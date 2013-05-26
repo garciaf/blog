@@ -2,3 +2,7 @@ name: Garciaf Blog
 safe: false
 lsi: true
 pygments: true
+auto: true
+ftp_host: ftp.fabbook.fr
+ftp_dir: /jekyl
+ftp_passive: false
