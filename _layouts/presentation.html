@@ -13,12 +13,12 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <link rel="stylesheet" href="/css/reveal.css">
-    <link rel="stylesheet" href="/css/theme/beige.css" id="theme">
-    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <link rel="stylesheet" href="{{ site.url }}/css/reveal.css">
+    <link rel="stylesheet" href="{{ site.url }}/css/theme/beige.css" id="theme">
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/custom.css">
 
     <!-- For syntax highlighting -->
-    <link rel="stylesheet" href="/lib/css/zenburn.css">
+    <link rel="stylesheet" href="{{ site.url }}/lib/css/zenburn.css">
 
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
@@ -35,8 +35,8 @@
       </div>
     </div>
   </div>
-    <script src="/lib/js/head.min.js"></script>
-    <script src="/js/reveal.min.js"></script>
+    <script src="{{ site.url }}/lib/js/head.min.js"></script>
+    <script src="{{ site.url }}/js/reveal.min.js"></script>
 
     <script>
 
@@ -52,12 +52,12 @@
 
         // Optional libraries used to extend on reveal.js
         dependencies: [
-          { src: '/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: '/js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: '/js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: '/js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: '/js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-          { src: '/js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          { src: '{{ site.url }}/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '{{ site.url }}/js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '{{ site.url }}/js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '{{ site.url }}/js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '{{ site.url }}/js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '{{ site.url }}/js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
           // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
           // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
         ]
