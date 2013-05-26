@@ -1,2 +1,4 @@
-name: Your New Jekyll Site
+name: Garciaf Blog
+safe: true
+lsi: false
 pygments: true
