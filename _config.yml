@@ -1,4 +1,5 @@
 name: Garciaf Blog
+relative_permalinks: false
 safe: true
 lsi: false
 pygments: true
