@@ -1,0 +1,152 @@
+---
+layout: presentation
+title:  "Hire a monkey vs BDD"
+date:   2013-05-26 22:15:46
+categories: slide
+language: en
+---
+
+%section
+  %h1 Hire monkey
+  %h3 Vs
+  %h1 BDD*
+  %h4 * Behavior-driven development
+  %p
+    %small
+      Created by
+      %a{:href => "http://fabbook.fr/fabien-garcia/about"} Fabien Garcia
+  %a.image{:href => "#/2"}
+    %img{:height => "238", :src => "/img/monkey-on-a-computer.jpg"}/
+%section
+  %section
+    %h1 How to be sure that your web app is working?
+  %section
+    %h1 You can trust developpers
+  %section
+    %h1 You test it!
+    %ol
+      %li You open a browser
+      %li Visit the url of your application
+      %li Fill in a form
+      %li Check if the page should have the right content
+  %section
+    %h2 And you do it for every single change, and you check for every single page, for every case
+  %section{"data-state" => "soothe"}
+    %h1 Advantages
+    %ul
+      %li You will become really good using your application
+  %section{"data-state" => "alert"}
+    %h1 Drawbacks
+    %ul
+      %li Time consuming
+      %li Do not add value to the product
+      %li Do not let you focus on the user experience
+      %li Stupid task
+  %section
+    %h1 A better solution?
+%section
+  %section
+    %h1 Why not hire a monkey?
+  %section{"data-state" => "soothe"}
+    %h1 Advantages
+    %ul
+      %li You pay him with banana
+      %li It will do any stupid task
+      %li It could repeat action as long as you give bananas
+  %section{"data-state" => "alert"}
+    %h1 Drawbacks
+    %ul
+      %li It's a monkey ;-)
+      %li Training time
+      %li It could be loud
+      %li The office is not suitable
+  %section
+    %h1 So let's find a better solution...
+%section
+  %h1 BDD*
+  %h2 * Behavior-driven development
+/ Example of nested vertical slides
+%section
+  %section
+    %h1 Cucumber
+  %section
+    %blockquote
+      It's a hight level framework testing
+    %p
+      %a{:href => "http://cukes.info/"} See more here
+  %section
+    %h2 Let's see
+    %pre
+      %code.ruby
+        :preserve
+      
+          # language: en
+          Feature: Addition
+            In order to avoid silly mistakes
+            As a math idiot 
+            I want to be told the sum of two numbers
+          
+            Scenario Outline: Add two numbers
+              Given I have entered <input_1> into the calculator
+              And I have entered <input_2> into the calculator
+              When I press < button >
+              Then the result should be < output > on the screen
+            Examples:
+              | input_1 | input_2 | button | output |
+              | 20      | 30      | add    | 50     |
+              | 2       | 5       | add    | 7      |
+              | 0       | 40      | add    | 40     |
+  %section{"data-state" => "soothe"}
+    %h1 Advantages
+    %ul
+      %li The syntax is really similar to a real User-story
+      %li High level testing
+  %section{"data-state" => "alert"}
+    %h1 Drawbacks
+    %ul
+      %li Need to learne the syntax
+      %li Syntax has no link with ruby
+%section
+  %section
+    %h1 Rspec with sugar*
+    %h3 * Capybara, Selenium-webdriver, Factory_girl_rails, ...
+  %section
+    %blockquote
+      Framework for testing developer friendly and easy to read.
+  %section
+    %h2 Let's see
+    %pre
+      %code.ruby
+        :preserve
+
+          describe "Search /blog" do
+            it "should be able to search into the blog database" do
+              post = FactoryGirl.create(:post)
+              post2 = FactoryGirl.create(:post, title: 'other staff' )
+              visit home_path
+              fill_in 'search', :with => 'article top'
+              click_on 'Search'
+              page.should have_content("article top")
+            end
+          end
+          
+  %section{"data-state" => "soothe"}
+    %h1 Advantages
+    %ul
+      %li Really flexible allow hight level testing and unit test
+      %li With the sugar test case are easy to read for non developer
+      %li Close to the ruby
+      %li Could be integrate with Selenium
+  %section{"data-state" => "alert"}
+    %h1 Drawbacks
+    %ul
+      %li Need to understand Ruby
+%section
+  %blockquote
+    We've heard that a million monkeys at a million keyboards could produce the complete works of Shakespeare; now, thanks to the Internet, we know that is not true
+  %p.source Robert Wilensky
+%section
+  %h1 Question?
+%section
+  %h1 THE END
+  %h3 BY Fabien Garcia
