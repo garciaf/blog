@@ -14,7 +14,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <link rel="stylesheet" href="{{ site.url }}/css/reveal.css">
-    <link rel="stylesheet" href="{{ site.url }}/css/theme/beige.css" id="theme">
+    {% if page.theme %}
+      <link rel="stylesheet" href="{{ site.url }}/css/theme/{{page.theme}}.css" id="theme">
+    {% else %}
+      <link rel="stylesheet" href="{{ site.url }}/css/theme/default.css" id="theme">
+    {% endif %}
+
     <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/custom.css">
 
     <!-- For syntax highlighting -->
