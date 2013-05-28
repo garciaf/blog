@@ -1,0 +1,18 @@
+@import "_assets/sass/_settings.scss";
+
+@import "_assets/sass/foundation.scss";
+
+header {
+  background-color: #2ba6cb;
+  padding: 22px 0;
+  h1{
+    color: #fff;
+    font-weight: 500;  
+  }
+  margin-bottom: 2em; 
+}
+
+footer{
+  background: #3f3f3f;
+  color: #fff;
+}

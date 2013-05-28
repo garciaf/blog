@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
+    {% css_asset_tag global %}
+      - /_assets/sass/app.css.scss
+    {% endcss_asset_tag %}
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="{{ site.url }}/css/syntax.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="{{ site.url }}/css/syntax.css">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="{{ site.url }}/css/main.css">
+  </head>
+  <body>
+    <nav class="top-bar" style="">
+      <ul class="title-area">
+        <!-- Title Area -->
+        <li class="name">
+          <h1><a href="/">Fabbook extra</a></h1>
+        </li>
+      </ul>
 
-    </head>
-    <body>
-
-        <div class="container">
-          <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="{{ site.url }}">{{ site.name }}</a></h1>
-              <a class="extra" href="/">home</a>
-            </div>
-     
-                {{ content }}
-
-            <div class="footer">
-              <div class="contact">
-                <p>
-                  Your Name<br />
-                  What You Are<br />
-                  your@email.com
-                </p>
-              </div>
-              <div class="contact">
-                <p>
-                  <a href="http://github.com/garciaf/">github.com/garciaf</a><br />
-                  <a href="http://twitter.com/FabbookFr/">twitter.com/FabbookFr</a><br />
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> <!-- /container -->
-
-    </body>
+      <section class="top-bar-section">
+        <ul class="left">
+          <li class="divider"></li>
+          <li><a href="http://fabbook.fr/news">Fabbook</a>
+      </section>
+    </nav>
+    <header>
+      <div class="row">
+        <div class="twelve columns">
+          <h1>{{page.title}}</h1>
+        </div>
+      </div>
+    </header>
+    <section id="mainContent" class="example">
+      {{ content }}
+    </section>
+    <footer>
+      <div class="row">
+        <div class="eight columns">
+          <ul class="inline-list right">
+            <li><a href="http://github.com/garciaf/">Github</a></li>
+            <li><a href="http://twitter.com/FabbookFr/">twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

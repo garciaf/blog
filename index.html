@@ -1,15 +1,19 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: blog post
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-        {% if post.published %}
-        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }} ({{post.language}})</a></li>
-        {% endif %}
-    {% endfor %}
-  </ul>
-</div>
+{% for post in site.posts %}
+    {% if post.published %}
+    <div class="row">
+      <div class="twelve columns panel">
+        <a href="{{ post.url }}"><h3>{{ post.title }} ({{post.language}})</h3></a>
+        
+        <p>
+          <span class="label secondary round">{{ post.date | date_to_string }}</span> 
+          <a class="button" href="{{ post.url }}">read</a>
+        </p>
+      </div>
+    </div>
+    {% endif %}
+{% endfor %}

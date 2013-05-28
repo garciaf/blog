@@ -7,7 +7,6 @@ language: fr
 published: true
 ---
 
-# Les prommesses expliqué avec Ken et Barbie
 ## L'histoire de ken et Barbie
 La vie est pleine de promesses nous en faisons tous les jours. Prenons par exemple ken et barbie:
     
