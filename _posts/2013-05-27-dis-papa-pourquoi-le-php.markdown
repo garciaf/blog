@@ -9,6 +9,10 @@ published: false
 
 # Dis papa pourquoi on fait du PHP ?
 
+_"Papa, papa, à l'école ils font que de dire que PHP c'est trop nul, ... sniff...", "mais c'est pas grave mon petit" "Dis Papa pourquoi on fait du PHP? ", "Heu tu veux pas que je te dise comment on fait les bébé à lq place ? Non ? Bon dans ce cas ..."_
+
+## Il était une fois ...
+
 En 1994, Rasmus Lerdorf inventait le PHP pour les besoins de son site web. Ce langage était alors un ensemble de fonctions écrites
 en PERL. De simple bibliothèque basé sur PERL, PHP est ensuite devenu un language interprété à part entière basé sur du C.
 En 1995, son créateur décida de passer PHP en open source. Une decision qui permit la véritable naissance de PHP.
