@@ -8,24 +8,29 @@
     {% css_asset_tag global %}
       - /_assets/sass/app.css.scss
     {% endcss_asset_tag %}
+    {% javascript_asset_tag modernl %}
+      - /_assets/js/vendor/custom.modernizr.js
+    {% endjavascript_asset_tag %}
 
     <!-- syntax highlighting CSS -->
     <link rel="stylesheet" href="{{ site.url }}/css/syntax.css">
 
   </head>
   <body>
-    <nav class="top-bar" style="">
+    <nav class="top-bar sticky" >
       <ul class="title-area">
         <!-- Title Area -->
         <li class="name">
           <h1><a href="/">Fabbook extra</a></h1>
         </li>
+        <li class="toggle-topbar"><a><i class="menu-icon"></i><span>Menu</span></a></li>
       </ul>
 
       <section class="top-bar-section">
         <ul class="left">
           <li class="divider"></li>
           <li><a href="http://fabbook.fr/news">Fabbook</a>
+          <li class="divider"></li>
       </section>
     </nav>
     <header>
@@ -48,5 +53,21 @@
         </div>
       </div>
     </footer>
+    {% javascript_asset_tag global %}
+      - /_assets/js/vendor/zepto.js
+      - /_assets/js/foundation/foundation.js
+      - /_assets/js/foundation/foundation.dropdown.js
+      - /_assets/js/foundation/foundation.section.js
+    {% endjavascript_asset_tag %}
+<script>
+  $(function(){
+    $(document).foundation({
+      index : 0,
+      stickyClass : 'sticky',
+      custom_back_text: true, // Set this to false and it will pull the top level link name as the back text
+      back_text: 'Back', // Define what you want your custom back text to be if custom_back_text: true
+      init : false});    
+      })
+</script>
   </body>
 </html>
