@@ -6,28 +6,33 @@ Small blog with slide and article hosted on [blog.fabbook.fr](http://blog.fabboo
 Install
 ====
 
-First fork and clone it :
- 
-  git clone git@github.com:garciaf/blog.git
+First fork and clone it:
+
+    git clone git@github.com:garciaf/blog.git
 
 You need first ruby (I recommand to use [rbenv](https://github.com/sstephenson/rbenv))and [bundler](http://gembundler.com/)
 
-  gem install bundler
+    gem install bundler
 
 Then you can use
 
-  bundle install
+    bundle install
   
 And you can start it this way: 
 
-  jekyll serve
+    jekyll serve
   
 If you want to write and update each time you change something: 
 
-  jekyll server -w
+    jekyll server -w
   
 And you can deploy with ftp using:
 
-  glynn
+    glynn
   
-And that's it Enjoy 
+And that's it Enjoy!
+
+Issue
+====
+
+You can use the github issue tracker
