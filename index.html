@@ -3,7 +3,7 @@ layout: default
 title: blog post
 ---
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
     {% if post.published %}
     <div class="row">
       <div class="twelve columns panel">
@@ -17,3 +17,5 @@ title: blog post
     </div>
     {% endif %}
 {% endfor %}
+
+{% include paginate.html %}
