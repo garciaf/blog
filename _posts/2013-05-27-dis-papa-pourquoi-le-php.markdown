@@ -20,7 +20,7 @@ mais de tenter de répondre à la question "Dis papa, pourquoi on fait du PHP ?"
 
 Pour répondre à cette question, il me semble important d'insister sur le coté Open Source de PHP qui selon moi a été un 
 vecteur important de son succès dans les années 2000. Pour les non initiés à l'Open Source, je me permet une petite paranthèse. 
-Le brevet libre part du principe que notre évolution au sens large doit être colletive et non individuel. Chacun dépose une brique à l'édifice
+Le brevet libre part du principe que notre évolution au sens large doit être colletive et non individuelle. Chacun dépose une brique à l'édifice
 afin de construire ensemble un ouvrage robuste, populaire, fiable et durable. Bien que des projets libres finissent aux oubliettes,
 il est bien déplorable de voir des projets pertinents et viables finir de la même façon faute de financement et de brevet "All Right Reserved". 
 Bref, je m'écarte du sujet et je pense qu'il pourra être interressant de créer un article à part entière sur le domaine du libre.
@@ -52,12 +52,12 @@ Alors forcémment j'ai douté, et j'ai pensé que l'avenir se trouvait sur des s
 
 Heureusement, PHP a su avoir raison de mes doutes. Sur les développements de code "ouvert", on cherche à s'entendre sur des conventions de codage, ce qui rend le code plus propre et plus accessible pour les novices au projet en question ([Convention PEAR](http://pear.php.net/manual/en/standards.php)  [PSR-0](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md), [PSR-1](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md) et [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)). 
 Et le développement en objet de PHP a permis à des Framework comme CakePHP ou Symfony de naître et ainsi rendre essentiel la notion de MVC
-(Model Vue Controller), afin de bien séparer la logique, le controleur (celui qui reçoit et renvoit les données ), et les 
+(Model View Controller), afin de bien séparer la logique, le controleur (celui qui reçoit et renvoit les données ), et les 
 vues, consituées seulement de variables et de tableaux à afficher dans le code HTML. 
 Des progrès au niveau de la gestion du cache coté serveur ont été réalisés dans les versions récentes, avec l'utilisation du cache APC. 
-De plus les dernières versions de Php intègrent des concept très puissant emprunté d'autre language (traits, closure pour ne citer qu'eux). 
-Depuis quelques temps PHP s'est doté d'un gestionnaire de dépendences enfin performant et souple j'ai nommé [Composer](http://getcomposer.org/) voilà de quoi pouvoir rendre l'écosysteme industriable. L'autre grande force c'est sont utilisation massive (de __très__  nombreux projets existent) et son installation très simple sur de nombreux serveurs
+De plus les dernières versions de PHP intègrent des concepts très puissant empruntés à d'autres langages (traits, closure pour ne citer qu'eux). 
+Depuis quelques temps PHP s'est doté d'un gestionnaire de dépendances enfin performant et souple j'ai nommé [Composer](http://getcomposer.org/) voilà de quoi pouvoir rendre l'écosysteme industriable. L'autre grande force c'est son utilisation massive (de __très__  nombreux projets existent) et son installation très simple sur de nombreux serveurs.
 
 Bref, on code en PHP car c'est libre, performant, et tellement web =)
 
-_Yohan & Fabien_
+_Yoann & Fabien_
