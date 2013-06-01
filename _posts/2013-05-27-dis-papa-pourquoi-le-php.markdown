@@ -1,15 +1,13 @@
 ---
 layout: post
 title:  "Dis papa pourquoi on fait du php?" 
-date:   2013-04-01 21:15:46
+date:   2013-05-27 21:15:46
 categories: article
 language: fr
-published: false
+published: true
 ---
 
-# Dis papa pourquoi on fait du PHP ?
-
-_"Papa, papa, à l'école ils font que de dire que PHP c'est trop nul, ... sniff...", "mais c'est pas grave mon petit" "Dis Papa pourquoi on fait du PHP? ", "Heu tu veux pas que je te dise comment on fait les bébé à lq place ? Non ? Bon dans ce cas ..."_
+_"Papa, papa, à l'école ils font que de dire que PHP c'est trop nul, ... sniff...", "mais c'est pas grave mon petit" "Dis Papa pourquoi on fait du PHP? ", "Heu tu veux pas que je te dise comment on fait les bébé à la place ? Non ? Bon dans ce cas ..."_
 
 ## Il était une fois ...
 
@@ -27,6 +25,8 @@ afin de construire ensemble un ouvrage robuste, populaire, fiable et durable. Bi
 il est bien déplorable de voir des projets pertinents et viables finir de la même façon faute de financement et de brevet "All Right Reserved". 
 Bref, je m'écarte du sujet et je pense qu'il pourra être interressant de créer un article à part entière sur le domaine du libre.
 
+## Le PHP c'est libre
+
 Revenons à notre ami PHP. Fin 90, fort d'une communauté libre fiable, ce langage intègre des librairies interressantes pour 
 le développement du web : Communication vers des bases de données, maniement des images, traitement de tableau. 
 Face à l'arrivé de la notion de programmation orienté objet dans le domaine de l'informatique, PHP reste à la page en intégrant
@@ -40,17 +40,24 @@ que de nombreux sites et forums d'aides se mettaient en place autour de ce langa
 sur le serveur et surtout du contenu sauvegardé en base de donnée. Beaucoup de bidouilleurs dont je faisais parti ont alors découvert
 les joies du code avec un certain coté ludique.
 
-Lors de mes études, j'ai entendu les mauvaises langues "Php, c'est degueulasse comme langage, c'est même pas typé !".
-Certes, on est loin de la rigueur imposée par du C ou du Java, mais c'est ce qui a permis aussi son développement "populaire".
-En revanche, je reconnais que l'absence de contraintes de codage peut amener le développeur à écrire avec son style, ce qui 
-devient invivable lorsque l'on est plusieurs sur le projet. Mais j'avoue qu'à entendre de genre de remarque, que l'avenir
-se trouvait sur des solutions plus propre comme du JSP ou de l'ASP; J'ai douté.
+## C'est bien mais ...
 
-Heureusement, PHP a su avoir raison de mes doutes. Sur les développements de code "ouvert", on cherche à s'entendre de convention 
-de codage, ce qui rend le code plus propre et plus accessible pour les novices au projet en question. Et le développement
-en objet de PHP a permis à des Framework comme CakePHP ou Symfony de naître et ainsi rendre essentiel la notion du MVC
-(Model Controller Viewer), afin de bien séparer la logique, le controleur ( celui qui reçoit et renvoit les données ), et les 
-vues, consituées seulement de variables et tableaux à afficher dans le code HTML. Des progrès au niveau de la gestion du cache 
-coté serveur ont été réalisés dans les versions récentes, avec l'utilisation du cache APC.
+Lors de mes études, j'ai entendu les mauvaises langues "Php, c'est degueulasse comme langage, c'est même pas typé !".
+Certes, on est loin de la rigueur imposée par du C ou du Java, mais c'est ce qui a permis aussi son développement "populaire". De plus de nombreuses inconsitence sont reprochés au language ([Phpsadness](http://phpsadness.com/)) toutes ses raisons font que ce language est un peu moins "cool".
+Et je reconnais que l'absence de contraintes de codage peut amener le développeur à écrire avec son style, ce qui devient invivable lorsque l'on est plusieurs sur le projet. 
+
+Alors forcémment j'ai douté, et j'ai pensé que l'avenir se trouvait sur des solutions plus propre comme du JSP ou de l'ASP
+
+## J'aime PHP car ...
+
+Heureusement, PHP a su avoir raison de mes doutes. Sur les développements de code "ouvert", on cherche à s'entendre sur des conventions de codage, ce qui rend le code plus propre et plus accessible pour les novices au projet en question ([Convention PEAR](http://pear.php.net/manual/en/standards.php)  [PSR-0](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md), [PSR-1](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md) et [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)). 
+Et le développement en objet de PHP a permis à des Framework comme CakePHP ou Symfony de naître et ainsi rendre essentiel la notion de MVC
+(Model Vue Controller), afin de bien séparer la logique, le controleur (celui qui reçoit et renvoit les données ), et les 
+vues, consituées seulement de variables et de tableaux à afficher dans le code HTML. 
+Des progrès au niveau de la gestion du cache coté serveur ont été réalisés dans les versions récentes, avec l'utilisation du cache APC. 
+De plus les dernières versions de Php intègrent des concept très puissant emprunté d'autre language (traits, closure pour ne citer qu'eux). 
+Depuis quelques temps PHP s'est doté d'un gestionnaire de dépendences enfin performant et souple j'ai nommé [Composer](http://getcomposer.org/) voilà de quoi pouvoir rendre l'écosysteme industriable. L'autre grande force c'est sont utilisation massive (de __très__  nombreux projets existent) et son installation très simple sur de nombreux serveurs
 
 Bref, on code en PHP car c'est libre, performant, et tellement web =)
+
+_Yohan & Fabien_
