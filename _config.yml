@@ -2,8 +2,12 @@ name: Garciaf Blog
 safe: false
 lsi: true
 pygments: true
-paginate: 5
+paginate: 10
+
 auto: true
 ftp_host: ftp.fabbook.fr
 ftp_dir: /jekyl
 ftp_passive: false
+
+exclude: [ 'README.md', 'Gemfile', 'Gemfile.lock' ]
+include: [ '.htaccess' ]
