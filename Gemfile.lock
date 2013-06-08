@@ -51,6 +51,7 @@ PLATFORMS
 DEPENDENCIES
   compass
   glynn
+  jekyll
   jekyll-asset-pipeline
   sass
   zurb-foundation
