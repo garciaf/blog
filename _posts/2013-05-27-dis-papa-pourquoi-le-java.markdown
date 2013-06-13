@@ -7,4 +7,10 @@ language: fr
 published: false
 ---
 
-# Dis papa pourquoi on fait du Java ?
+_"Papa, papa, à l'école ils font que de dire que Java c'est trop nul, ... sniff...", "mais c'est pas grave mon petit" "Dis Papa pourquoi on fait du Java? ", "Heu tu veux pas que je te dise comment on fait les bébé à la place ? Non ? Bon dans ce cas ..."_
+
+## Il était une fois ...
+
+## Tes copains se moquent de Java car ...
+
+Java 
