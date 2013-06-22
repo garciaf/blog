@@ -1,45 +1,30 @@
-<div class="pagination-centered">
+<div class="pager">
 <!-- Pagination links -->
-<ul id="post-pagination" class="pagination">
+
   {% if paginator.previous_page %}
-    <li class="previous">
       {% if paginator.previous_page == 1 %}
-        <a href="/">Previous</a>
+        <a class="button previous" href="/">Previous</a>
       {% else %}
-        <a href="{{ paginator.previous_page_path }}">Previous</a>
+        <a class="button previous" href="{{ paginator.previous_page_path }}">Previous</a>
       {% endif %}
-    </li>
-  {% else %}
-    <li class="previous unavailable">
-      <span>Previous</span>
-    </li>
   {% endif %}
-    <li class="page">
+  <div class="pages">
       {% if paginator.page == 1 %}
-        <span class="current">1</span>
+        <a href="#" class="active">1</a>
       {% else %}
         <a href="/">1</a>
       {% endif %}
-    </li>
 
     {% for count in (2..paginator.total_pages) %}
-      <li class="page">
         {% if count == paginator.page %}
-          <span class="current">{{ count }}</span>
+          <a href="#" class="active">{{ count }}</a>
         {% else %}
           <a href="/page{{ count }}">{{ count }}</a>
         {% endif %}
-      </li>
     {% endfor %}
+  </div>
 
   {% if paginator.next_page %}
-    <li class="next">
-      <a href="{{ paginator.next_page_path }}">Next</a>
-    </li>
-  {% else %}
-    <li class="next unavailable">
-      <span>Next</span>
-    </li>
+      <a class="button next" href="{{ paginator.next_page_path }}">Next</a>
   {% endif %}
-</ul>
 </div>
