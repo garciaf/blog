@@ -9,7 +9,7 @@ ftp_host: ftp.fabbook.fr
 ftp_dir: /jekyl
 ftp_passive: false
 
-exclude: [ 'README.md', 'Gemfile', 'Gemfile.lock' ]
+exclude: [ 'README.md', 'Gemfile', 'Gemfile.lock', 'Rakefile' ]
 include: [ '.htaccess' ]
 
 gallerytag:
