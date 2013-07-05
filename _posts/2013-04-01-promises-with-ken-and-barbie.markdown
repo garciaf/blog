@@ -7,7 +7,7 @@ language: fr
 published: true
 ---
 
-## L'histoire de ken et Barbie
+### L'histoire de ken et Barbie
 La vie est pleine de promesses nous en faisons tous les jours. Prenons par exemple ken et barbie:
     
     ken = new PerfectMan()
@@ -31,7 +31,7 @@ ken.marry(barbie)
 
 Et voilà une vie parfaite terminé. 
 
-## L'histoire des gens nomaux
+### L'histoire des gens nomaux
 Mais tout ne se réalise pas toujours comme on le souhaite, et les promesses que l'on fait ne sont pas toujours tenues. 
 {% highlight ruby %}
 ted = new Man()
@@ -66,7 +66,7 @@ Bref c'est bien beau tout ça mais c'est quoi le lien avec javascript ? Et bien 
 
 # Le lien avec javascript
 
-## Exemples 
+### Exemples 
 
 En js vous pouvez décider de retourner une promesse pour un événement asynchrone. 
 Si tout s'est bien passé alors vous pourrez passez à la suite avec comme argument le ou les valeurs retourné.
@@ -129,8 +129,8 @@ user.findWhere(name:"john")
 
 Le code est beaucoup plus lisible et du code plus claire est du code qui se maintient mieux. 
 
-## Transformer des fonctions asynchrone en promesses
-### Node
+### Transformer des fonctions asynchrone en promesses
+#### Node
 Tout cela est bien beau mais l'essentiel du monde javascript est plutôt friand de callback. 
 Si l'on souhaite néanmoins utiliser les promesses au lieu des callback. 
 On pourra utiliser la librairie Q excellente de cette façon :
@@ -174,7 +174,7 @@ User.find("test@mail.com")
   .fail (err) -> console.err err
 {% endhighlight %}
 
-### jQuery
+#### jQuery
 jQuery utilise les promesses depuis la version 1.5. 
 Si l'on souhaite convertir une fonction asynchrone en prommesse, Defered va devenir très utile. 
 {% highlight ruby %}
@@ -195,13 +195,13 @@ $.when(promiseFunc).then (res) ->
   alert status + ", things are going well"
 {% endhighlight %}
  
-## Liens
+### Liens
 
 Pour terminer ce petit article quelques liens pour aller plus loin, car tout n'a pas été abordé. 
 Et il y a beaucoup d'autre chose à en dire :
 * [Q](http://documentup.com/kriskowal/q/)
 * [Deferred object jQuery](http://api.jquery.com/category/deferred-object/)
 
-## Conclusion 
+### Conclusion 
 
 Bien évidemment si vous souhaitez rajouter des points compléter ou corriger, il ne vous reste plus qu'à forker.
