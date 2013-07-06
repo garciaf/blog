@@ -85,7 +85,7 @@ Le problème c'est que j'étais dans la situation où :
 
 Là où c'est très bête, c'est le contexte dans lequel j'ai validé ces estimations, j'avais fait beaucoup d'hypothèses sur le déroulement du dev (pas de client à déveloper, liberté technique, TDD facile à faire, développement en couche efficace). 
 
-### Le coup de baton
+### Le coup de bâton
 Alors quand on s'est aperçu que l'on ne livrerait pas dans les temps. J'ai reçu une convocation de mon N+3 ("responsable de production") pour une réunion "musclée".
 En gros c'était de ma faute, j'ai essayé de donner des justifications techniques mais ça a été balayé d'un revers de la main par un "Non l'architecte et le chef de projet se sont beaucoup remis en question". Vous répondez quoi à ça ? J'ai fait un truc du style "oui mais heu ..."
 A la fin de l'entretien, j'ai eu droit à une évaluation et j'ai eu l'impression d'être un idiot ni plus ni moins.
