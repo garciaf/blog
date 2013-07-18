@@ -25,6 +25,8 @@ layout: post
 category: #{args.category}
 title: #{args.title}
 date: #{Time.now.strftime('%Y-%m-%d %k:%M:%S')}
+subtitle: Subtitle
+published: false
 ---
 EOS
     end
