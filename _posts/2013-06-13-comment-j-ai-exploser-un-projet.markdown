@@ -14,11 +14,11 @@ Il y a des choses dont on est pas toujours fier, et aujourd'hui je vais vous en 
 Dans le dévelopement parfois on fait des trucs bien, parfois moins bien et parfois on merde carrément. 
 Récit d'un projet mort né.
 
-### Le contexte 
+## Le contexte 
 Bon c'est un projet qu'on a vendu pour x jours au client. C'est simple tu devrais y arriver, on va tenter de le faire sur une techno que tu connais mais pas nous (Symfony2). C'est toujours intéressant de démarrer un nouveau projet, on peut tout faire. 
 J'avais été formé sur le framework et l'estimation me semblait réaliste. 
 
-### Les premières difficultés
+## Les premières difficultés
 Pour commencer la "hierarchie", plus on est haut, plus on a raison. 
 J'étais dévelopeur, tout en bas juste au dessus de la femme de ménage pour les choix techniques. 
 Il faudra que toutes les décisions techniques soient validées par l'architecte ou le chef de projet.
@@ -28,11 +28,11 @@ On est sur SVN pour le projet (Quand on utilise composer je vous raconte pas la 
 On dévelope sur Windows (no comment)
 Et les (longues) réunions font partie du temps de dévelopement.
 
-### Déveloper en couche
+## Déveloper en couche
 En effet sur le papier cela semblait assez séduisant. Coder tout le modèle, puis tous les services, puis tous les contrôleurs et pour finir toutes les interfaces. 
 Malheureusement quand on arrive aux interfaces on se rend compte qu'il manque quelques services. Et on se rend compte que dans les services il manque quelques fonctions dans le modèle. Bref aujourd'hui je pense qu'il faut développer feature par feature car on revient moins sur son code. Et on fait des choses plus simples à chaque étape.
 
-### Vouloir faire la révolution
+## Vouloir faire la révolution
 De mon coté c'était mon deuxième projet from scratch et j'ai voulu faire les choses bien ce sera du TDD.
 J' écris les tests avant chaque developement. Malheureusement personne dans la boîte n'a d'expérience avec le TDD. Mais j'insiste malgrè tout...
 La boite n'est pas super chaude pour du TDD. Le N+2 est un ancien dévelopeur C (quand ça compile, le programme fonctionne point à la ligne) et comme plus on est en haut plus on a raison les tests automatiques ne sont pas dans les moeurs de l'entreprise.
@@ -41,25 +41,25 @@ Je discute certains écrans dont l'implémentation me parait inutilement compliq
 Quelques (long) échanges pour finalement me réaffirmer ma place dans la hiérarchie des décisions techniques. 
 Les meilleurs idées viennent toujours d'en haut.
 
-### Erreur en écrivant des tests
+## Erreur en écrivant des tests
 Une erreur que j'ai commise lorsque j'ai écris mes tests, c'était d'écrire en me basant sur un jeux de fixture. 
 C'est une mauvaise pratique qu'il convient de remplacer par des _Factory_ qui générent les données nécessaires aux tests.
 Malheureusement quand vous êtes le seul à vouloir écrire des tests personne ne voit ses erreurs.
 Bref écrivez du test avec des gens qui ont de l'expérience ou la volonté d'apprendre, ça facilite les choses.
 
-### Rajouter un nouveau framework au milieu du dev
+## Rajouter un nouveau framework au milieu du dev
 Dévelopement couche par couche on part du bas et on remonte. 
 Du coups les interfaces sont à la fin. Mais pour pouvoir tester si ça marche il m'a fallu faire quelques interfaces à la main. 
 Arrivé à la moitié on m'explique qu'il faut faire une interface full ext-js. Une grande partie de la logique est transféré sur le client.
 Et on se prive de la generation des formulaires de symfony. De plus je suis une bille en ExtJs. 
 Mon erreur avoir cru qu'apprendre cette couche supplémentaire ne changera rien. Perdu ...
 
-### L'architecte ne connait pas le framework et il doit tout valider
+## L'architecte ne connait pas le framework et il doit tout valider
 En effet la confiance n'est pas au rendez-vous, je suis alors un dev junior et l'architecte ne dévelope plus vraiment depuis un moment.
 Il découvre le framework. De surcroit il doit valider chacun de mes choix techniques (choix des bundles). 
 Dans la mesure où il ne connait pas mieux le framework que moi, je trouve ça curieux. 
 
-### Commentaire sur les commentaires
+## Commentaire sur les commentaires
 L'utilisation des commentaires est assez subjective. Certains les utilise beaucoup, d'autre moins. 
 Je fais partie de la seconde catégorie. Un code doit être compréhensible sans commentaire et les tests doivent expliquer ce que fait le code. 
 J'écris du commentaire, lorsque je fais un hack, ou pour préciser un point relié au projet. 
@@ -70,14 +70,14 @@ En bref j'ai été contraint d'écrire des commentaires inutiles dans l'éventua
 Aujourd'hui je sais qu'il faut écrire le minimum de code pour remplir le besoin. 
 Si l'on ne génére pas de documentation pas de commentaire inutile pour le cas où. Perdu encore une fois. 
 
-### Le code en français
+## Le code en français
 La spec était tellement carré que j'ai recopié le modèle tel quel (quasiment) et ce fut une grosse erreur.
 En effet tout était écrit en français et lorsqu'il a fallu écrire des méthodes pour le modèle, 
 J'ai eu des noms assez marrants comme _getVoiture()_ et bien d'autres. Le mélange est très mauvais et fait vite de la peine. 
 Cela m'a valu de devoir traduire des noms de méthode en français, cela m'a aussi valu de longues discussions avec mon architecte.
 Bref codez toujours, toujours en anglais et même si tout est en français traduisez !
 
-### Ne pas lancer d'alerte
+## Ne pas lancer d'alerte
 En voyant le nombre de problèmes s'accumuler j'aurai du dire de manière explicite "Soit j'arrête de développer votre merde, soit on change le processus sinon on va dans le mur".
 Le problème c'est que j'étais dans la situation où :
 - on a pas assez de boulot pour pouvoir refuser des projets
@@ -85,7 +85,7 @@ Le problème c'est que j'étais dans la situation où :
 
 Là où c'est très bête, c'est le contexte dans lequel j'ai validé ces estimations, j'avais fait beaucoup d'hypothèses sur le déroulement du dev (pas de client à déveloper, liberté technique, TDD facile à faire, développement en couche efficace). 
 
-### Le coup de bâton
+## Le coup de bâton
 Alors quand on s'est aperçu que l'on ne livrerait pas dans les temps. J'ai reçu une convocation de mon N+3 ("responsable de production") pour une réunion "musclée".
 En gros c'était de ma faute, j'ai essayé de donner des justifications techniques mais ça a été balayé d'un revers de la main par un "Non l'architecte et le chef de projet se sont beaucoup remis en question". Vous répondez quoi à ça ? J'ai fait un truc du style "oui mais heu ..."
 A la fin de l'entretien, j'ai eu droit à une évaluation et j'ai eu l'impression d'être un idiot ni plus ni moins.

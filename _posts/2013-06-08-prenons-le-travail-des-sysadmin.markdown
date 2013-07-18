@@ -37,7 +37,7 @@ knife cookbook site install mysql
 La recette se télécharge et vous voilà avec mysql utilisable dans vos recette. Un cookbook c'est juste un depot git avec du code ruby à l'intérieur. 
 On peut avoir plusieurs recettes dans un cookbook. Ensuite il y les "node" qui sont simplement les instances particulière de serveur que l'on aura. 
 On peut avoir des données spécifiques au node. En effet par exemple le mot de passe de votre base de donnée Mysql ne sera pas le même sur votre serveur de production que sur votre serveur de test. 
-Ensuite il y a les rôles un role c'est un peu comme un menu, il contient plusieurs. 
+Ensuite il y a les rôles un role c'est un peu comme un menu, il contient plusieurs recettes. 
 
 ## Pourquoi faire si compliqué ?
 Parce qu'on peut ! Non plus sérieusement une fois vos recette faite et votre environnement configuré vous serez capable de créer et mettre à jour des serveurs plus vite qu'il ne le faut pour le dire. 
