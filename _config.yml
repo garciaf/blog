@@ -1,4 +1,7 @@
 name: Garciaf Blog
+description: Blog about a dev
+url: http://blog.fabbook.fr
+
 safe: false
 lsi: true
 pygments: true
