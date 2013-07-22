@@ -81,6 +81,20 @@ En gros il faut écrire des histoires en utilisant le minimum de mots et le maxi
 Si les développeurs étaient poètes ils écriraient des [haiku](https://fr.wikipedia.org/wiki/Ha%C3%AFku).
 Et l'aiku représente le but ultime du développeur, tout exprimer avec le minimum de mot.
 
+## Tenez vous à jour
+###	Suivez les chefs cuistos
+Avec Internet il y a maintenant de très bon chef qui partage leur trucs sur intenet. 
+J'ai une préference pour les podcasts maintenant et j'aime les amateurs qui partagent une recette où les gros 
+sites comme [750 grammes](http://www.youtube.com/user/750Grammes) qui font des vidéo très bien faites et très accessible. 
+### Suivez les gourous du dev
+Pour le dev c'est la même chose, il y a de très bon developeurs qui partagent leurs connaissances.
+Pour rails il y a une excellente séries de podcast [railscasts](http://railscasts.com/) qui est vraiment un puit de science. 
+Je suis sur twitter différents "personnalité" du dev (pour php par exemple : [Fabien Potencier](https://twitter.com/fabpot) )
+J'aime aussi [humancoder](http://news.humancoders.com/) qui permet de centraliser la veille de différents endroits. 
+
+Bref dévorez tout ce que vous trouverez cela vous donnera toujours du terreau pour faire pousser vos idées.
+
+
 ## Conclusion
 Voilà une réflexion qui me trottait dans la tête depuis un moment. 
 Maintenant le tout c'est de ne pas confondre les activité sinon vos ordinateurs ni survivront pas. 
