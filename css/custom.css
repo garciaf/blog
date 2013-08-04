@@ -11,3 +11,7 @@
 .bad{
   color: #b94a48 ;
 }
+
+.pink .reveal .state-background {
+  background: rgba( 255, 173, 206, 0.6 );
+}
