@@ -19,7 +19,7 @@ Et si jamais votre cuisine est sale vous risquez de rendre les gens malades.
 ### Gardez votre code propre
 Refractorez, refractorez, refractorer, en effet enlevez ce qui ne sert plus à rien.
 Cherchez toujours à faire le job avec le moins de ligne possible. 
-Renommez ce qui n'est pas claire et évitez de vous répéter. 
+Renommez ce qui n'est pas clair et évitez de vous répéter. 
 Plus votre code est propre, moins vous vous rendrez malade quand vous irez dans votre code.
 
 ## Tester ce que vous faites
@@ -77,19 +77,19 @@ La chimie c'est une boite à outils, après vous êtes libre d'en faire ce que v
 ### En code
 la encore on est entre les maths et la prose. 
 Vous devez être rigoureux avec ce que vous écrivez, mais vous pouvez être créatif sur la façon de le formuler.
-En gros il faut écrire des histoires en utilisant le minimum de mots et le maximum d'information.
+En gros il faut écrire des histoires en utilisant le minimum de mot et le maximum d'information.
 Si les développeurs étaient poètes ils écriraient des [haiku](https://fr.wikipedia.org/wiki/Ha%C3%AFku).
 Et l'aiku représente le but ultime du développeur, tout exprimer avec le minimum de mot.
 
-## Tenez vous à jour
+## Tenez-vous à jour
 ###	Suivez les chefs cuistos
-Avec Internet il y a maintenant de très bon chef qui partage leur trucs sur intenet. 
+Avec Internet il y a maintenant de très bons chefs qui partagent leurs trucs sur intenet. 
 J'ai une préference pour les podcasts maintenant et j'aime les amateurs qui partagent une recette où les gros 
-sites comme [750 grammes](http://www.youtube.com/user/750Grammes) qui font des vidéo très bien faites et très accessible. 
+sites comme [750 grammes](http://www.youtube.com/user/750Grammes) qui font des vidéos très bien faites et très accessibles. 
 ### Suivez les gourous du dev
-Pour le dev c'est la même chose, il y a de très bon developeurs qui partagent leurs connaissances.
+Pour le dev c'est la même chose, il y a de très bons developeurs qui partagent leurs connaissances.
 Pour rails il y a une excellente séries de podcast [railscasts](http://railscasts.com/) qui est vraiment un puit de science. 
-Je suis sur twitter différents "personnalité" du dev (pour php par exemple : [Fabien Potencier](https://twitter.com/fabpot) )
+Je suis sur twitter différentes "personnalités" du dev (pour php par exemple : [Fabien Potencier](https://twitter.com/fabpot) )
 J'aime aussi [humancoder](http://news.humancoders.com/) qui permet de centraliser la veille de différents endroits. 
 
 Bref dévorez tout ce que vous trouverez cela vous donnera toujours du terreau pour faire pousser vos idées.
@@ -97,7 +97,7 @@ Bref dévorez tout ce que vous trouverez cela vous donnera toujours du terreau p
 
 ## Conclusion
 Voilà une réflexion qui me trottait dans la tête depuis un moment. 
-Maintenant le tout c'est de ne pas confondre les activité sinon vos ordinateurs ni survivront pas. 
+Maintenant le tout c'est de ne pas confondre les activités sinon vos ordinateurs ni survivront pas. 
 Et vous, vous pensez que coder ressemble à une autre activité ? Si oui laquelle ?
 
 
