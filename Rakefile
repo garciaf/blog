@@ -10,7 +10,8 @@ namespace :rsync do
       system('rsync _site/ -ave ssh --delete vagrant@192.168.33.10:/home/vagrant/deploy/')
     end
 end
-
+# Usage:
+# rake write["Post Title Goes Here",category]
 desc "Given a title as an argument, create a new post file"
 task :write, [:title, :category] do |t, args|
   puts args
