@@ -3,7 +3,7 @@ layout: post
 category: post
 title: Quel techno utiliser aujourd'hui ?
 date: 2013-08-23 23:42:44
-subtitle: Et si les technos étaient des ex je dirai quoi ?
+subtitle: Et si les technos étaient des ex je dirais quoi ?
 published: true
 cover: /img/ex-girl-friends.jpg
 ---
