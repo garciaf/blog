@@ -45,17 +45,19 @@ public class java {
 {% endhighlight %}
 
 Et pour qu'elle vous prépare de petis sites je vous raconte ce qu'il faut lui raconter. 
-Bref j'ai fais un mon école avec après et une fois mon diplôme d'ingénieur, je n'ai plus donné de nouvelles. 
+Bref j'ai c'était ma copine officiel pendant mon école d'ingé.
+Elle m'a permis de comprendre la programmation orienté objet. Une fois mon diplôme d'ingénieur, je n'ai plus donné de nouvelles.
+Cependant certains anciens collègues de promos vivent le parfait amour avec elle, on était pas fait pour vivre ensemble j'imagine.
 
 ## PHP la fille facile
 PHP c'est un peu cette fille qui se laisse déployer sur n'importe quel serveur pour peu qu'apache soit installé. 
 Elle vous fait tourner un site avec un fichier et quelques lignes. 
-N'importe qui peu faire des trucs avec elle en deux temps trois mouvements. 
+N'importe qui peut faire des trucs avec elle en deux temps trois mouvements. 
 Manque de pot quand vous cherchez à construire une relation plus sérieuse avec elle, vous commencez à comprendre que c'est une fille compliqué.
 Et oui elle à des fonctions [étranges](http://www.phpsadness.com/), comme elle a eu beaucoup d'histoire, elle se trimballe pas mal d'ex.
-Heureusement certaines personnes essayent de la cadrer [Symfony](http://symfony.com/) et cela rend la relation plus compliqué. 
+Heureusement certaines personnes essayent de la cadrer [Symfony](http://symfony.com/) et cela rend la relation un peu moins compliqué. 
 Bon son coté fille facile fait que beaucoup d'entreprise se sont marié avec du coup on la retrouve un peu partout. 
-Mais bon sang ce qu'elle est compliqué. On s'ait beaucoup aimé mais pour le moment c'est terminé. 
+Mais bon sang ce qu'elle est compliqué. On s'est beaucoup aimé mais pour le moment c'est terminé. 
 (Ceci dit elle fait des [efforts](http://php.net/archive/2013.php#id2013-08-22-1) pour me reconquérir ...) 
 
 ## C# la fille fermé qui ne s'ouvre jamais
