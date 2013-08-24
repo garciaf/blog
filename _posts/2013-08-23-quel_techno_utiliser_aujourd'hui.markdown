@@ -69,22 +69,22 @@ Avec ce genre de fille on a l'impression d'être avec une étrangère même si o
 J'aime pas les filles fermés.
 
 ## Javascript la petite jeune super hot
-Bon javascript au début ça n'a pas été le coup de foudre au début. 
+Bon javascript au premier regard ça n'a pas été le coup de foudre. 
 Il faut dire, qu'au début c'était la fille moche qui reste toute seule en soirée. 
 Mais parfois on n'avait pas le choix il fallait bien s'y mettre pour faire plaisir à un copain. 
 - Allez s'il te plait fait moi un menu qui clignote 
 - Je veux de l'ajax sur ma page
 Bon je l'ai fais mais j'ai pas eu de plaisir. 
-Cependant en grandissant, la puberté a été franchement sympa avec elle et elle ressortie super canon. 
-Vous savez c'est la fille qui vous laisse un filet de bave sur la joue. 
+Cependant en grandissant, la puberté a été franchement sympa, et elle ressortie super canon. 
+Vous savez c'est la fille qui vous laisse un filet de bave sur la joue quand elle vous croise. 
 Maintenant elle fait pleins de trucs, elle est sur le serveur et le navigateur. 
-Elle boit du coffee et ça la rend plus nerveuse. Elle est rapide bref c'est un coups en or. 
+Elle boit du [coffee](http://coffeescript.org/) et ça la rend plus nerveuse. Elle est rapide bref c'est un coups en or.
 Manque de pot elle est un peu jeune et même si elle fait des trucs sympa elle est un peu courte sur les discutions.
-Vous savez c'est la fille super jolie mais qui a pas grand chose à raconter, elle manque un peu de maturité. 
+Vous savez c'est la fille super jolie mais qui n'a pas grand chose à raconter, elle manque un peu de maturité. 
 Beaucoup de promesses mais pour le moment l'écosysteme n'est pas super mature. 
 Elle sait faire des trucs de fou malgrès tout mais elle est jeune.
-On s'est rencontré dans une start-up avec des gens cool et des coupes de cheveux étranges. 
-Mais le jours où il m'a fallu construire un système d'authentification from scratch je me suis dis qu'elle était un peu jeune.
+On s'est rencontré dans une start-up "cool", avec des gens cool et des coupes de cheveux étranges. 
+Mais le jours où il m'a fallu construire un système d'authentification from scratch je me suis dis qu'elle était un peu jeune pour moi.
 
 ## Ruby c'est ma meuf
 Alors elle ça faisait un moment que je lui tournais autour sans jamais oser m'approcher. 
@@ -100,5 +100,5 @@ Bref je crois que je suis amoureux
 
 # Conclusion
 Alors comme toute relation, il est difficile de savoir comment ce sera dans un an, deux ans etc ...
-Ceci dit une chose assez marrante en regardant cette article, c'est que chaque language correspond à une vrai fille dans la réalité. 
+Ceci dit une chose assez marrante en regardant cette article, c'est que chaque language correspond à une veritable dans la réalité. 
 Et vous c'est quoi votre techno avec qui vous vivez ? Êtes vous un developeur fidèle. 
