@@ -44,10 +44,10 @@ public class java {
 }
 {% endhighlight %}
 
-Et pour qu'elle vous prépare de petis sites je vous raconte ce qu'il faut lui raconter. 
-Bref j'ai c'était ma copine officiel pendant mon école d'ingé.
+Et pour qu'elle vous prépare de petis sites je vous raconte pas ce qu'il faut lui raconter. 
+Bref c'était ma copine officiel pendant mon école d'ingé.
 Elle m'a permis de comprendre la programmation orienté objet. Une fois mon diplôme d'ingénieur, je n'ai plus donné de nouvelles.
-Cependant certains anciens collègues de promos vivent le parfait amour avec elle, on était pas fait pour vivre ensemble j'imagine.
+Cependant certains anciens collègues de promos vivent le parfait amour avec elle. Pour ma part on était pas fait pour vivre ensemble j'imagine.
 
 ## PHP la fille facile
 PHP c'est un peu cette fille qui se laisse déployer sur n'importe quel serveur pour peu qu'apache soit installé. 
