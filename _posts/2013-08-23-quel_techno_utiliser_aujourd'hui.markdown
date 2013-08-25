@@ -30,6 +30,7 @@ Je ne l'ai jamais rappellé et ne l'ai même pas retrouvé sur facebook
 Elle, c'est le rat de laboratoire, du genre grosses lunettes, grosses fonctions mathématiques. 
 Orpheline, elle fut adoptée par une famille de chercheur d'où son coté première de la classe.
 Je dois avouer que je me suis servi d'elle pour faire mes devoirs de physique.
+
 Elle m'a rendu beaucoup de services, mais devenue inutile, je l'ai largué comme une vieille chaussette.
 On se donne des nouvelles, de temps à autre et je sais qu'elle fait carrière dans la recherche, donc je culpabilise un peu moins.
 
@@ -39,6 +40,7 @@ Je n'ai pas eu une relation très passionée avec elle. Le seul truc dont je me 
 Pour lui faire dire un "hello world", il fallait lui écrire tout un programme.
 Et pour le soir pour faire un software ensemble, les préliminaires étaient interminables et sans aucune garantie de réussite.
 Bref c'était ma copine officielle pendant mon école d'ingé.
+
 Cependant elle m'a permis de comprendre des choses essentielles, la patience, la programmation orientée objet. Mon diplôme  en poche, je n'ai plus donné de signe de vie.
 Cependant un ancien collègue de promo m'a assuré qu'il vivait le parfait amour avec elle. Pour ma part on n'était pas fait l'un pour l'autre ... j'imagine.
 
@@ -48,7 +50,8 @@ Elle vous fait tourner un site avec un fichier et quelques lignes.
 N'importe qui peut faire n'importe quoi avec elle en deux temps trois mouvements. 
 Manque de pot, quand vous cherchez à construire une relation plus sérieuse avec elle, vous comprenez que c'est une fille tordue. Comme elle a eu beaucoup d'histoires, elle se trimballe une ribambelle d'ex..
 (Eh oui elle à des fonctions [étranges](http://www.phpsadness.com/))
-L'adage qui dit que "La musique adoucit les moeurs" fonctionne bien avec elle, et elle est très sensible à la deuxième [Symfony](http://symfony.com/) de [fabien Potencier]() qui permet de la recadrer, rendant la relation un peu moins complexe. 
+L'adage qui dit que "La musique adoucit les moeurs" fonctionne bien avec elle, et elle est très sensible à la deuxième [Symfony](http://symfony.com/) de [fabien Potencier](https://twitter.com/fabpot) qui permet de la recadrer, rendant la relation un peu moins complexe. 
+
 Bon son côté fille facile l'a rendu populaire, du coup on retrouve ses programmes un peu partout. 
 Mais bon sang ce qu'elle est compliquée !!! 
 On s'est beaucoup aimé mais maintenant c'est terminé. 
@@ -68,6 +71,7 @@ Bon javascript au premier regard ça n'a pas été le coup de foudre.
 Il faut dire, qu'au début c'était la fille moche qui restait toute seule en soirée. 
 Mais parfois faute de mieux, il fallait bien s'y mettre...
 Un menu qui clignote, une requête ajax, un menu déroulant plus tard et on ne la rappellait jamais.
+
 Cependant en grandissant, la petite moche est devenue super canon. 
 Maintenant c'est la fille qui vous laisse la bouche ouverte lorsque vous la croisez et fait passer votre QI de 100 à 0 en moins de cinq secondes. 
 Maintenant elle fait plein de choses, elle est sur le serveur et le navigateur. 
@@ -81,11 +85,13 @@ Mais le jour où il m'a fallu construire un système d'authentification from scr
 Alors elle, ça faisait un moment que je lui tournais autour sans jamais osé m'en approcher. 
 Et puis un jour un ami commun nous a présenté et on a commencé à se parler. 
 Il m'a fallu m'adapter un peu au début (elle est japonaise et elle a de la famille au Danemark)mais finalement elle est très claire quand on commmence à la comprendre.
+
 Au début je l'ai apprécié pour sa simplicité, sa rigueur.
 Rapidement je me suis rendu compte qu'elle essayait de faire de moi un dévelopeur meilleur, je ne mettais plus les coudes sur la table, je faisais du tdd, je ne me répetais de moins en moins etc ...
 Bref c'est une femme avec qui on a envie de faire un bout de chemin ensemble et avec qui on peut construire une relation solide.
 Et en plus elle est cultivée et  a une grande expérience. 
 Et une fois n'est pas coutume elle est simple à comprendre. 
+
 Bref je crois que je suis amoureux...
 
 # Conclusion
