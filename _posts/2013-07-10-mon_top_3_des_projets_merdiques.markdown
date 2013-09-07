@@ -36,26 +36,28 @@ L'équipe aussi sympa soit-elle n'est pas encouragée à écrire du bon code.
 
 ### Pourquoi c'est devenu compliqué ?
 Le problème c'est que chaque fois qu'une feature est finie, il y a dix features qui sont déjà en retard. 
-Bref il n'y a jamais le temps de faire du refractoring, d'écrire des tests, de faire évoluer le framework.
+Bref il n'y a jamais de temps pour faire du refractoring, écrire des tests, faire évoluer le framework.
 Les dévelopeurs sont transformés en pompier éteignant les feux les uns après les autres. 
 
-L'autre aspect qui a rendu le projet compliqué c'est le contexte schysophrene de ce projet. 
+L'autre aspect qui a rendu le projet compliqué, c'est le contexte schizophrène de ce projet. 
 En effet il s'agit là d'une grosse entreprise qui est divisée en plusieurs sous entreprises. 
-Et bien entendu elles sont en concurrence, ne se font pas confiance et du coup l'on doit développer un seul et même logiciel qui est aussi schysophrene que l'entreprise elle-même. 
+Et bien entendu elles sont en concurrence, ne se font pas confiance et du coup l'on doit développer un seul et même logiciel qui est aussi schizophrène que l'entreprise elle-même. 
 
 Certains CEO vous diront que c'est bien d'avoir une strucure comme ça, ça maintient la productivité.
 D'un autre coté lorsque vous devez faire un seul et même outil avec ce genre de structure, cela complique les choses. 
-C'est un peu comme si vous faisiez une maison et que suivant la personne qui rentre vous deviez avoir un intérieur différent. 
+C'est un peu comme si vous construisiez une maison et que suivant la personne qui rentre, vous deviez modifier l' intérieur. 
 
 Il y avait environ une dizaine d'environnements chacun ayant des fonctionnalités différentes, suivant le département et tout ça avec le même code.
 
-Bref, même avant de coder quoi que ce soit c'est déjà compliqué. Quand vous partez sur des bases aussi complexes le projet ne vieillira pas bien. 
+Bref, même avant de coder quoi que ce soit c'est déjà compliqué. Quand vous partez sur ses bases là, le projet ne vieillira pas bien. 
 
 ### Dans un monde parfait
 
-Le problème c'est qu'on est dans un système qui donne le maximum de décisions à ceux qui en savent le moins (ou qui ont su il y a longtemps).
+Le problème, c'est qu'on est dans un système qui donne le maximum de décisions à ceux qui en savent le moins (ou qui ont su il y a longtemps).
 C'est un peu comme si vous construisiez une maison et que vous dessiniez les plans de la maison à la place de l'architecte.
-Si votre maison s'écroule ne soyez pas surpris, car l'architecte lorsqu'il dessine ses plans, pense à des choses qu'ignorent les autres personnes (les murs porteurs, la resistance des matériaux, et j'en passe).
+Si votre maison s'écroule, ne soyez pas surpris, car l'architecte lorsqu'il dessine ses plans pense à des choses qu'ignorent les autres personnes (les murs porteurs, la resistance des matériaux, et j'en passe).
 Lorsque vous développez un logiciel et que vous ignorez l'équipe qui l'implémente, vous terminez dans la même situation. 
-Il faut impliquer les équipes techniques, les développeurs ne sont pas là pour "pisser" du code mais pour résoudre des problèmes, c'est certainemant ce qu'il font de mieux. 
-Bref écoutez votre architecte pour construire votre maison.  
+
+### Conclusion
+Il faut impliquer les équipes techniques, les développeurs ne sont pas là pour "pisser" du code mais pour résoudre des problèmes, c'est certainemant ce qu'ils font de mieux. 
+Bref, écoutez votre architecte pour construire votre maison.  
