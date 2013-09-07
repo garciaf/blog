@@ -3,7 +3,7 @@ layout: post
 category: article
 title: La fusée qui ne décolle pas
 subtitle: Retour sur un projet compliqué
-date: 2013-07-10 23:02:57
+date: 2013-09-07 23:02:57
 language: fr
 published: true
 cover: /img/rocket-crash.jpeg
