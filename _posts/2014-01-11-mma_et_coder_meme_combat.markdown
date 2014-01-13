@@ -77,7 +77,22 @@ On est vraiment dans l'échange et chercher à trouver ce que chacun peut vous a
 Contrairement au sport celui qui est au dessus de vous ne sera pas forcément là pour vous faire progresser. 
 Les managers ne savent pas programmer (sauf rare exception), cherchez plutôt les mentors au près de vos collègues de travails, dans les livres ou sur internet. 
 
+# Faites les choses dans l'odre
+## Les finitions se font à la fin
+Cela ne sert à rien de partir bille en tête en étranglement en effet si vous n'avez pas controllé votre adversaire vos efforts seront vain. 
+C'est un défaut très récurrent chez les débutant qui cherche la sousmission avant d'avoir controllé quoi que ce soit.
+Quand vous faites une sousmission il faut que votre adversaire n'est pas d'autre échapatoire que de taper pour son salut. 
+Bref comme son nom l'indique une finition se fait à la fin. 
+
+## Faites les couches basses parfaitement
+Les couches basses qui font le coeur de votre application doivent être traité avec beaucoup de soin. 
+Test unitaire, test d'intégration etc ... L'interface n'en sera que plus facile. 
+Ne partez pas de l'interface cela n'amène rien de bon. Faites cela à la fin. 
+
 # Rester humble
 - Car il y aura toujours un type pour vous botter les fesses quelques part 
 - Car il y aura toujours un type qui pourra résoudre votre problème plus vite que vous
 
+# Le mot de la fin
+Ce grand éccart étant fait, j'espère avoir put donné envie d'enfiler des gants ou de taper du code. 
+Et vous c'est quoi votre 
