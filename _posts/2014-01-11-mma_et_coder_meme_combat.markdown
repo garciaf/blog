@@ -5,6 +5,7 @@ title: MMA et coder même combat
 date: 2014-01-11 22:33:29
 subtitle: Quand le codeur et le combattant parle le même language
 published: true
+cover: /img/fight.jpg
 ---
 
 Aujourd'hui je vais tenter un grand écart comme celui de [Jean-Claude](http://youtu.be/M7FIvfx5J10) et il est particulièrement périlleux.
