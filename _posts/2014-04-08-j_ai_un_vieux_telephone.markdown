@@ -40,7 +40,7 @@ Le parano part en courant, durant sa course il bouscule un type avec un T-shirt 
 Tient en voilà un qui essaye de se la jouer rebelle, "et bouge pas le révolutionnaire"
 
 ## Arrivé face à l'anticonformiste
-"Alors écoute moi bien le rebelle de carnal, il n'y a rien de plus conformiste à l'heure actuelle que d'avoir un smartphone.
+"Alors écoute moi bien le rebelle de carnaval, il n'y a rien de plus conformiste à l'heure actuelle que d'avoir un smartphone.
 Et l'idée d'avoir un smartphone, me donne l'impression de rejoindre un troupeau de moutons qu'on a éduqué à bien consommer ce qu'on leur dit d'acheter.
 Si aujourd'hui, Tu veux te distinguer n'essayez pas de ressembler à Steeve ou Bill, sois toi même !!!"
 Le Che se décompose mais sort: "attend je suis sur Android, c'est plus subversif" et je répond "Tu as raison Google c'est vachement des rebelles, ça n'a rien à voir avec Apple"
@@ -48,12 +48,12 @@ Le Che ne fera pas de révolution cette année mais je vois un développeur avec
 Il cache discrètement son téléphone mais trop tard, j'ai deux mots à lui dire...
 
 ## Devant l'autre développeur
-"Ecoute mon petit pote, je passe le plus clair de mon temps sur des ordinateurs pour gagner mon salaire, le peu de temps qu'il me reste, dois-je vraiment le passer sur un autre ordinateur ? plus petit ? Je ne crois pas ...
+"Ecoutes mon petit pote, je passe le plus clair de mon temps sur des ordinateurs pour gagner mon salaire, le peu de temps qu'il me reste, dois-je vraiment le passer sur un autre ordinateur ? plus petit ? Je ne crois pas ...
 De plus, même s'il m'arrive de développer des applications pour ces terminaux, suis-je obligé de les acheter?"
 Timide il avance, "mais on peut lire ses mails tout le temps", je le regarde dans le blanc des yeux et je lui dis
 "Es-tu marié avec ton travail ? Moi non et même si j'aime ce que je fais cela ne justifie pas d'être un esclave."
 Les yeux du développeur deviennent subitement bleux et j'apperçois qu'une erreur fatal vient de se produire. 
-Juste le temps de m'approcher d'un type avec des googles glasses et une I-watch et deux smartphones dans les mains. 
+Juste le temps de m'approcher d'un type avec des googles glasses, une I-watch et deux smartphones dans les mains. 
 
 ## En face du technophile
 "Quel est l'intérêt d'avoir la puissance de calcul et toute la connaissance mondiale, 24h/24. 
@@ -66,7 +66,7 @@ Le personnage commence à pleurer mais enfile une tétine connecté à son I-pho
 Je m'arrête et vois un type avec un fouet accroché à son pantalons et un smartphone de l'autre coté 
 
 ## Je m'approche de l'aventurier
-"Alors harrisson ford tu fais quoi avec truc? 
+"Alors harrisson ford tu fais quoi avec ce truc? 
 Vois tu mon téléphone pourri est bien mieux adapté à l'aventure que toi, il peut rester chargé une semaine, il peut tomber de plusieurs metres et s'en remettre. 
 je téléphone lorsque j'en ai besoin, il n'a pas besoin de mise à jour. Il s'allume et s'éteint instantanément.
 Je sais toujours lire une carte routière, ou dessiner des plans car je ne suis pas devenu paresseux à cause de mon smartphone.
@@ -87,5 +87,5 @@ Quand est-il des "heureux" propriétaires de smartphone? Quel usage justifie vra
 Est-ce vraiment moi qui doit me justifier de ne pas avoir de smartphone?
 
 Soudain le smartphone sonne et me réveille brutalement, je suis dans mon lit dégoulinant de sueur, quel horrible cauchemard.
-Je regarde l'écran de mon smartphone et l'approche de ma bouche, et je lui susurre "j'ai révé que je voulais me séparer de toi et que je trouvais pleins d'excuse étrange, rassure toi on s'aimera toujours et rien ne pourra nous séparer"
+Je regarde l'écran de mon smartphone et l'approche de ma bouche, et je lui susurre "j'ai révé que je voulais me séparer de toi et que je trouvais pleins d'excuses étranges, rassure toi on s'aimera toujours et rien ne pourra nous séparer"
 Un petit sourire se dessine sur l'écran du smartphone ...
