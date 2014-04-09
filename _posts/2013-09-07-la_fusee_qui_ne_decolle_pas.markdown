@@ -22,9 +22,6 @@ Le framework javascript c'est "[Prototype](http://prototypejs.org)" ! Et c'est d
 La une fois la première réaction passée, j'ai fait une grimace un peu étrange, tout en pensant "Qu'est ce que je fais là ?"
 
 ![wtf](/img/wtf.gif "Premiere rencontre avec une classe de 2000 lignes")
- <blockquote>
-  Premiere rencontre avec une classe de 2000 lignes
-</blockquote>
 
 
 ### C'est quoi les conséquences ? 
