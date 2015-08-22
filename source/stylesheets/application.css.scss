@@ -1,0 +1,16 @@
+@import 'vendor/casper';
+@import 'syntax';
+
+// Overwrite some styles from casper.css
+pre.highlight {
+  word-wrap: normal;
+  code {
+    white-space: pre;
+  }
+}
+.page-title{
+  a{
+    text-decoration: none;
+  }
+}
+
