@@ -1,0 +1,256 @@
+---
+layout: presentation
+title:  "Promise in Js with ken and barbie"
+subtitle: "Or a good reason to talk about Barbie and promise in Js"
+date:   2013-04-02 22:15:46
+categories: slide
+theme: sky
+language: en
+published: true
+cover: /img/barbie-and-ken.jpg
+---
+
+%section{"data-background" => "rgba( 255, 173, 206, 0.6 )"}
+  %h1 Promise in Js
+  %h3 With Ken and Barbie
+  %p
+    %small
+      Created by
+      %a{:href => "http://fabbook.fr"} Fabien Garcia
+  %a.image{:href => "#/1"}
+    %img{:height => "238", :src => "/img/barbie-and-ken.jpg"}/
+%section
+  %h1 What is a promise?
+  %blockquote
+    a declaration that something will or will not be done, given, etc., by one
+  %p.source dictionary.com
+
+%section{"data-background" => "rgba( 255, 173, 206, 0.6 )"}
+  %section
+    %h1 The story of ken and barbie
+  %section
+    %h2 Let's take Ken and Barbie:
+    %pre
+      %code.javascript          
+        ken = new PerfectMan()
+        barbie = new PerfectWoman()
+  %section
+    %h2 They met and ken propose to barbie
+    %p So this is the classic process
+    %pre
+      %code.javascript
+        ken.marry(barbie)
+  %section
+    %h2 But what happen for real?
+    %pre
+      %code.javascript          
+        :preserve
+
+          ken.marry(barbie)
+            .then => ken.find(job)
+            .then => child = Sex(ken, barbie)
+            .then (child) => ken.takeCare(child); barbie.takeCare(child)
+            .then => ken.die()
+            .then => barbie.die()
+%section{"data-state" => "soothe"}
+  %section
+    %h1 The story of normal people
+  %section
+    %h2 Have you met Ted?
+    %pre
+      %code.javascript          
+        ted = new Man()
+        robin = new Woman()
+    %p Ted want to marry but Robin not really ...
+  %section
+    %h2 What happen when they met?
+    %pre
+      %code.javascript
+        :preserve
+
+          ted.marry(robin)
+            .then => ted.find("job")
+            .fail => robin = ted.find("otherWoman")
+            .then => child = Sex(ken, robin)
+            .then (child) => ken.takeCare(child); robin.takeCare(child)
+            .then => ken.die()
+            .then => barbie.die()
+            .fail => HIMYM = Factory("serie")
+  %section
+    %h2 If you want to have barbie
+    %pre
+      %code.javascript
+        :preserve 
+          me = new Man()
+          barbie = new PerfectWoman()
+  %section
+    %h2 you are not Ken, so you will have to work hard
+    %pre
+      %code.jacascript
+        :preserve
+
+          $.when(me.find("job"), me.do("sport"), 
+            me.earn("money"), me.do("surgery"))
+            .then => me.marry(barbie)
+            .then => child = Sex(me, barbie)
+            .then(child) => me.takeCare(child)
+            .then => me.die()
+            .then => barbie.die()
+            .fail(error) => me.find("otherWoman")
+%section
+  %h1 So what is the link with JS?
+%section
+  %h1 It's the same thing!
+  %p Code is just a story
+%section
+  %section
+    %h1 Some examples
+  %section
+    %h2 Classic workflow in node
+    %pre
+      %code.javascript
+        :preserve
+
+          user.findWhere(name:"john").success(user) ->
+            Email.send(user.email).success(response) ->
+              fs.write response, (status) ->
+                user.save(status: "message send"). success(err, res) ->
+                  console.log "workflow finished"
+  %section
+    %h2 It will be
+    %pre
+      %code.javascript
+        :preserve
+
+          user.findWhere(name:"john")
+            .then (user) -> Email.send(user.email)
+            .then (response) -> fs.write response
+            .then (status) -> user.save(status: "message send")
+            .then (status) -> console.log "Workflow finished" 
+  %section
+    %h2 If you need data in several place
+    %h3 Example with backbone
+    %pre
+      %code.javascript
+        :preserve
+
+          checkAllFetched = (collection) =>
+            collection.fetched = true
+            if @collection1.fetched and @collection2.fetched
+              @prepareData()
+          fetchOptions =
+            success: checkAllFetched
+            data: @params
+          @collection1.fetch fetchOptions
+          @collection2.fetch fetchOptions
+  %section
+    %h2 turn with promise
+    %pre
+      %code.javascript
+        :preserve
+
+          $.when(@collection1.fetch(data: @params), 
+            @collection2.fetch(data: @params))
+            .done => @prepareData()
+%section
+  %section
+    %h1 How to convert into a promise?
+    %h2
+      With
+      %a{:href => "http://documentup.com/kriskowal/q/"} Q
+  %section
+    %h2 classic database search with node
+    %pre
+      %code.javascript
+        :preserve
+
+          find: (email, callback) ->
+            @query "SELECT `id`, `email` WHERE email = `?` LIMIT 1", email, (err, res) ->
+              callback err, res[0]
+  %section
+    %h2 Turn into promise
+    %pre
+      %code.javascript
+        :preserve
+
+          find: (email) ->
+            deferred = Q.defer()
+            @query "SELECT `id`, `email` WHERE email = `?` LIMIT 1", 
+              email, (err, res) ->
+              if err
+                deferred.reject new Error(err)
+              else
+                deferred.resolve res
+            return deferred.promise
+  %section
+    %h2 shorter notation
+    %pre
+      %code.javascript
+        :preserve
+
+          find (email) ->
+          Q.nfcall @query, "SELECT `id`, `email` WHERE email = `?` LIMIT 1", email 
+    %p or
+    %pre
+      %code.javascript
+        :preserve
+
+          find (email) ->
+          Q.ninvoke @, "query", "SELECT `id`, `email` WHERE email = `?` LIMIT 1", email 
+%section
+  %section
+    %h1 How to convert into a promise?
+    %h2
+      With
+      %a{:href => "http://jquery.com/"} jQuery
+  %section
+    %h2 It is here since jQuery 1.5
+    %h3
+      With the object
+      %a{:href => "http://api.jquery.com/deferred.promise/"} defered
+  %section
+    %h2 Turn async function into promise
+    %pre
+      %code.javascript
+        :preserve
+
+          promiseFunc = ->
+            deferred = new jQuery.Deferred()
+            ayncFunction param, (err, res) ->
+              if err
+                deferred.reject err
+              else
+                deferred.resolve res
+            return deferred.promise()
+    %p It will be used
+    %pre
+      %code.javascript
+        :preserve
+
+          $.when(promiseFunc).then ((res) ->
+            alert status + ", things are going well"
+  %section
+    %h2 With existing jQuery method
+    %pre
+      %code.javascript
+        :preserve
+
+          $.when($.get("http://url.com"))
+            .then (data) ->
+              alert data + ", things are going well"
+            .fail (err) ->
+              console.log err
+%section
+  %h2 Links
+  %ul
+    %li
+      %a{:href => "https://github.com/garciaf/article"} Presentation + article
+    %li
+      %a{:href => "http://documentup.com/kriskowal/q/"} Q node
+    %li
+      %a{:href => "http://api.jquery.com/category/deferred-object/"} Deferred object jQuery
+%section
+  %h1 Question?
+%section
+  %h1 THE END
+  %h3 BY Fabien Garcia
