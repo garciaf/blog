@@ -47,7 +47,9 @@ set :casper, {
     gravatar_email: 'fab0670312047@gmail.com' # Optional
   },
   navigation: {
-    "Home" => "/"
+    "Home" => "/",
+    "The french cook" => "http://the-french-cook.com",
+    "GitHub" => "https://github.com/garciaf"
   }
 }
 
