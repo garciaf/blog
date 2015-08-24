@@ -31,20 +31,20 @@ I change my mindset and I also change my work. For the first time I will be the 
 I was writting my test like "What's happen if I send this data? If I'm connected as an admin will I see this tab?". It was more an exploratory approch. Also no one else was reading my code, so I was free to write any test I wanted. For my first hard feature to develop, I notice I needed a way to make sure my application was working while I was coding. And I start to write some test in advance or right after I wrote my code. 
 I was starting doing some TDD and I came to my next phase...
 
-### Enhtousiastic
+### Enthusiastic
 I finaly started to believe that's testing could be something useful. Each time I had something to develop something, I started to think how I could test it? I also start to write some code design to be tested. Off course I was testing 100% of my code, some easy or really trivial.
 And I came to my current state with testing...
 
 ### Friendly
 So now I'm in peace with testing. I know now that's testing by himself doesn't do any miracle, and testing for increasing code coverage is pointless.
-I know that's testing is one tool to make your life easier, if you use this tool right. Testing also give you a strong focus, it limitate [Overengineering](https://www.wikiwand.com/en/Overengineering) by forcing us to specify what we will code. I also know that there is some small bug fix and small change wich can live without beeing tested. 
+I know that's testing is one tool to make your life easier, if you use this tool right. Testing also give you a strong focus, it limitate [overengineering](https://www.wikiwand.com/en/Overengineering) by forcing us to specify what we will code. I also know that there is some small bug fix and small change wich can live without beeing tested. 
 
 #My opinion
 
 Now testing is something natural, however it's not perfect and not automatic. Now I could sum up my ground to write test: 
 
- - Do I will make a change on it the future?
+ - Do I will make a change on it in the future?
  - Do I want to documente this?
  - This code is or will be critical?
 
-If I answer yes to one of this question I will most likely write a test. 
+If I answer yes to one or more of this question I will most likely write a test. 
