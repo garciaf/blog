@@ -2,7 +2,7 @@
 layout: post
 title:  "Les prommesses expliqué avec Ken et Barbie"
 date:   2013-04-01 21:15:46
-categories: article
+tags: javascript
 lang: fr
 published: true
 ---
