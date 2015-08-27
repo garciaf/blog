@@ -3,12 +3,12 @@
     .vertical
       .main-header-content.inner
         %h1.post-title
-          %a{href: home_path}
+          %a{href: localized_path("")}
             = blog_settings.name
         %h2.page-description= blog_settings.description
     %nav.main-nav.clearfix{class: cover? ? 'overlay' : nil}
       - if blog_settings.logo.present?
-        %a.blog-logo{href: home_path}
+        %a.blog-logo{href: localized_path("")}
           = image_tag blog_settings.logo, alt: blog_settings.name
       - if blog_settings.navigation
         %a.menu-button.icon-menu{href: '#'}

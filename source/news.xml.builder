@@ -1,6 +1,6 @@
 ---
 layout: false
-blog: en
+blog: fr
 ---
 
 @articles ||= blog.articles[0..5]

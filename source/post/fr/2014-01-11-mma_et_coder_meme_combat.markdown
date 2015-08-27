@@ -5,7 +5,7 @@ title: MMA et coder même combat
 date: 2014-01-11 22:33:29
 subtitle: Quand le codeur et le combattant parle le même language
 published: true
-language: fr
+lang: fr
 cover: fight.jpg
 ---
 

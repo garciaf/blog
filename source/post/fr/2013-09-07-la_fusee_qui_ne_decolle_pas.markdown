@@ -5,7 +5,6 @@ title: La fusée qui ne décolle pas
 subtitle: 
 date: 2013-09-07 23:02:57
 lang: fr
-published: true
 cover: rocket-crash.jpeg
 ---
 ## Retour sur un projet compliqué

@@ -5,7 +5,7 @@ title: J'ai un vieux telephone
 date: 2014-04-08 21:05:48
 subtitle: 
 published: true
-language: fr
+lang: fr
 cover: nokia-3310.jpg
 ---
 ## J'ai un téléphone de merde et je vous emmerde

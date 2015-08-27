@@ -3,17 +3,17 @@
 ###
 
 # Time.zone = "UTC"
-activate :i18n, :lang_map => { :en => :english, :fr => :french }, :mount_at_root => :fr
+activate :i18n, :mount_at_root => :en
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
-  # blog.prefix = "blog"
+  blog.name = "en"
 
   blog.permalink = "post/{year}/{month}/{day}/{title}.html"
   # Matcher for blog source files
-  blog.sources = "post/{year}-{month}-{day}-{title}.html"
+  blog.sources = "post/en/{year}-{month}-{day}-{title}.html"
   blog.taglink = "tag/{tag}.html"
-  # blog.layout = "layout"
+  blog.layout = "post"
   blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
   blog.year_link = "{year}.html"
@@ -21,15 +21,38 @@ activate :blog do |blog|
   blog.day_link = "{year}/{month}/{day}.html"
   # blog.default_extension = ".markdown"
 
-  blog.tag_template = "tag.html"
+  blog.tag_template = "tag_en.html"
   # blog.calendar_template = "calendar.html"
 
   # Enable pagination
   blog.paginate = true
   blog.per_page = 6
-  # blog.page_link = "page/{num}"
+  blog.page_link = "page/{num}"
 end
 
+activate :blog do |blog|
+  # This will add a prefix to all links, template references and source paths
+  blog.name = "fr"
+  blog.permalink = "fr/{post}/{year}/{month}/{day}/{title}.html"
+  # Matcher for blog source files
+  blog.sources = "post/fr/{year}-{month}-{day}-{title}.html"
+  blog.layout = "post"
+  blog.summary_separator = /READMORE/
+  blog.taglink = "fr/tag/{tag}.html"
+  # blog.summary_length = 250
+  # blog.year_link = "{year}.html"
+  # blog.month_link = "{year}/{month}.html"
+  # blog.day_link = "{year}/{month}/{day}.html"
+  # blog.default_extension = ".markdown"
+
+  blog.tag_template = "tag_fr.html"
+  # blog.calendar_template = "calendar.html"
+
+  # Enable pagination
+  blog.paginate = true
+  blog.per_page = 6
+  blog.page_link = "page/{num}"
+end
 set :casper, {
   blog: {
     url: 'http://blog.fabbook.fr',
@@ -47,20 +70,29 @@ set :casper, {
     gravatar_email: 'fab0670312047@gmail.com' # Optional
   },
   navigation: {
-    "Home" => "/",
     "The french cook" => "http://the-french-cook.com",
     "GitHub" => "https://github.com/garciaf"
+
   }
 }
 
-page '/feed.xml', layout: false
+
 page '/sitemap.xml', layout: false
 
 ignore '/partials/*'
+ignore '/tag_en.html.haml'
+ignore '/tag_fr.html.haml'
+
 
 ready do
-  blog.tags.each do |tag, articles|
+  blog('en').tags.each do |tag, articles|
     proxy "/tag/#{tag.downcase.parameterize}/feed.xml", '/feed.xml', layout: false do
+      @tagname = tag
+      @articles = articles[0..5]
+    end
+  end
+  blog('fr').tags.each do |tag, articles|
+    proxy "fr/tag/#{tag.downcase.parameterize}/feed.xml", '/news.xml', layout: false do
       @tagname = tag
       @articles = articles[0..5]
     end

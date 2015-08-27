@@ -94,7 +94,15 @@ module MiddlemanCasperHelpers
   def gravatar?
     blog_author.gravatar_email.present?
   end
+  def localized_path(path, language=nil)
+    language ||= I18n.locale
 
+    if language.to_s == I18n.default_locale.to_s
+      path = "/#{path}"
+    else
+      path = "/#{language}/#{path}";
+    end
+  end
   def twitter_url
     "https://twitter.com/share?text=#{current_article.title}" \
       "&amp;url=#{current_article_url}"
