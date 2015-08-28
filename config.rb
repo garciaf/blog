@@ -26,7 +26,7 @@ activate :blog do |blog|
 
   # Enable pagination
   blog.paginate = true
-  blog.per_page = 6
+  blog.per_page = 10
   blog.page_link = "page/{num}"
 end
 
@@ -50,7 +50,7 @@ activate :blog do |blog|
 
   # Enable pagination
   blog.paginate = true
-  blog.per_page = 6
+  blog.per_page = 10
   blog.page_link = "page/{num}"
 end
 set :casper, {
