@@ -1,10 +1,9 @@
 ---
 layout: post
 title:  "Merder un projet en dix étapes"
-subtitle: "Ou comment exploser un projet avec style ..."
 date:   2013-06-13 18:29:46
-categories: article
 lang: fr
+tag: opinion
 published: true
 cover: explosion.png
 ---
@@ -14,6 +13,7 @@ Il y a des choses dont on est pas toujours fier, et aujourd'hui je vais vous en 
 Dans le dévelopement parfois on fait des trucs bien, parfois moins bien et parfois on merde carrément. 
 Récit d'un projet mort né.
 READMORE
+# Ou comment exploser un projet avec style ...
 ## Le contexte 
 Bon c'est un projet qu'on a vendu pour x jours au client. C'est simple tu devrais y arriver, on va tenter de le faire sur une techno que tu connais mais pas nous (Symfony2). C'est toujours intéressant de démarrer un nouveau projet, on peut tout faire. 
 J'avais été formé sur le framework et l'estimation me semblait réaliste. 

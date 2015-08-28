@@ -3,11 +3,13 @@ layout: post
 category: post
 title: Quel techno utiliser aujourd'hui ?
 date: 2013-08-24 23:42:44
-subtitle: Et si les technos étaient des ex je dirais quoi ?
-published: true
 lang: fr
+tag: opinion
 cover: ex-girl-friends.jpg
 ---
+Et si les technos étaient des ex je dirais quoi ?
+
+READMORE
 
 A quoi ressemble la vie sentimentale d'un dévelopeur quand il s'agit de relation avec des technos ?
 Curieusement ça ressemble beaucoup à la vraie vie, on passe d'une techno à l'autre en espérant trouver la bonne.  

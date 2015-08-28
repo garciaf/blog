@@ -14,7 +14,7 @@ Quand on vient de symfony2 et que l'on découvre node.js on fait d'abbord connai
 ### Le Formulaire de login
 Au risque de me répéter coder des formulaires n'est pas le truc que je trouve le plus excitant, c'est pour ça que je vais m'appuyer sur une librairie qui fait ça pour moi ( pour plus de détail sur cette librairie voir mon article précédent ) on va donc créer un nouveau formulaire que l'on appellera login.coffee et que l'on placera dans le dossier form. Son code ressemblera à ça : 
 
-```
+```coffeescript
 forms = require "forms"
 fields = forms.fields
 validators = forms.validators
@@ -31,7 +31,8 @@ Votre formulaire de contact est fait, maintenant nous allons sécuriser la zone 
 
 ## Vos papiers SVP avec passport.js
 Pour l'authentification il y a le choix entre différentes librairie, j'ai fais le choix arbitraire de passport.js mais libre à vous d'en choisir une autre bien entendu. Les exemples de l'API sont intéressants mais ils ne traitent pas de l'autentification avec les utilisateurs en base de données, et la définition de pattern de route pour l'autentification. je vais donc réparer ce tord. Tout d'abbord installons la librairie avec tout ce qui va bien. On édite le fichier package.json : 
-```
+
+```json
 {
   "name": "fabbook",
   "version": "0.0.1",
@@ -53,7 +54,7 @@ Pour l'authentification il y a le choix entre différentes librairie, j'ai fais 
 ```
 Comme d'habitude vous lancez la commande `npm install` et vous aurez toutes les librairies nécessaires pour ce tuto. Maintenant on va gerer l'autentification à part, je n'aime pas que le fichier app.coffee soit trop chargé. Je créé donc un fichier auth.coffee et c'est parti : 
 
-```
+```coffeescript
 db = require("./db")
 passport = require 'passport'
 util = require 'util'
@@ -88,10 +89,8 @@ passport.deserializeUser (id, done) ->
     done err, user
 
 passport.use new LocalStrategy((username, password, done) ->
-  
   # asynchronous verification, for effect...
-  process.nextTick ->
-    
+  process.nextTick ->  
   findByUsername username, (err, user) ->
       return done(err)  if err
       unless user
@@ -110,7 +109,7 @@ EnsureAuthenticated = exports.EnsureAuthenticated = ensureAuthenticated
 ```
 Vous noterez qu'il s'agit d'une adapation de l'exemple de base. En effet les utilisateurs sont désomais récupéré en base de données, pour que cela fonctionne il faut aussi déclarer dans le modele un 'user' qui contiendra les données nécessaires pour l'autentification, dans models/user.coffee : 
 
-```
+```coffeescript
 module.exports = (sequelize, DataTypes) ->
   model = define_model(sequelize, DataTypes)
   
@@ -138,14 +137,14 @@ define_model = (sequelize, DataTypes) ->
 
 Et une petite adapatation à notre fichier db.coffee où l'on rajoute la ligne suivante:
 
-```
+```coffeescript
 User = exports.User = connections[config.database].import "#{__dirname}/models/user.js"
 ```
 maintenant il faut s'aoccuper de l'app.coffee
 ### Déclarer un pattern de route nécessitant une autentification
 Ce que je préfère pour l'authentification c'est qu'une famille de route necessite de montrer patte blanche, plutôt que de définir pour chaque route si il faut ou non une authentification (flemme quand tu nous tient), cela se traduit donc par l'utilisation de app.all dans mon fichier app.coffee. Cela nous donne ça au final : 
 
-```
+```coffeescript
 ###
 Module dependencies.
 ###
@@ -214,7 +213,7 @@ app.get "/admin/article/:id/delete", admin.deleteArticle
 
 J'en ai aussi profité pour mettre mes routes liés à l'autentification dans un controlleur à part dans le fichier routes/security.coffee qui ressemble à ça : 
 
-```
+```coffeescript
 form = require("../form/login")
 auth = require("../auth")
 
@@ -234,7 +233,7 @@ exports.logout = (req, res) ->
 ```
 Pour info la vue 'admin/login.jade' ressemble à ça :
 
-```
+```jade
 extends ../layout
 block content
   div.container
@@ -252,7 +251,7 @@ e met une grosse mise en garde avec la solution que je viens de présenter, en e
 ### On ajoute une librairie qui gère la hash et le salt
 il y a un choix de librairie qui propose de gérer la hash et le salt j'ai pour ma part choisi sechash on l'ajoute dans sa liste de package et on l'installe. Je vais ajouter un champ salt sur mon user pour que chaque utilisateur possède un salt différent. De cette façon vous vous protégez que deux utilisateurs avec un même mot de passe aient le même hash. Il va falloir adpter notre code de vérification des utilsateurs. Allez dans le fichier auth.coffee : 
 
-```
+```coffeescript
 sechash = require 'sechash'
 ...
 
