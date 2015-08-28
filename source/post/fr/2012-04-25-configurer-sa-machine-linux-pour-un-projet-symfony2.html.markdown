@@ -1,4 +1,5 @@
 ---
+lang: fr
 title: Configurer sa machine linux pour un projet symfony2
 date: 2012-04-25 00:00 UTC
 tags: symphony, php, unix

@@ -1,4 +1,5 @@
 ---
+lang: fr
 title: Imaginons l'informatique comme une chocolaterie
 date: 2012-03-01 00:00 UTC
 tags: opinion
