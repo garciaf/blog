@@ -6,7 +6,7 @@ tags: symphony, php, unix
 cover: symphony-php.jpg
 ---
 
-Passant la plus grande partie de mon temps à coder des web applications, il m'arrive malheureusement d'oublier comment on installe une web application sur Linux avec une adresse du type http://localhost/8080, c'est donc pour ça que j'écris ces quelques lignes pour pouvoir m'en souvenir
+Passant la plus grande partie de mon temps à coder des web applications, il m'arrive malheureusement d'oublier comment on installe une web application sur Linux avec une adresse du type `http://localhost/8080`, c'est donc pour ça que j'écris ces quelques lignes pour pouvoir m'en souvenir
 
 READMORE
 

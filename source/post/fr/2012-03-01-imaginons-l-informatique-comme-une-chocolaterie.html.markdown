@@ -3,6 +3,7 @@ lang: fr
 title: Imaginons l'informatique comme une chocolaterie
 date: 2012-03-01 00:00 UTC
 tags: opinion
+cover: chocolat.jpg
 ---
 
 Et si l'on faisait un peu de vulgarisation informatique autour du chocolat ?
