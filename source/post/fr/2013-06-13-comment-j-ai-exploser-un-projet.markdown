@@ -3,7 +3,7 @@ layout: post
 title:  "Merder un projet en dix étapes"
 date:   2013-06-13 18:29:46
 lang: fr
-tag: opinion
+tags: opinion
 published: true
 cover: explosion.png
 ---

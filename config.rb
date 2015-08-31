@@ -15,6 +15,8 @@ activate :blog do |blog|
   blog.taglink = "tag/{tag}.html"
   blog.layout = "post"
   blog.summary_separator = /READMORE/
+  blog.taglink = "en/tag/{tag}.html"
+  
   # blog.summary_length = 250
   blog.year_link = "{year}.html"
   blog.month_link = "{year}/{month}.html"
@@ -38,7 +40,7 @@ activate :blog do |blog|
   blog.sources = "post/fr/{year}-{month}-{day}-{title}.html"
   blog.layout = "post"
   blog.summary_separator = /READMORE/
-  blog.taglink = "fr/tag/{tag}.html"
+  blog.taglink = "tag/{tag}.html"
   # blog.summary_length = 250
   # blog.year_link = "{year}.html"
   # blog.month_link = "{year}/{month}.html"

@@ -5,7 +5,7 @@ title: Cuisiner et Coder même combat
 date: 2013-07-15 18:45:01
 published: true
 lang: fr
-tag: opinion
+tags: opinion
 cover: macarons.jpg
 ---
 ## Quand le codeur et le cuisinier parle le même langage

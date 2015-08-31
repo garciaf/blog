@@ -7,6 +7,7 @@ subtitle:
 published: true
 lang: fr
 cover: nokia-3310.jpg
+tags: opinion
 ---
 ## J'ai un téléphone de merde et je vous emmerde
 

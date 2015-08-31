@@ -7,6 +7,7 @@ subtitle: Quand le codeur et le combattant parle le même language
 published: true
 lang: fr
 cover: fight.jpg
+tags: opinion
 ---
 
 Aujourd'hui je vais tenter un grand écart comme celui de [Jean-Claude](http://youtu.be/M7FIvfx5J10) et il est particulièrement périlleux.
