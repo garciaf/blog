@@ -56,7 +56,11 @@ module MiddlemanCasperHelpers
   def navigation
     casper[:navigation]
   end
-
+  def image_cover(page = current_page)
+    if (src = page.data.cover).present?
+      image_tag src, resize_to: '700x'
+    end
+  end
   def is_tag_page?
     current_resource.metadata[:locals]['page_type'] == 'tag'
   end
