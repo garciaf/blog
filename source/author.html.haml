@@ -2,6 +2,7 @@
 pageable: true
 per_page: 6
 blog: en
+cover: fabien-grap.jpg
 ---
 
 %header.main-header.author-head{cover}
@@ -22,6 +23,9 @@ blog: en
   - if blog_author.bio.present?
     %h2.author-bio= blog_author.bio
   .author-meta
+    %span.author-stats
+      %i.icon-stats
+      = pluralize(blog.articles.count, 'post')
     - if blog_author.location.present?
       %span.author-location.icon-location= blog_author.location
     - if blog_author.website.present?
@@ -31,9 +35,6 @@ blog: en
       %span.author-twitter
         %a{href: blog_author.twitter}
           %span.icon-twitter
-    %span.author-stats
-      %i.icon-stats
-      = pluralize(blog.articles.count, 'post')
 
 %main#content.content{role: :main}
   = partial(:page_articles,
