@@ -66,8 +66,9 @@ set :casper, {
     name: 'Fabien',
     bio: 'Developer by day, fighter and cook by night',
     location: 'Berlin',
-    website: "http://blog.fabbook.fr", # Optional
-    gravatar_email: 'fab0670312047@gmail.com' # Optional
+    website: nil, # Optional
+    gravatar_email: 'fab0670312047@gmail.com', # Optional
+    twitter: 'https://twitter.com/FabbookFr'
   },
   navigation: {
     "The french cook" => "http://the-french-cook.com",

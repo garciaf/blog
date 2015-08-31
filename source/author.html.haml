@@ -27,6 +27,10 @@ blog: en
     - if blog_author.website.present?
       %span.author-link.icon-link
         %a{href: blog_author.website}= blog_author.website
+    - if blog_author.twitter.present?
+      %span.author-twitter
+        %a{href: blog_author.twitter}
+          %span.icon-twitter
     %span.author-stats
       %i.icon-stats
       = pluralize(blog.articles.count, 'post')
