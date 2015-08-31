@@ -121,8 +121,14 @@ module MiddlemanCasperHelpers
       "#{blog.options.prefix.to_s}/feed.xml"
     end
   end
-  def home_path
-    "#{blog.options.prefix.to_s}/"
+  def home_path(language=nil)
+    language ||= I18n.locale
+    if language.to_s == I18n.default_locale.to_s
+      "/"
+    else
+      "/#{language}/"
+    end
+    
   end
   def author_path
     "#{blog.options.prefix.to_s}/author/#{blog_author.name.parameterize}/"

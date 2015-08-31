@@ -3,18 +3,18 @@
 ###
 
 # Time.zone = "UTC"
-activate :i18n, :mount_at_root => :en
+activate :i18n, :mount_at_root => :fr
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   blog.name = "en"
 
-  blog.permalink = "post/{year}/{month}/{day}/{title}.html"
+  blog.permalink = "en/post/{year}/{month}/{day}/{title}.html"
   # Matcher for blog source files
   blog.sources = "post/en/{year}-{month}-{day}-{title}.html"
   blog.taglink = "tag/{tag}.html"
   blog.layout = "post"
-  blog.summary_separator = /(READMORE)/
+  blog.summary_separator = /READMORE/
   # blog.summary_length = 250
   blog.year_link = "{year}.html"
   blog.month_link = "{year}/{month}.html"
@@ -33,7 +33,7 @@ end
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   blog.name = "fr"
-  blog.permalink = "fr/{post}/{year}/{month}/{day}/{title}.html"
+  blog.permalink = "post/{year}/{month}/{day}/{title}.html"
   # Matcher for blog source files
   blog.sources = "post/fr/{year}-{month}-{day}-{title}.html"
   blog.layout = "post"
