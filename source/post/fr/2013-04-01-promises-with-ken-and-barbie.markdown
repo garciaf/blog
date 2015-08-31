@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Les prommesses expliqué avec Ken et Barbie"
+title:  "Les promesses expliquées avec Ken et Barbie"
 date:   2013-04-01 21:15:46
 tags: javascript
 lang: fr
