@@ -44,7 +44,7 @@ forme pour PHP il s'agit de
 installé un appel à la ligne de commande permet de traiter l'ensemble
 des fichiers dans un repertoire avec la commande suivante : 
 
-> php-cs-fixer fix path/to/bundle
+`php-cs-fixer fix path/to/bundle`
 
 Et voilà votre code est indenté et mis en forme de manière automatique.
 J'ai utilisé l'outils et le gain de temps et l'efficacité est au rendez
@@ -54,22 +54,22 @@ sur linux :
 
 on installe node.js dans un premier temps avec la commande 
 
-> sudo aptitude install npm
+`sudo aptitude install npm`
 
  Il faut ensuite mettre à jour les dépendances : 
 
-> sudo aptitude update
+`sudo aptitude update`
 
 Ensuite il faut installer l'outils uglifyjs avec aptitude : 
 
-> sudo aptitude install libnode-uglify
+`sudo aptitude install libnode-uglify`
 
  Ensuite on rend les fichiers javascript "beautiful" avec la commande
 suivante : 
 
-> uglifyjs -b -v --overwrite path/to/jsfile.js
+`uglifyjs -b -v --overwrite path/to/jsfile.js`
 
- L'option "--overwrite" permet d'enregistrer la modification directement
+L'option `--overwrite` permet d'enregistrer la modification directement
 sur le fichier. 
 
 Et voilà vos fichier PHP et javascripts sont désormais jolis et donc
