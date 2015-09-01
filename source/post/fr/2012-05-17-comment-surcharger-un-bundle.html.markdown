@@ -3,6 +3,7 @@ title: Comment surcharger un bundle
 date: 2012-05-17 00:00 UTC
 tags: php, symphony
 cover: symphony-php.jpg
+lang: fr
 ---
 
 Parfois, dans Symfony2, on trouve un bundle sympa qui fait presque tout

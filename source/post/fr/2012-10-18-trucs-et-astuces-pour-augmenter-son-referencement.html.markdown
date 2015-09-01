@@ -1,4 +1,5 @@
 ---
+lang: fr
 title: Trucs et astuces pour augmenter son référencement
 date: 2012-10-18 00:00 UTC
 tags: php

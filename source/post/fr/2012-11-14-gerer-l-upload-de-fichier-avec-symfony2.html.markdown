@@ -1,4 +1,5 @@
 ---
+lang: fr
 title: Gérer l'upload de fichier avec symfony2
 date: 2012-11-14 00:00 UTC
 tags: php, symphony

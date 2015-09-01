@@ -3,7 +3,6 @@ layout: post
 category: article
 title: J'ai un vieux telephone
 date: 2014-04-08 21:05:48
-subtitle: 
 published: true
 lang: fr
 cover: nokia-3310.jpg

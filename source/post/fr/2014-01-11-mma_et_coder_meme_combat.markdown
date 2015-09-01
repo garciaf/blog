@@ -12,6 +12,9 @@ tags: opinion
 
 Aujourd'hui je vais tenter un grand écart comme celui de [Jean-Claude](http://youtu.be/M7FIvfx5J10) et il est particulièrement périlleux.
 Je vais comparer "l'art de coder" avec "l'art délicat du bourrage de pifs" plus communément appelé sport de combats ou MMA.
+
+READMORE
+
 Étant moi-même un combattant depuis maintenant une vingtaine d'années je remarque de nombreuses similitudes entre mon activité qui me rapporte de l'argent et celle qui me rapporte des bleus, petit tour des similitudes.
 
 # L'ultime est une illusion

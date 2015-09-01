@@ -1,4 +1,5 @@
 ---
+lang: fr
 title: Solution collaborative cheap et efficace
 date: 2012-06-16 00:00 UTC
 tags: opinion

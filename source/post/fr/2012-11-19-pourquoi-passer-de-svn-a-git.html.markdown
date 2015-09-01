@@ -1,4 +1,5 @@
 ---
+lang: fr
 title: Pourquoi passer de SVN à GIT ?
 date: 2012-11-19 00:00 UTC
 tags: opinion

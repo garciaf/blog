@@ -1,4 +1,5 @@
 ---
+lang: fr
 title: Developer un site web avec node.js et tous les outils
 date: 2012-10-26 00:00 UTC
 tags: javascript, nodejs

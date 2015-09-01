@@ -1,4 +1,5 @@
 ---
+lang: fr
 title: Dompter requireJS
 date: 2013-01-26 00:00 UTC
 tags: javascript

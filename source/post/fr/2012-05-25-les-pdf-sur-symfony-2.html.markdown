@@ -2,6 +2,7 @@
 title: Les PDF sur symfony 2
 date: 2012-05-25 00:00 UTC
 tags: php, symfony
+lang: fr
 cover: symphony-php.jpg
 ---
 

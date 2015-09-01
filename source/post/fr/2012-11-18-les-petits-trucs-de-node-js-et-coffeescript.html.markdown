@@ -1,4 +1,5 @@
 ---
+lang: fr
 title: Les petits trucs de node.js et coffeeScript
 date: 2012-11-18 00:00 UTC
 tags: javascript

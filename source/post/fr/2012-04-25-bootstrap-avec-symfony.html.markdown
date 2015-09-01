@@ -3,6 +3,7 @@ title: Bootstrap avec symfony
 date: 2012-04-25 00:00 UTC
 tags: php, symfony
 cover: symphony-php.jpg
+lang: fr
 ---
 
 Développant essentiellement sur Symfpny et PHP, l'étape que je redoute

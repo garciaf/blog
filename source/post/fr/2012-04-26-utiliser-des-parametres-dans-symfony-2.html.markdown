@@ -3,6 +3,7 @@ title: Utiliser des paramètres dans symfony 2
 date: 2012-04-26 00:00 UTC
 tags: php, symphony
 cover: symphony-php.jpg
+lang: fr
 ---
 
 Parfois des choses simples peuvent parfois devenir compliqué si on si

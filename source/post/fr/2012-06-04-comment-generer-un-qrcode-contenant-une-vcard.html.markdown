@@ -3,6 +3,7 @@ title: Comment générer un QRCode contenant une vCard
 date: 2012-06-04 00:00 UTC
 tags: php
 cover: symphony-php.jpg
+lang: fr
 ---
 
 Ou comment fabriquer une carte de visite web 3.0 avec symfony2 et quelques Bundles

@@ -1,4 +1,5 @@
 ---
+lang: fr
 title: Présentation des nouvelles APIs HTML5 qui vont vous aider avec exemples concrets
 date: 2012-10-16 00:00 UTC
 tags: javascript, html5

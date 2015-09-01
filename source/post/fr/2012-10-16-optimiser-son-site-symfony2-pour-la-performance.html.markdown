@@ -1,4 +1,5 @@
 ---
+lang: fr
 title: Optimiser son site symfony2 pour la performance
 date: 2012-10-16 00:00 UTC
 tags: php

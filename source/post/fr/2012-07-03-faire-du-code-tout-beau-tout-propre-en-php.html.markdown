@@ -1,4 +1,5 @@
 ---
+lang: fr
 title: Faire du code tout beau tout propre en PHP
 date: 2012-07-03 00:00 UTC
 tags: php

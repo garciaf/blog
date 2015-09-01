@@ -7,7 +7,6 @@ lang: fr
 tags: opinion
 cover: rocket-crash.jpeg
 ---
-## Retour sur un projet compliqué
 Dans ma carrière j'ai eu la chance de travailler sur des projets passionants et parfois j'ai eu moins de chance...
 Retour sur un projet merdique...
 READMORE

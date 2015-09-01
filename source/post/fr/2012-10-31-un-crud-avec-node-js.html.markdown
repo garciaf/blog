@@ -1,4 +1,5 @@
 ---
+lang: fr
 title: Un crud avec node.js
 date: 2012-10-31 00:00 UTC
 tags: nodejs, javascript
