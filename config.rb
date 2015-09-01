@@ -58,7 +58,7 @@ end
 set :casper, {
   blog: {
     url: 'http://blog.fabbook.fr',
-    name: 'Fabbook Blog',
+    name: 'Fabbook',
     description: 'Life and Dev',
     date_format: '%d %B %Y',
     navigation: true,
@@ -74,6 +74,7 @@ set :casper, {
   },
   navigation: {
     "The french cook" => "http://the-french-cook.com",
+    "Fabphoto" => "http://fabphoto.fr",
     "GitHub" => "https://github.com/garciaf"
 
   }
