@@ -124,12 +124,13 @@ module MiddlemanCasperHelpers
   end
 
   def feed_path
-    if is_tag_page?
-      "#{current_page.url.to_s}feed.xml"
+    if I18n.locale == I18n.default_locale
+      "/feed.xml"
     else
-      "#{blog.options.prefix.to_s}/feed.xml"
+      "/#{I18n.locale}/feed.xml"
     end
   end
+
   def home_path(language=nil)
     language ||= I18n.locale
     if language.to_s == I18n.default_locale.to_s

@@ -89,19 +89,6 @@ ignore '/tag_fr.html.haml'
 
 
 ready do
-  blog('en').tags.each do |tag, articles|
-    proxy "/tag/#{tag.downcase.parameterize}/feed.xml", '/feed.xml', layout: false do
-      @tagname = tag
-      @articles = articles[0..5]
-    end
-  end
-  blog('fr').tags.each do |tag, articles|
-    proxy "fr/tag/#{tag.downcase.parameterize}/feed.xml", '/news.xml', layout: false do
-      @tagname = tag
-      @articles = articles[0..5]
-    end
-  end
-
   proxy "/author/#{blog_author.name.parameterize}.html", '/author.html', ignore: true
 end
 
