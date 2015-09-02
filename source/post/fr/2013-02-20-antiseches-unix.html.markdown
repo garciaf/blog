@@ -2,6 +2,7 @@
 layout: post
 title: Antisèches unix
 tags: unix
+cover: unix.jpg
 lang: fr
 ---
 ##Petit pense bête à l'usage des utilisateurs UNIX avec une mémoire de 256k
@@ -22,4 +23,4 @@ Une fois les commandes précédentes créé il est assez difficle de killer ces 
 ps aux | grep ssh
 ```
 
-et voilà vous avez les numéros des processus et un simple kill -9 devra faire l'affaire
+et voilà vous avez les numéros des processus et un simple `kill -9` devra faire l'affaire
