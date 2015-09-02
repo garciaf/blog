@@ -80,6 +80,11 @@ module MiddlemanCasperHelpers
     URI.join(blog_settings.url, current_article.url)
   end
 
+  def cover_url(page = current_page)
+    if (src = page.data.cover).present?
+      image_path(src)
+    end
+  end
   def cover(page = current_page)
     if (src = page.data.cover).present?
       { style: "background-image: url(#{image_path(src)})" }
