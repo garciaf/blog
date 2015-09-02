@@ -5,6 +5,7 @@ date:   2013-05-27 21:15:46
 categories: article
 lang: fr
 tags: php
+cover: php.jpg
 published: true
 ---
 

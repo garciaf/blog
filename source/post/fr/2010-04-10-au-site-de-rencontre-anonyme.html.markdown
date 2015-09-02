@@ -8,6 +8,8 @@ cover: love-robot.jpg
 
 Salut à tous je m’appelle Winston Wolf (Réponse en coeur : «Bonjours Winston Wolf») et je suis ici car je suis allé sur un site de rencontre, et je me suis inscrit.
 
+READMORE
+
 Alors voilà pourquoi tout cela a commencé et qu’elle en est le résultat ? Tout d’abord je suis dans une école d’ingénieur où 80% des élèves sont des poilus. Sur les 20% de filles restantes 50% sont déjà dans une relation super sérieuse (qui statistiquement se terminera au bout de 7,5ans dans 60% des cas).
 
 Il y a 25% de filles célibataires que j’appellerai les consommatrices, 24% qui ne sont pas à mon goût et 1% avec qui je pourrai vivre une histoire d’amour digne d’un conte de fées.

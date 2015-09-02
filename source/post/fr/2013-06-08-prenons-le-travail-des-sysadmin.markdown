@@ -31,9 +31,9 @@ Par la suite on pourra se connecter à notre serveur virtuel par ssh.
 Maintenant que l'on a de quoi jouer, on va commencer la cuisine. Nous allons utiliser pour cela [chef](http://www.opscode.com/chef/).
 Avec ce système on va fabriquer ou utiliser des recettes pour monter un serveur. Une recette s'installe de la manière suivante, si vous avez besoin de mysql vous entrez la commande suivante. 
 
-{% highlight ruby %}
+```ruby
 knife cookbook site install mysql
-{% endhighlight %}
+```
 
 La recette se télécharge et vous voilà avec mysql utilisable dans vos recette. Un cookbook c'est juste un depot git avec du code ruby à l'intérieur. 
 On peut avoir plusieurs recettes dans un cookbook. Ensuite il y les "node" qui sont simplement les instances particulière de serveur que l'on aura. Pour faire simple un node c'est ni plus ni moins qu'une machine physique(ou une VM)
