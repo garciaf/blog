@@ -2,6 +2,7 @@
 pageable: true
 per_page: 6
 blog: fr
+lang: fr
 cover: fabien-grap.jpg
 ---
 
@@ -21,7 +22,7 @@ cover: fabien-grap.jpg
         %span.hidden #{blog_author.name}'s Picture
   %h1.author-title= blog_author.name
   - if blog_author.bio.present?
-    %h2.author-bio= blog_author.bio
+    %h2.author-bio= t('blog_author.bio')
   .author-meta
     %span.author-stats
       %i.icon-stats

@@ -141,6 +141,10 @@ module MiddlemanCasperHelpers
     
   end
   def author_path
-    "#{blog.options.prefix.to_s}/author/#{blog_author.name.parameterize}/"
+    if I18n.locale == I18n.default_locale
+      "/author/#{blog_author.name.parameterize}/"
+    else
+      "/#{I18n.locale}/author/#{blog_author.name.parameterize}/"
+    end
   end
 end

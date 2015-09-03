@@ -89,7 +89,18 @@ ignore '/tag_fr.html.haml'
 
 
 ready do
-  proxy "/author/#{blog_author.name.parameterize}.html", '/author.html', ignore: true
+  langs.each do |locale|
+    if locale == I18n.default_locale
+      proxy "/author/#{blog_author.name.parameterize}.html", "/author.#{locale}.html", ignore: true do
+        ::I18n.locale = locale
+      end
+    else
+      
+      proxy "/#{locale}/author/#{blog_author.name.parameterize}.html", "/author.#{locale}.html", ignore: true do
+        ::I18n.locale = locale
+      end
+    end
+  end
 end
 
 config = YAML.load_file("parameter.yml")
@@ -104,31 +115,7 @@ activate :deploy do |deploy|
   deploy.path = config['deploy']['path']
   deploy.build_before = true # default: false
 end
-###
-# Compass
-###
 
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
-
-###
-# Page options, layouts, aliases and proxies
-###
-
-# Per-page layout changes:
-#
-# With no layout
-# page "/path/to/file.html", layout: false
-#
-# With alternative layout
-# page "/path/to/file.html", layout: :otherlayout
-#
-# A path which all have the same layout
-# with_layout :admin do
-#   page "/admin/*"
-# end
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
