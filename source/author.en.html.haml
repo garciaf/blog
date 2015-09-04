@@ -20,8 +20,7 @@ cover: fabien-grap.jpg
       .img{style: "background-image: url(#{gravatar(114)})"}
         %span.hidden #{blog_author.name}'s Picture
   %h1.author-title= blog_author.name
-  - if blog_author.bio.present?
-    %h2.author-bio= t('blog_author.bio')
+  %h2.author-bio= t('blog_author.bio')
   .author-meta
     %span.author-stats
       %i.icon-stats
