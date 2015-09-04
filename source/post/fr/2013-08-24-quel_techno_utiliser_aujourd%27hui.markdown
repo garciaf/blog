@@ -4,7 +4,7 @@ category: post
 title: Quel techno utiliser aujourd'hui ?
 date: 2013-08-24 23:42:44
 lang: fr
-tags: opinion
+tags: opinion, php, javascript, ruby
 cover: ex-girl-friends.jpg
 ---
 Et si les technos étaient des ex je dirais quoi ?

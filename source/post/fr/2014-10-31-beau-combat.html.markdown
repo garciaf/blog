@@ -3,7 +3,7 @@ layout: post
 lang: fr
 title: Beau combat
 date: 2014-10-31 13:51 UTC
-tags: opinion
+tags: combat
 cover: fabien-martin.jpg
 ---
 

@@ -103,6 +103,7 @@ Lors de cette mission j'ai eu la chance de rencontrer des gens formidables qui m
 Et je suis parti hors de l'hexagone pour voir comment ça se passe. 
 
 Si c'était à refaire ?:
+
 - Soit un client avec un framework javascript récent et maintenable (Angular, Backbone) qui parle à une API très simple (node, rails) mais ce projet ne justifie pas d'en faire une single page application (application de burautique)
 - Soit un serveur qui fait tout et le javascript pour le strict minimum (affichage de modale) et coté serveur (symfony2, Rails ).
 - Hébergement des sources sur Github

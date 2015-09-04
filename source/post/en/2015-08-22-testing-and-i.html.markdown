@@ -32,7 +32,7 @@ I was writting my test like "What's happen if I send this data? If I'm connected
 I was starting doing some TDD and I came to my next phase...
 
 ### Enthusiastic
-I finaly started to believe that's testing could be something useful. Each time I had something to develop something, I started to think how I could test it? I also start to write some code design to be tested. Off course I was testing 100% of my code, some easy or really trivial.
+I finaly started to believe that's testing could be something useful. Each time I had something to develop something, I started to think how I could test it? I also start to write some code design to be tested. Off course I was not testing 100% of my code, some easy or really trivial was left without test.
 And I came to my current state with testing...
 
 ### Friendly

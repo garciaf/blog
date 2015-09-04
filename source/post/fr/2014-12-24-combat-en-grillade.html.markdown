@@ -3,7 +3,7 @@ layout: post
 lang: fr
 title: Combat en grillade
 date: 2014-12-24 20:57 UTC
-tags: opinion
+tags: combat
 cover: fabien-adrien.jpg
 ---
 Voilà une autre recette de combat en grillade cette fois. 

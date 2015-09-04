@@ -9,12 +9,12 @@ cover: fight.jpg
 Salut à tous je m’appelle Fabien (Réponse en coeur : «Bonjour Fabien») et je suis ici car j’ai testé la vie en couple à deux et dans le même appart retour sur un drame personnel...
 READMORE
 
-Un viel addage dit que la vie de couple c’est résoudre à deux des problèmes qu’on aurait jamais eu tout seul. Sachant cela, je suis allé enquêter pour faire un reportage exclusif Polypress.
+Un viel addage dit que la vie de couple c’est résoudre à deux des problèmes qu’on aurait jamais eu tout seul. Sachant cela, je suis allé enquêter pour faire un reportage exclusif.
 
 Alors tout d’abord comment se retrouve t’on à deux dans le même appartement ?
 Il y a quelques phrases annodines qui ne payent pas de mine mais qui sont lourdes de conséquences. «Tu ne voudrais pas rester dormir ce soir ?» «Ce serait plus pratique si tu laissais quelques affaires non ?» Toujours est-il qu’une fois que la brosse à dent du partenaire touche, sur le rebord du lavabo, votre rasoir, vous êtes mal. Si jamais les tampons périodiques et l’aspirine ont remplacé votre boite de preservatifs, alors il n’y a plus d’espoir. 
 
-Alors quels sont les changements qui vont chambouler votre appartement et votre vie ? Tout d’abord dans votre salle de bain de nouveaux objets font leur apparition, certains sont très étrange. Un sèche cheveux, une machine à épiler, une nouvelle brosse à dent et j’en passe. Dans la cabine de douche, il y a de nouveaux produits pour laver la tête, les cheveux, les doigts, les yeux, le nez , le corps et j’en passe. Desormais tous vos gels douches sont à l’envers pour faire sortir le liquide plus facilement. 
+Alors quels sont les changements qui vont chambouler votre appartement et votre vie ? Tout d’abord dans votre salle de bain de nouveaux objets font leur apparition, certains sont très étranges. Un sèche cheveux, une machine à épiler, une nouvelle brosse à dent etc ... Dans la cabine de douche, il y a de nouveaux produits pour laver la tête, les cheveux, les doigts, les yeux, le nez , le corps et j’en passe. Désormais tous vos gels douches sont à l’envers pour faire sortir le liquide plus facilement. 
 
 Au chapitre des disparitions, les surprises continuent. Votre pile de Playboy sous votre lit a mystérieusement disparu, et tous vos fichiers contenant les oeuvres de Clara et ses amies ont disparu de votre ordinateur. 
 
