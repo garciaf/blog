@@ -138,8 +138,8 @@ module MiddlemanCasperHelpers
     else
       "/#{language}/"
     end
-    
   end
+  
   def author_path
     if I18n.locale == I18n.default_locale
       "/author/#{blog_author.name.parameterize}/"
