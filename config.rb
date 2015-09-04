@@ -57,7 +57,7 @@ activate :blog do |blog|
 end
 set :casper, {
   blog: {
-    url: 'http://blog.fabbook.fr',
+    url: 'http://fabbook.fr',
     name: 'Fabbook',
     description: 'Life and Dev',
     date_format: '%d %B %Y',

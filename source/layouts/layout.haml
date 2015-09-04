@@ -7,8 +7,22 @@
     %meta{name: :viewport, content: 'width=device-width, initial-scale=1.0'}
     %meta{'http-equiv' => 'X-UA-Compatible', content: 'IE=edge'}
     %meta{name: 'HandheldFriendly', content: 'True'}
-    %meta{:content => "D1Bemo6DvgzHq2UiLiXOMJQuDmV0NGtMlN5LhwEMyrA", :name => "google-site-verification"}
-    %meta{:content => cover_url, :property=> "og:image"}
+    %meta{content: "D1Bemo6DvgzHq2UiLiXOMJQuDmV0NGtMlN5LhwEMyrA", name: "google-site-verification"}
+    // Twitter
+    %meta{content: page_title, name: "twitter:title"}
+    %meta{content: page_description, name: "twitter:description"}
+    %meta{content: cover_url, name: "twitter:image:src"}
+    // Open Graph General (Facebook & Pinterest)
+    %meta{content: cover_url, property: "og:image"}
+    %meta{content: page_title, property: "og:title"}
+    %meta{content: blog_settings.name, property: "og:site_name"}
+    %meta{content: cover_url, property: "og:image"}
+    %meta{content: page_description, property: "og:description"}
+    %meta{content: 'website', property: "og:type"}
+    // Google plus
+    %meta{itemprop: 'name',  content: page_title}
+    %meta{itemprop: 'description', content: page_description }
+    %meta{itemprop:'image', content: cover_url }
 
     = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
     = favicon_tag 'images/iconemain.png'
