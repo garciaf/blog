@@ -9,11 +9,11 @@ cover: nokia-3310.jpg
 tags: opinion
 ---
 ## J'ai un téléphone de merde et je vous emmerde
+READMORE
 
 Je suis assis à une table, j'ai mal à la tête, cette salle est pleine à craquer, tout le monde parle, je veux sortir. 
 Tout à coup mon téléphone sonne, je sors mon vieux nokia 3310 de ma poche : "Ecoute je te rappelle plus tard, je ne suis pas disponible..."
 
-READMORE
 
 Une fois que j'ai remis mon téléphone dans ma poche, un grand silence. 
 Quel calme enfin ... Mais les gens me regardent tous comme s'ils avaient vu un fantôme.

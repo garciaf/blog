@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Testing and I"
+title: "My love hate relationship with testing"
 date: 2015-08-22 13:51 UTC
 tags: ruby, testing
 cover: love-hate.jpg
