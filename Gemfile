@@ -8,6 +8,7 @@ gem 'middleman-livereload', '~> 3.4.3'
 gem 'middleman-deploy'
 gem 'middleman-simple-thumbnailer'
 gem 'middleman-imageoptim'
+gem 'middleman-minify-html'
 
 # For feed.xml.builder
 gem 'builder', '~> 3.2.2'

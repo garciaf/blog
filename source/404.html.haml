@@ -1,6 +1,6 @@
 ---
 title: 404 try again
-blog: en
+blog: fr
 ---
 %header.main-header{cover}
   %nav.main-nav.overlay.clearfix
@@ -22,3 +22,9 @@ blog: en
   %main.content{role: :main}
     %article.post
       %h1.post-title  You loose there is nothing here :-(
+      %section.post-content Beaucoup d'articles ont de nouvelles URL, voici les nouvelles addresses de quelques articles :
+      %ul
+      - page_articles.each do |article|
+        %li= link_to article.title, article
+
+
