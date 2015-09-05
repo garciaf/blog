@@ -104,9 +104,6 @@ ready do
 end
 
 config = YAML.load_file("parameter.yml")
-###
-# Helpers
-###
 activate :deploy do |deploy|
   deploy.method = :ftp
   deploy.host = config['deploy']['host']
