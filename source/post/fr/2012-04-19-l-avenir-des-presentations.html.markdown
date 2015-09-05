@@ -3,6 +3,7 @@ title: L'avenir des présentations ?
 date: 2012-04-19 00:00 UTC
 tags: opinion
 lang: fr
+cover: presentation.png
 ---
 Parmis les outils que je dois utiliser mais qui ne me font pas réver, il y a un incontournable il s'agit de PowerPoint ou LibreOffice pour sa version libre. Et je dois avouer qu'aucun de ces deux outils ne m'a vraiment convaincu. En effet, j'ai toujours tendance à mettre plus de temps à me concentrer sur la forme que sur le fond. Moralité après avoir changé de background 5 ou 6 fois je me dis qu'il est temps que je change d'outils. 
 
