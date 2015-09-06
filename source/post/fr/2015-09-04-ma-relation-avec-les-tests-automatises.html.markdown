@@ -23,7 +23,7 @@ J'étais dans le faux, perdu et tellement naif. Donc, après avoir [littéraleme
 
 ### Sceptique
 Je pensais que le TTD, était juste une mode, ça n'avait pas de place dans le monde réel.
-Et je n'ai plus écris de tests. Mais heuereusement j'ai rencontré quelqu'un qui m'a fait changer mon point de vue sur la question.
+Et je n'ai plus écris de tests. Mais heureusement j'ai rencontré quelqu'un qui m'a fait changer mon point de vue sur la question.
 Ce type était vraiment brillant, il trouvait toujours un moyen de réaliser ce qui était demandé. Son code était éléguant et facile à lire et bien entendu le code était testé.
 Il m'a alors expliqué qu'écrire des tests faisait partie du développement.
 Écrire des tests lui permettait d'avoir une plus grande concentration.
