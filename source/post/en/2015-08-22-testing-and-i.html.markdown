@@ -5,6 +5,8 @@ date: 2015-08-22 13:51 UTC
 tags: ruby, testing
 cover: love-hate.jpg
 lang: en
+translations: 
+  fr: /post/2015/09/04/ma-relation-avec-les-tests-automatises/
 ---
 During all this year writing code, I've been living a strange hate, love relationship with testing. I got some opinion about testing in software development and what I believe is not so black and white. 
 But first let's talk about the different phase with testing. 

@@ -4,6 +4,8 @@ date: 2015-09-04 09:32 UTC
 tags: test, ruby, opinion
 cover: love-hate.jpg
 lang: fr
+translations: 
+  en: /en/post/2015/08/22/testing-and-i/
 ---
 
 Pendant toutes ces années à écrire du code j'ai vécu une curieuse relation avec les tests automatisés. Je les ai aimé et detesté. 

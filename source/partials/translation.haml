@@ -1,5 +1,6 @@
 - if has_translation?(current_article)
-  - current_article.data.translations.each do |lang, url|
-    .phoca-flagbox
-      = link_to url do
-        %span.phoca-flag{class: lang}
+  .post-translation
+    - current_article.data.translations.each do |lang, url|
+      .phoca-flagbox
+        = link_to url do
+          %span.phoca-flag{class: lang}

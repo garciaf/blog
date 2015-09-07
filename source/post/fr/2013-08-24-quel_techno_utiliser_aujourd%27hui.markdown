@@ -6,6 +6,8 @@ date: 2013-08-24 23:42:44
 lang: fr
 tags: opinion, php, javascript, ruby
 cover: ex-girl-friends.jpg
+translations:
+  en: /en/post/2015/09/07/if-programming-language-were-my-ex/
 ---
 Et si les technos étaient des ex je dirais quoi ?
 

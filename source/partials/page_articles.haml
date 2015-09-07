@@ -20,8 +20,8 @@
       %a{href: author_path}= blog_author.name
       - if tags?(article)
         on #{tags(article)}
-      = partial(:translation, locals: { current_article: article })
       %time.post-date{datetime: article.date.strftime('%Y-%m-%d')}
         = article.date.strftime(blog_settings.date_format)
+      = partial(:translation, locals: { current_article: article })
 
 = partial(:pagination) if paginate
