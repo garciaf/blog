@@ -103,6 +103,11 @@ module MiddlemanCasperHelpers
   def gravatar?
     blog_author.gravatar_email.present?
   end
+
+  def has_translation?(page = current_page)
+    page.data.translations.present?
+  end
+
   def localized_path(path, language=nil)
     language ||= I18n.locale
 
@@ -112,6 +117,8 @@ module MiddlemanCasperHelpers
       path = "/#{language}/#{path}";
     end
   end
+
+
   def twitter_url
     "https://twitter.com/share?text=#{current_article.title}" \
       "&amp;url=#{current_article_url}"

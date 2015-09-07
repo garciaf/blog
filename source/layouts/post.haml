@@ -23,7 +23,7 @@
             = current_article.date.strftime(blog_settings.date_format)
           - if tags?
             on #{tags}
-
+          = partial(:translation)
       %section.post-content= yield
       %section.post-comment= partial(:comments)
       %footer.post-footer
