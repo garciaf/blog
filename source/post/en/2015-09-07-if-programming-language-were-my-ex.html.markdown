@@ -4,7 +4,7 @@ date: 2015-09-07 09:51 UTC
 tags: opinion, php, javascript, ruby
 lang: en
 cover: ex-girl-friends.jpg
-published: false
+published: true
 translations:
   fr: /post/2013/08/24/quel_techno_utiliser_aujourd'hui/
 ---
@@ -113,4 +113,4 @@ I think I'm in love ...
 # Last words
 It's hard to know what will happen in one year, two years etc ...
 Reading my article I realize that programming language are really close to people. 
-And you are in relationship with which techno? Are you faithfull ? Comment bellow.
+Are you in a relationship with a technology? Are you faithfull ? Comment below.
