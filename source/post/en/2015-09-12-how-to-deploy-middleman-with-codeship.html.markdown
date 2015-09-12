@@ -10,7 +10,7 @@ Today I'll explain how to deploy middleman project with codeship
 
 READMORE
 
-## Contexte
+## Context
 I only have one ftp derver to deploy my web site. So first I used the really good gem [middleman-deploy](https://github.com/middleman-contrib/middleman-deploy) and make the settings for ftp. 
 I do not want to store the configuration of the ftp in my source. 
 
