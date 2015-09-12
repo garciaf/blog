@@ -21,3 +21,4 @@ gem 'redcarpet', '~> 3.3.2'
 # For "summary"-Helper
 gem 'nokogiri', '~> 1.6.6.2'
 gem 'sanitize', '~> 3.0.0'
+gem 'pry'
