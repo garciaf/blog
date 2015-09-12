@@ -104,14 +104,14 @@ ready do
 end
 
 config = YAML.load_file("parameter.yml").each do |key, value|
-  ENV[key] = value
+  value = ENV[key] if ENV[key]
 end
 
 activate :deploy do |deploy|
   deploy.method = :ftp
-  deploy.host = config['host']
-  deploy.user = config['user']
-  deploy.password = config['password']
+  deploy.host = config['FTP_HOST']
+  deploy.user = config['FTP_USER']
+  deploy.password = config['FTP_PASSWORD']
   deploy.path = config['path']
   deploy.build_before = true # default: false
 end
