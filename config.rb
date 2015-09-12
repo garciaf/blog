@@ -117,7 +117,7 @@ activate :deploy do |deploy|
   deploy.user = config['FTP_USER']
   deploy.password = config['FTP_PASSWORD']
   deploy.path = config['path']
-  deploy.build_before = true # default: false
+  deploy.build_before = false # default: false
 end
 
 
