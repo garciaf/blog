@@ -103,8 +103,12 @@ ready do
   end
 end
 
-config = YAML.load_file("parameter.yml").each do |key, value|
-  value = ENV[key] if ENV[key]
+config = YAML.load_file("parameter.codeship.yml")
+config.map do |key, value|
+  if ENV[key.to_s]
+    value = ENV[key]
+  end
+  config[key] = value
 end
 
 activate :deploy do |deploy|
