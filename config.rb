@@ -103,15 +103,16 @@ ready do
   end
 end
 
-config = YAML.load("parameter.yml").each do |key, value|
-  ENV[key.to_s] = value
+config = YAML.load_file("parameter.yml").each do |key, value|
+  ENV[key] = value
 end
+
 activate :deploy do |deploy|
   deploy.method = :ftp
-  deploy.host = config['deploy']['host']
-  deploy.user = config['deploy']['user']
-  deploy.password = config['deploy']['password']
-  deploy.path = config['deploy']['path']
+  deploy.host = config['host']
+  deploy.user = config['user']
+  deploy.password = config['password']
+  deploy.path = config['path']
   deploy.build_before = true # default: false
 end
 
