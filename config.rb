@@ -103,7 +103,7 @@ ready do
   end
 end
 
-config = YAML.load_file("parameter.codeship.yml")
+config = YAML.load_file("parameter.yml")
 config.map do |key, value|
   if ENV[key.to_s]
     value = ENV[key]
