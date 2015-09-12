@@ -103,7 +103,9 @@ ready do
   end
 end
 
-config = YAML.load_file("parameter.yml")
+config = YAML.load("parameter.yml").each do |key, value|
+  ENV[key.to_s] = value
+end
 activate :deploy do |deploy|
   deploy.method = :ftp
   deploy.host = config['deploy']['host']
