@@ -27,13 +27,7 @@ path: /www
 then I want to the `config.rb` file to use the config 
 
 ```ruby
-config = YAML.load_file("parameter.yml")
-config.map do |key, value|
-  if ENV[key.to_s]
-    value = ENV[key]
-  end
-  config[key] = value
-end
+config = YAML.load ERB.new(File.read('parameter.codeship.yml')).result(binding)
 
 activate :deploy do |deploy|
   deploy.method = :ftp
