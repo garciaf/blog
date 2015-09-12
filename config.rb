@@ -104,7 +104,7 @@ ready do
 end
 
 
-config = YAML.load ERB.new(File.read('parameteryml')).result(binding)
+config = YAML.load ERB.new(File.read('parameter.yml')).result(binding)
 
 activate :deploy do |deploy|
   deploy.method = :ftp
