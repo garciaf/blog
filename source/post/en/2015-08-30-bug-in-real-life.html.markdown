@@ -6,7 +6,7 @@ lang: en
 cover: wtf.jpg
 ---
 
-Do you believe only software get bugs? Now worries there is a lot buggy system out there, let's see what...
+Do you believe only software get bugs? No worries there is a lot buggy system out there, let's see what...
 
 READMORE
 
