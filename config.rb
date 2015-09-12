@@ -103,13 +103,8 @@ ready do
   end
 end
 
-config = YAML.load_file("parameter.yml")
-config.map do |key, value|
-  if ENV[key.to_s]
-    value = ENV[key]
-  end
-  config[key] = value
-end
+
+config = YAML.load ERB.new(File.read('parameteryml')).result(binding)
 
 activate :deploy do |deploy|
   deploy.method = :ftp
