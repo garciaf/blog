@@ -6,7 +6,7 @@ cover: mr-robot.jpg
 lang: fr
 ---
 
-Je n'avais pas spécialement prévu de parler séries sur ce blog, mais voilà un mix de chose que j'aime bien, technique et séries. Et trêve de suspense quel claque cette série.
+Je n'avais pas spécialement prévu de parler séries sur ce blog, mais voilà un mix de chose que j'aime bien, technique et séries. Et trêve de suspense quelle claque cette série !
 
 READMORE
 
