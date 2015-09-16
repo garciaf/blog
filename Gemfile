@@ -9,7 +9,7 @@ gem 'middleman-deploy'
 gem 'middleman-simple-thumbnailer'
 gem 'middleman-imageoptim'
 gem 'middleman-minify-html'
-
+gem 'middleman-robots'
 # For feed.xml.builder
 gem 'builder', '~> 3.2.2'
 

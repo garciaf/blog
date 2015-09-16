@@ -164,7 +164,9 @@ configure :build do
   activate :imageoptim
   # Enable cache buster
   # activate :asset_hash
-
+  activate :robots, :rules => [
+    {:user_agent => '*', :allow => %w(/)}
+  ], :sitemap => "http://blog.fabbook.fr/sitemap.xml"
   # Use relative URLs
   # activate :relative_assets
 
