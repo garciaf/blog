@@ -13,7 +13,7 @@ gem 'middleman-robots'
 # For feed.xml.builder
 gem 'builder', '~> 3.2.2'
 
-
+gem 'middleman-alias'
 # Code syntax highlighting
 gem 'middleman-syntax', '~> 2.0.0'
 gem 'redcarpet', '~> 3.3.2'
