@@ -6,6 +6,7 @@ date: 2013-08-24 23:42:44
 lang: fr
 tags: opinion, php, javascript, ruby
 cover: ex-girl-friends.jpg
+alias: post/2013/08/24/quel_techno_utiliser_aujourd'hui.html
 translations:
   en: /en/post/2015/09/07/if-programming-language-were-my-ex/
 ---
