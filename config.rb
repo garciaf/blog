@@ -169,7 +169,7 @@ configure :build do
   # activate :asset_hash
   activate :robots, :rules => [
     {:user_agent => '*', :allow => %w(/)}
-  ], :sitemap => "http://blog.fabbook.fr/sitemap.xml"
+  ], :sitemap => "http://fabbook.fr/sitemap.xml"
   # Use relative URLs
   # activate :relative_assets
 
