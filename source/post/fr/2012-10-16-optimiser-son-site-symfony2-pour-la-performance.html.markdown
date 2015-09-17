@@ -4,6 +4,7 @@ title: Optimiser son site symfony2 pour la performance
 date: 2012-10-16 00:00 UTC
 tags: php
 cover: symphony-php.jpg
+alias: optimiser-son-site-symfony2-pour-la-performance/blogarticle/
 ---
 
 Où comment rendre un site dynamique (presque) aussi performant qu'un site statique

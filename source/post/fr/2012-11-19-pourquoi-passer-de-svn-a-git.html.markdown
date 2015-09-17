@@ -4,6 +4,7 @@ title: Pourquoi passer de SVN à GIT ?
 date: 2012-11-19 00:00 UTC
 tags: opinion
 cover: git-logo.png
+alias: pourquoi-passer-de-svn-a-git/blogarticle/
 ---
 
 Ayant utilisé pendant plusieurs années SVN, j'avais du mal à comprendre

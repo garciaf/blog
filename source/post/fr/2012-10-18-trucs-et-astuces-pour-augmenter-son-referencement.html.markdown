@@ -4,6 +4,7 @@ title: Trucs et astuces pour augmenter son référencement
 date: 2012-10-18 00:00 UTC
 tags: php
 cover: seo-symfony.jpg
+alias: trucs-et-astuces-pour-augmenter-son-referencement/blogarticle/
 ---
 
  Toujours au travail après avoir rencontré le collègue qui aimait

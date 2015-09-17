@@ -4,6 +4,7 @@ title: Déployer son application symfony2 sur OVH
 date: 2011-12-12 00:00 UTC
 tags: ovh, symfony
 cover: symphony-php.jpg
+alias: deployer-son-application-symfony2-sur-ovh/blogarticle/
 ---
 
 Le nouveau framework symfony 2 rock's mais comment mettre en ligne ses oeuvres sur une offre perso d'OVH quand on a pas de ligne de commande ?

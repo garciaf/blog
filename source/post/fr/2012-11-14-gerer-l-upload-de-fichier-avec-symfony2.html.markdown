@@ -4,6 +4,7 @@ title: Gérer l'upload de fichier avec symfony2
 date: 2012-11-14 00:00 UTC
 tags: php, symphony
 cover: symphony-php.jpg
+alias: gerer-l-upload-de-fichier-avec-symfony2/blogarticle/
 ---
 Présentation d'une méthode alternative pour gérer l'upload de ficher avec symfony2
 

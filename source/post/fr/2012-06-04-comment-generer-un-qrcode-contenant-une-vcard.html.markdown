@@ -4,6 +4,7 @@ date: 2012-06-04 00:00 UTC
 tags: php
 cover: symphony-php.jpg
 lang: fr
+alias: comment-generer-un-qrcode-contenant-une-vcard/blogarticle/
 ---
 
 Ou comment fabriquer une carte de visite web 3.0 avec symfony2 et quelques Bundles

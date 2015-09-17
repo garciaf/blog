@@ -4,6 +4,7 @@ date: 2012-05-25 00:00 UTC
 tags: php, symfony
 lang: fr
 cover: symphony-php.jpg
+alias: les-pdf-sur-symfony-2/blogarticle/
 ---
 
 Je suis resté assez calme sur ce blog ces dernier temps car j'ai tenté
