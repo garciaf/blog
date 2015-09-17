@@ -4,7 +4,7 @@ title: Developer un site web avec node.js et tous les outils
 date: 2012-10-26 00:00 UTC
 tags: javascript, nodejs
 cover: nodejs.jpg
-alias: developer-un-site-web-avec-node-js-et-tous-les-outils/blogarticle
+alias: developer-un-site-web-avec-node-js-et-tous-les-outils/blogarticle/
 ---
 Retour d'expérience d'un newbie sur node.js ainsi que sequelize.js, express.js et tous leurs potes ...
 READMORE

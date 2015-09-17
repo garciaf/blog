@@ -3,6 +3,7 @@ title: Créer un backend avec node.js
 tags: nodejs, javascript
 cover: nodejs.jpg
 lang: fr
+alias: creer-un-backend-avec-node-js/blogarticle/
 ---
 
 Comment faire un backend avec des utilisateurs en base, des forms, passport.js quand on est flemmard et que l'on vient de symfony2 ?

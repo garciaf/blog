@@ -4,7 +4,7 @@ title: Un crud avec node.js
 date: 2012-10-31 00:00 UTC
 tags: nodejs, javascript
 cover: nodejs.jpg
-alias: un-crud-avec-node-js/blogarticle
+alias: un-crud-avec-node-js/blogarticle/
 ---
 Un crud d'article éditable avec express, sequelize et form
 
