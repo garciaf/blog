@@ -1,0 +1,239 @@
+---
+layout: presentation
+title: ReactJS and Rails
+date: 2015-11-24 10:23 UTC
+tags: javascript, rails, ruby
+categories: slide
+theme: black
+lang: en
+published: true
+cover: reactjs.png
+---
+
+%section
+  %h1 ReactJs and Rails
+  %a.image{:href => "#/1"}
+    %img{:height => "238", :src => image_path("reactjs.png")}
+  %p
+    %small
+      %a{:href => "http://fabbook.fr/author/fabien"} Fabien Garcia
+
+%section
+  %h2 Philosophy of the framework
+  %ul
+    %li Care about the view
+    %li Care about binding
+    %li Care about rendering
+    %li Everything is component
+
+%section
+  %section
+    %h2 Install with rails
+    %h3 How ?
+    %pre
+      %code.ruby
+        :preserve
+          # Gemfile
+          gem 'react-rails'
+          # In the console
+          bundle install
+    %h3 That was hard right? 
+  %section
+    %h2 Why this gem?
+    %img{:src => image_path("2015-11-24-reactjs-and-rails/rubygem.png"), :alt => "ranking"}/
+  
+  %section
+    %h2 Benefits of react-rails
+    %ul
+      %li Provide various react builds to your asset bundle
+      %li Transform .jsx in the asset pipeline
+      %li Render components into views and mount them via view helper & react_ujs
+      %li Render components server-side with prerender: true
+      %li Generate components with a Rails generator
+      %li Be extended with custom renderers, transformers and view helpers
+
+%section
+  %section
+    %h1 Sample App
+    %h2 List records
+  %section
+    %h1 Controller
+    %pre
+      %code.ruby
+        :preserve
+          # app/controllers/records_controller.rb
+
+          class RecordsController < ApplicationController
+            def index
+              @records = Record.all
+            end
+          end
+  %section
+    %h1 View
+    %h2 Helper 
+    %pre
+      %code.erb
+        :preserve
+          <%# app/views/records/index.html.erb %>
+          <%= react_component 'Records', { data: @records } %>
+    %h3 Generate
+    %pre
+      %code.html
+        :preserve
+          <div data-react-class="Records" data-react-props="{...}"></div>
+  %section
+    %h1 Coffeescript
+    %pre
+      %code.coffeescript
+        :preserve
+          # app/assets/javascripts/components/records.js.coffee
+            @Records = React.createClass
+              render: ->
+                React.DOM.div
+                  className: 'records'
+                  React.DOM.h2
+                    className: 'title'
+                    'Records'
+    %h4 or with JSX syntax
+    %pre
+      %code.coffeescript
+        :preserve
+          @Records = React.createClass
+            render: ->
+              `<div className="records">
+                <h2 className="title"> Records </h2>
+              </div>`
+  %section
+    %h2 Components
+    %pre
+      %code.coffeescript
+        :preserve
+          # app/assets/javascripts/components/records.js.coffee
+          @Records = React.createClass
+            ...
+            render: ->
+              React.DOM.div
+                className: 'records'
+                React.DOM.h2
+                  className: 'title'
+                  'Records'
+                React.DOM.table
+                  className: 'table table-bordered'
+                  React.DOM.tbody null,
+                    for record in @state.records
+                      React.createElement Record, key: record.id, record: record
+  %section
+    %h2 Single record
+    %pre
+      %code.coffeescript
+        :preserve
+          @Record = React.createClass
+            render: ->
+              React.DOM.tr null,
+                React.DOM.td null, @props.record.date
+                React.DOM.td null, @props.record.title
+                React.DOM.td null, amountFormat(@props.record.amount)
+  %section
+    %h2 New record
+    %pre
+      %code.coffeescript
+        :preserve
+          # app/assets/javascripts/components/record_form.js.coffee
+
+          @RecordForm = React.createClass
+            getInitialState: ->
+              title: ''
+              date: ''
+              amount: ''
+            render: ->
+              React.DOM.form
+                className: 'form-inline'
+                React.DOM.div
+                  className: 'form-group'
+                  React.DOM.input
+                    type: 'text'
+                    className: 'form-control'
+                    placeholder: 'Date'
+                    name: 'date'
+                    value: @state.date
+                    onChange: @handleChange
+                React.DOM.div
+                  className: 'form-group'
+                  React.DOM.input
+                    type: 'text'
+                    className: 'form-control'
+                    placeholder: 'Title'
+                    name: 'title'
+                    value: @state.title
+                    onChange: @handleChange
+                React.DOM.div
+                  className: 'form-group'
+                  React.DOM.input
+                    type: 'number'
+                    className: 'form-control'
+                    placeholder: 'Amount'
+                    name: 'amount'
+                    value: @state.amount
+                    onChange: @handleChange
+                React.DOM.button
+                  type: 'submit'
+                  className: 'btn btn-primary'
+                  disabled: !@valid()
+                  'Create record'
+  %section
+    %h3 handling submitting
+    %pre
+      %code.coffeescript
+        :preserve
+          # app/assets/javascripts/components/record_form.js.coffee
+          @RecordForm = React.createClass
+            ...
+            handleSubmit: (e) ->
+              e.preventDefault()
+              $.post '', { record: @state }, (data) =>
+                @props.handleNewRecord data
+                @setState @getInitialState()
+              , 'JSON'
+
+            render: ->
+              React.DOM.form
+                className: 'form-inline'
+                onSubmit: @handleSubmit
+              ...
+  %section
+    %h3 Updating the Parent
+    %pre
+      %code.coffeescript
+        :preserve
+          # app/assets/javascripts/components/records.js.coffee
+
+          @Records = React.createClass
+            ...
+            addRecord: (record) ->
+              records = @state.records.slice()
+              records.push record
+              @setState records: records
+            render: ->
+              React.DOM.div
+                className: 'records'
+                React.DOM.h2
+                  className: 'title'
+                  'Records'
+                React.createElement RecordForm, handleNewRecord: @addRecord
+                React.DOM.hr null
+              ...
+%section
+  %h1 Real rails app
+  %a{:href => "https://github.com/garciaf/react_app"} My react App
+%section
+  %h1 Sources
+  %ul
+    %li 
+      %a{:href => "https://www.airpair.com/reactjs/posts/reactjs-a-guide-for-rails-developers"} A guide for Rails developers
+    %li 
+      %a{:href => "https://hackhands.com/react-rails-tutorial/"} React on Rails Tutorial
+    %li 
+      %a{:href => "https://github.com/reactjs/react-rails"} gem react rails
+%section
+  %h1 Question ?
+  %img{:src => image_path("2015-11-24-reactjs-and-rails/question.gif"), :alt => "ranking"}/
