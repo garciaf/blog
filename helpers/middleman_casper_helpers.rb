@@ -35,7 +35,11 @@ module MiddlemanCasperHelpers
 
   def summary(article)
     summary_length = article.blog_options[:summary_length]
-    strip_tags(article.summary(summary_length, ''))
+    if article.data.subtitle
+      article.data.subtitle
+    else
+      strip_tags(article.summary(summary_length, ''))
+    end
   end
 
   def read_next_summary(article, words)
