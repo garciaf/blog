@@ -224,8 +224,33 @@ cover: reactjs.png
                 React.DOM.hr null
               ...
 %section
-  %h1 Real rails app
-  %a{:href => "https://github.com/garciaf/react_app"} My react App
+  %section
+    %h1 Real rails app
+    %a{:href => "https://github.com/garciaf/react_app"} My react App
+  %section
+    %h1 Architecture
+    %img{:src => image_path("2015-11-24-reactjs-and-rails/architecture.png"), :alt => "ranking"}/
+  %section
+    %h1 Testing with rspec and rails
+    %pre
+      %code.ruby
+        :preserve
+          describe "Integration", js: true, type: :feature do 
+          it "should see react comment" do
+            comment = FactoryGirl.create :comment
+            visit root_path
+            expect(page).to have_content(comment.text)
+            expect(page).to have_content(comment.author)
+          end
+        end
+    %h4 You can check real test here
+    %a{:href => "https://codeship.com/projects/117924"}
+      %img{:src => "https://camo.githubusercontent.com/b433078f5dd03bf282e3ef5f0b3fd02ecc84abdb/68747470733a2f2f636f6465736869702e636f6d2f70726f6a656374732f38386337383661302d373538622d303133332d383662312d3461316131663132326230642f7374617475733f6272616e63683d6d6173746572", :alt => "Codeship Status for garciaf/react_app", :style =>"max-width:100%;", "data-canonical-src" =>"https://codeship.com/projects/88c786a0-758b-0133-86b1-4a1a1f122b0d/status?branch=master"}/
+  %section
+    %h1 Testing component
+    %h3 Still need to figured out how it works but there is official doc for it:
+    %a{:href => "https://facebook.github.io/react/docs/test-utils.html"} Test Utilities
+
 %section
   %h1 Sources
   %ul
