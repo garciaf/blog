@@ -5,7 +5,7 @@ subtitle: How look life with react when you are a rails developer? We will try t
 date: 2015-11-24 10:23 UTC
 tags: javascript, rails, ruby
 categories: slide
-theme: black
+theme: beige
 lang: en
 published: true
 cover: reactjs.png
@@ -369,6 +369,66 @@ cover: reactjs.png
       %li Can be implemented in a model
       %li Same controller can handle different format easily
 %section
+  %section
+    %h1 Code Structure
+    %h3 Backbone react project example
+  %section
+    %h2 Overview
+    %img{:src => image_path("2015-11-24-reactjs-and-rails/code-structure.png"), :alt => ""}/
+  %section
+    %h2 App scope
+    %p The purpose it to be able to access any component, model or collection in the code
+    %pre
+      %code.coffeescript
+        :preserve
+          window.MyApp =
+            Models: {}
+            Collections: {}
+            Views: {}
+  %section
+    %h2 Collection and model
+    %p Collection can refer special model via the App scope
+    %pre
+      %code.coffeescript
+        :preserve
+          # models/post.js.coffee
+          MyApp.Models.Post = Backbone.Model.extend
+    %pre
+      %code.coffeescript
+        :preserve
+          # collections/posts.js.cofee
+          MyApp.Collections.Posts = Backbone.Collection.extend
+            model: MyApp.Models.Post
+  %section
+    %h2 Application file
+    %p 
+    %pre
+      %code.coffeescript
+        :preserve
+          #= require ./vendor/jquery
+          #= require ./vendor/underscore
+          #= require ./vendor/backbone
+          
+          #= require ./vendor/react
+          #= require ./vendor/react-dom
+          
+          #= require ./vendor/backbone-react-component
+          
+          #= require 'app_scope'
+
+          #= require_tree './models'
+          #= require_tree './collections'
+          #= require_tree './components'
+
+  %section
+    %h2 Component
+    %p <strong>react-rails</strong> will mount automatically the component with the script <strong>react-ujs</strong> and if we use the build in helpert
+    %pre
+      %code.erb
+        :preserve
+          <%# app/views/records/index.html.erb %>
+          <%= react_component 'Blog', { data: @posts } %>
+%section
   %h1 Sources
   %ul
     %li 
@@ -377,6 +437,10 @@ cover: reactjs.png
       %a{:href => "https://hackhands.com/react-rails-tutorial/"} React on Rails Tutorial
     %li 
       %a{:href => "https://github.com/reactjs/react-rails"} gem react rails
+    %li
+      %a{:href => "https://github.com/garciaf/react_app"} Rails implementation with backbone and react
+    %li
+      %a{:href => "https://github.com/garciaf/local_blog"} Middleman implementation with backbone and react 
 %section
   %h1 Question ?
   %img{:src => image_path("2015-11-24-reactjs-and-rails/question.gif"), :alt => "ranking"}/
