@@ -250,7 +250,124 @@ cover: reactjs.png
     %h1 Testing component
     %h3 Still need to figured out how it works but there is official doc for it:
     %a{:href => "https://facebook.github.io/react/docs/test-utils.html"} Test Utilities
+  %section
+    %h1 I18n with rails
+    %p 
+      We can use the gem
+      %a{:href => "https://github.com/fnando/i18n-js"} i18n-js
+    %p And integrate in our component like this, it load the translation from the server side
+    %pre
+      %code.yaml
+        :preserve
+          # config/locales/en.yml
+          en:
+            hello: Hello World
+    %pre
+      %code.jsx
+        :preserve
+          render: function() {
+            return (
+                <div>
+                  {I18n.t('hello')}
+                </div>
+            );
+          }
+  %section
+    %h1 I18n with react
+    %p
+      Yahoo provide an ad-don to handle internationalization
+      %a{:href => "https://github.com/yahoo/react-intl"} react-intl
+      other option is 
+      %a{:href => "https://github.com/fnando/i18n-js"} i18n-js
+%section
+  %section
+    %h1 Json server side
+    %h4 How to handle Json serialization?
 
+    %p There is many solution out there but I will pick the one used by the rails community
+  %section
+    %h1 Jbuilder
+    %h4 API
+    %p Single record
+    %pre
+      %code.ruby
+        :preserve
+          json.set! :author do
+            json.set! :name, 'David'
+          end
+
+          # => "author": { "name": "David" }
+    %p Array
+    %pre
+      %code.ruby
+        :preserve
+          # @people = People.all
+
+          json.array! @people, :id, :name
+
+          # => [ { "id": 1, "name": "David" }, { "id": 2, "name": "Jamie" } ]
+  %section
+    %p Nested in the class
+    %pre
+      %code.ruby
+        :preserve
+          class Person
+            # ... Class Definition ... #
+            def to_builder
+              Jbuilder.new do |person|
+                person.(self, :name, :age)
+              end
+            end
+          end
+
+          class Company
+            # ... Class Definition ... #
+            def to_builder
+              Jbuilder.new do |company|
+                company.name name
+                company.president president.to_builder
+              end
+            end
+          end
+
+          company = Company.new('Doodle Corp', Person.new('John Stobs', 58))
+          company.to_builder.target!
+          # => {"name":"Doodle Corp","president":{"name":"John Stobs","age":58}}
+  %section
+    %p In a view:
+    %pre
+      %code.ruby
+        :preserve
+          # app/views/message/show.json.jbuilder
+          json.content format_content(@message.content)
+          json.(@message, :created_at)
+
+          json.author do
+            json.name @message.creator.name.familiar
+            json.email_address @message.creator.email_address
+          end
+    %p Result: 
+    %pre
+      %code.json
+        :preserve
+          {
+            "content": "<p>This is <i>serious</i> monkey business</p>",
+            "created_at": "2011-10-29T20:45:28-05:00",
+
+            "author": {
+              "name": "David H.",
+              "email_address": "david@n.com"
+            }
+          }
+  %section
+    %h1 Jbuilder
+    %h4 Good point
+    %ul
+      %li Really flexible
+      %li handle nested object
+      %li Supported by rails
+      %li Can be implemented in a model
+      %li Same controller can handle different format easily
 %section
   %h1 Sources
   %ul
