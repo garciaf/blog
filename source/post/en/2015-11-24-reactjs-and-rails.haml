@@ -279,12 +279,67 @@ cover: reactjs.png
       %a{:href => "https://github.com/yahoo/react-intl"} react-intl
       other option is 
       %a{:href => "https://github.com/fnando/i18n-js"} i18n-js
+
+%section
+  %h1 Json server side
+  %h4 How to handle Json serialization?
+
+  %p There is many solution out there but I will talk about two of them
 %section
   %section
-    %h1 Json server side
-    %h4 How to handle Json serialization?
+    %h1 active model serializers
+    %h4 Api
+    %pre
+      %code.ruby
+        :preserve
+          class IosAppSerializer < ActiveModel::Serializer
 
-    %p There is many solution out there but I will pick the one used by the rails community
+            include Rails.application.routes.url_helpers
+
+            attributes :id, :name, :app_url
+            
+            def app_url
+              ios_app_path(object)
+            end
+
+          end
+  %section
+    %h2 Controller
+    %pre
+      %code.ruby
+        :preserve
+          class IosAppsController < ApplicationController
+            def index
+              @ios_apps = IosApp.all
+              respond_to do |format|
+                format.json {render json: @ios_apps }
+              end
+            end
+          end
+  %section
+    %h2 Helper
+    %pre
+      %code.ruby
+        :preserve
+          module ApplicationHelper
+            def json_for(target)
+              ActiveModel::SerializableResource.new(target).serializable_hash
+            end
+          end
+    %h2 View
+    %pre
+      %code.haml
+        :preserve
+          = json_for(@ios_apps)
+    %p Easy right?
+  %section
+    %h1 active model serializers
+    %h4 Good point
+    %ul
+      %li Definition outside the model
+      %li Can be used everywhere in the application
+      %li Simple syntax
+%section
   %section
     %h1 Jbuilder
     %h4 API
@@ -369,9 +424,12 @@ cover: reactjs.png
       %li Can be implemented in a model
       %li Same controller can handle different format easily
 %section
+  %h1 Building a application
+  %h2 Client side 
+%section
   %section
-    %h1 Code Structure
-    %h3 Backbone react project example
+    %h1 Backbone react component
+    %p We will use just react, backbone and backbone-react-component to glue them together
   %section
     %h2 Overview
     %img{:src => image_path("2015-11-24-reactjs-and-rails/code-structure.png"), :alt => ""}/
@@ -421,13 +479,139 @@ cover: reactjs.png
           #= require_tree './components'
 
   %section
-    %h2 Component
+    %h2 Component server side
     %p <strong>react-rails</strong> will mount automatically the component with the script <strong>react-ujs</strong> and if we use the build in helpert
     %pre
       %code.erb
         :preserve
           <%# app/views/records/index.html.erb %>
           <%= react_component 'Blog', { data: @posts } %>
+  %section
+    %h2 Component client side
+    %h3 IosAppBox
+    %pre
+      %code.coffeescript
+        :preserve
+          @IosAppBox = React.createClass
+            mixins: [Backbone.React.Component.mixin]
+            componentWillMount: ->
+              iosApps = new ResignOps.Collections.IosApps
+              iosApps.reset(@props.ios_apps)
+              @onCollection @, iosApps
+            componentWillUnmount: -> 
+              @off(@)
+            render: ->
+              `<IosAppList> </IosAppList>`
+  %section
+    %h2 Component client side
+    %h3 IosAppList
+    %pre
+      %code.coffescript
+        :preserve
+          @IosAppList = React.createClass
+            mixins: [Backbone.React.Component.mixin]
+
+            render: ->
+              IosAppNodes = @getCollection().map((iosApp) ->
+                `<IosAppRow model={iosApp} key={iosApp.cid} />`
+              )
+              `<tbody>
+                {IosAppNodes}
+              </tbody>`
+  %section
+    %h2 result
+    %img{:src => image_path("2015-11-24-reactjs-and-rails/app-one-list.png"), :alt => ""}/
+  %section
+    %h1 But 
+    %h2 what happen if we want to display this collection in several place?
+  %section
+    %h2 Like here
+    %img{:src => image_path("2015-11-24-reactjs-and-rails/app-two-list.png"), :alt => ""}/
+  %section
+    %h2 You are screwed!
+    %img{:src => image_path("2015-11-24-reactjs-and-rails/grumpy-cat.jpg"), :alt => ""}/
+  %section
+    %h1 Let's look for an other solution
+%section
+  %section
+    %h1 Backbone react flux dispatcher
+    %p React, backbone, flux, dispatcher and there friends join the party
+  %section
+    %h2 Overview
+    %img{:src => image_path("2015-11-24-reactjs-and-rails/architecture-flux.png"), :alt => ""}/
+  %section
+    %h1 The dispatcher
+    %pre
+      %code.coffeescript
+        :preserve
+          @IosAppDispatcher = new (Flux.Dispatcher)
+    %p Open question: Do we need more than one dispatcher?
+  %section
+    %h2 Store
+    %pre
+      %code.coffeescript
+        :preserve
+          IosApp = Backbone.Model.extend
+            urlRoot: '/ios_apps/'
+
+          IosAppCollection = Backbone.Collection.extend
+            model: IosApp
+            url: '/ios_apps'
+            initialize: ->
+              @dispatchToken = window.IosAppDispatcher.register (payload) =>
+                switch payload.actionType
+                  when "ios_app-delete"
+                    @get(payload.ios_app).destroy()
+                  when "ios_app-add"
+                    @add(payload.ios_app, {merge: true, sort: true})
+
+          @IosAppStore = new IosAppCollection()
+    %p A store is just an instance of a collection or model
+  %section
+    %h2 Component
+    %pre
+      %code.coffeescript
+        :preserve
+          IosAppStore = @IosAppStore
+          @IosAppThumbs = React.createClass
+            getInitialState: ->
+              {
+                IosAppStore: IosAppStore
+              }
+            componentDidMount: ->
+              @state.IosAppStore.on "all", =>
+                @forceUpdate()
+              , @
+            render: ->
+              IosAppNodes = @state.IosAppStore.map((iosApp) ->
+                `<div key={iosApp.cid}> 
+                    <a href={iosApp.get("app_url")} className="thumbnail">
+                    <img src={iosApp.get("standard_app_icon")}/>
+                  </a>
+                </div>`
+              )
+              `{IosAppNodes}`
+  %section
+    %h2 Triger action from the component
+    %pre
+      %code.coffeescript
+        :preserve
+          IosAppDispatcher = @IosAppDispatcher
+
+          @IosAppRow = React.createClass
+            destroy: (e) ->
+              e.preventDefault()
+              IosAppDispatcher.dispatch
+                actionType: 'ios_app-delete'
+                ios_app: @props.iosApp
+  %section
+    %h2 result
+    %img{:src => image_path("2015-11-24-reactjs-and-rails/app-two-list-flux.gif"), :alt => ""}/
+  %section
+    %h2 Booth list are sync because they share the same store
+  %section
+    %h1 Happy?
+    %img{:src => image_path("2015-11-24-reactjs-and-rails/happy-grumpy-cat.png"), :alt => ""}/
 %section
   %h1 Sources
   %ul
