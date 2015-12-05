@@ -287,60 +287,6 @@ cover: reactjs.png
   %p There is many solution out there but I will talk about two of them
 %section
   %section
-    %h1 active model serializers
-    %h4 Api
-    %pre
-      %code.ruby
-        :preserve
-          class IosAppSerializer < ActiveModel::Serializer
-
-            include Rails.application.routes.url_helpers
-
-            attributes :id, :name, :app_url
-            
-            def app_url
-              ios_app_path(object)
-            end
-
-          end
-  %section
-    %h2 Controller
-    %pre
-      %code.ruby
-        :preserve
-          class IosAppsController < ApplicationController
-            def index
-              @ios_apps = IosApp.all
-              respond_to do |format|
-                format.json {render json: @ios_apps }
-              end
-            end
-          end
-  %section
-    %h2 Helper
-    %pre
-      %code.ruby
-        :preserve
-          module ApplicationHelper
-            def json_for(target)
-              ActiveModel::SerializableResource.new(target).serializable_hash
-            end
-          end
-    %h2 View
-    %pre
-      %code.haml
-        :preserve
-          = json_for(@ios_apps)
-    %p Easy right?
-  %section
-    %h1 active model serializers
-    %h4 Good point
-    %ul
-      %li Definition outside the model
-      %li Can be used everywhere in the application
-      %li Simple syntax
-%section
-  %section
     %h1 Jbuilder
     %h4 API
     %p Single record
@@ -416,13 +362,76 @@ cover: reactjs.png
           }
   %section
     %h1 Jbuilder
-    %h4 Good point
+    %h4 Benefit
     %ul
       %li Really flexible
       %li handle nested object
       %li Supported by rails
       %li Can be implemented in a model
       %li Same controller can handle different format easily
+  %section
+    %h1 Jbuilder
+    %h4 Drawback
+    %ul
+      %li Hard to keep things DRY
+      %li Api not so intuitive
+      %li Hard to use in a view
+  %section
+    %h1 So what else?
+%section
+  %section
+    %h1 active model serializers
+    %h4 Api
+    %pre
+      %code.ruby
+        :preserve
+          class IosAppSerializer < ActiveModel::Serializer
+
+            include Rails.application.routes.url_helpers
+
+            attributes :id, :name, :app_url
+            
+            def app_url
+              ios_app_path(object)
+            end
+
+          end
+  %section
+    %h2 Controller
+    %pre
+      %code.ruby
+        :preserve
+          class IosAppsController < ApplicationController
+            def index
+              @ios_apps = IosApp.all
+              respond_to do |format|
+                format.json {render json: @ios_apps }
+              end
+            end
+          end
+  %section
+    %h2 Helper
+    %pre
+      %code.ruby
+        :preserve
+          module ApplicationHelper
+            def json_for(target)
+              ActiveModel::SerializableResource.new(target).serializable_hash
+            end
+          end
+    %h2 View
+    %pre
+      %code.haml
+        :preserve
+          = json_for(@ios_apps)
+    %p Easy right?
+  %section
+    %h1 active model serializers
+    %h4 Good point
+    %ul
+      %li Definition outside the model
+      %li Can be used everywhere in the application
+      %li Simple syntax
 %section
   %h1 Building a application
   %h2 Client side 
@@ -606,12 +615,24 @@ cover: reactjs.png
                 ios_app: @props.iosApp
   %section
     %h2 result
+    %h4 Creating
+    %img{:src => image_path("2015-11-24-reactjs-and-rails/app-two-list-flux-create.gif"), :alt => ""}/
+  %section
+    %h2 result
+    %h4 Destroying
     %img{:src => image_path("2015-11-24-reactjs-and-rails/app-two-list-flux.gif"), :alt => ""}/
   %section
     %h2 Booth list are sync because they share the same store
   %section
     %h1 Happy?
     %img{:src => image_path("2015-11-24-reactjs-and-rails/happy-grumpy-cat.png"), :alt => ""}/
+  %section
+    %h1 Not completely
+    %h2 Still few open questions
+    %ul
+      %li Where or who should populate the store?
+      %li When using a prop and when a state?
+      %li John snow is really dead? I mean forever dead?
 %section
   %h1 Sources
   %ul
