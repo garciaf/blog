@@ -553,7 +553,7 @@ cover: reactjs.png
     %pre
       %code.coffeescript
         :preserve
-          @IosAppDispatcher = new (Flux.Dispatcher)
+          @IosAppDispatcher = new Flux.Dispatcher()
     %p Open question: Do we need more than one dispatcher?
   %section
     %h2 Store
