@@ -8,6 +8,8 @@ published: true
 lang: fr
 cover: fight.jpg
 tags: opinion
+translations: 
+  en: /en/post/2015/12/24/if-you-can-code-you-can-fight/
 ---
 
 Aujourd'hui je vais tenter un grand écart comme celui de [Jean-Claude](http://youtu.be/M7FIvfx5J10) et il est particulièrement périlleux.
