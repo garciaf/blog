@@ -4,7 +4,6 @@ date: 2015-09-07 09:51 UTC
 tags: opinion, php, javascript, ruby
 lang: en
 cover: ex-girl-friends.jpg
-published: true
 translations:
   fr: /post/2013/08/24/quel_techno_utiliser_aujourd'hui/
 ---
