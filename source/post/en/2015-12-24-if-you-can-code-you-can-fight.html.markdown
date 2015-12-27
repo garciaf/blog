@@ -28,23 +28,33 @@ You are curious about every tools and you'll use the one you need at the time yo
 
 ## Hacking is in you DNA
 
-To design/extend/fix software you need to be able to see the system in every angle possible. You think how to use the systems you have to perform the job you need to do even if it was never design for it. 
-In fight sport the system to hack is human body, yours and the one of your opponent.
-You'll first try to hack your own body and see how removing some fat or improving nutrition could have effect on your strength speed or agility. 
+To design/extend/fix software you need to be able to see the system in every angle possible.
+Everything is a system, and you can see every angle in order to perform your goal. Even if the system had never been designed for it.
+In fight sport the system to hack is the human body, yours and the one of your opponent.
+You'll first try to hack your own body and see how removing some fat or improving nutrition could have effect on your strength, speed or agility. 
 Then in a fight you need to perform the right combination to "shut down" the opponent.
-And the more you search, the more ways you'll find it: "If I hit the chin, If I hit the liver, If I choke him out he'll pass out ..." 
+And the more you search, the more "hacks" you'll find:
+ - Hit the chin
+ - Hit the liver
+ - Choke him out
+ - Break the arm
+ - Break the legs
+
 You'll see fast that human body it's just a system like any other ...
 
 ## You have discipline
 
 If you are good developer, you follow convention, you are consistent and this quality will help you learning martial arts.
-Because let's be honest you will not learn fancy staff that you saw in Kung Fu movies. Most likely if you start boxing, you'll spends weeks learning how to throw a jab.
-You will repeat again and again the same move till you can do it without thinking about this. 
-And to could go through this kind of journey, the discipline you've learned with the code will help you a lot to improve really fast. 
+Because let's be honest, in a real gym, you will not learn fancy staff that you saw in Kung Fu movies. 
+Most likely if you start boxing, you'll spends weeks learning how to throw a jab. 
+If you start BJJ you will learn how to pass the guard.
+If you do wrestling you will learn how to do a single leg ...
+You will repeat again and again the same moves till you can do it without thinking about this. 
+And to could go through this kind of journey, the discipline you've learned while coding will help you a lot ... 
 
 ## Keep it simple
 
-The same way you like to write simple code, fighting sport works the same way.
+The same way you like to write simple code, fight like simple moves.
 If you do simple technique you have more chance to win over opponent because you have less chance to do mistakes.
 
 ## If you are in good shape, what is your excuse?
@@ -53,5 +63,3 @@ So if you are not training martial art what prevent you from doing so?
 What other cross skill you could see? 
 
 ![Meme](2015-12-24-if-you-can-code-you-can-fight/meme.jpg)
-
-
