@@ -34,6 +34,7 @@ In fight sport the system to hack is the human body, yours and the one of your o
 You'll first try to hack your own body and see how removing some fat or improving nutrition could have effect on your strength, speed or agility. 
 Then in a fight you need to perform the right combination to "shut down" the opponent.
 And the more you search, the more "hacks" you'll find:
+ 
  - Hit the chin
  - Hit the liver
  - Choke him out
