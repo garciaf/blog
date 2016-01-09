@@ -1,5 +1,5 @@
 ---
-title: side effect of unit testing
+title: Side effect of unit testing
 date: 2016-01-09 16:08 UTC
 tags: opinion, testing
 lang: en
