@@ -1,7 +1,7 @@
 ---
-pageable: true
-blog: en
+pageable: false
 cover: cloud.jpg
+lang: en
 ---
 
 %header.main-header{cover}
@@ -22,4 +22,4 @@ cover: cloud.jpg
 
 %main#content.content{role: :main}
   = partial(:page_articles,
-            locals: { page_articles: page_articles, paginate: paginate, blog: 'en' })
+            locals: { page_articles: blog.local_articles, paginate: paginate })

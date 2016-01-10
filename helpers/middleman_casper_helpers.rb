@@ -113,13 +113,7 @@ module MiddlemanCasperHelpers
   end
 
   def localized_path(path, language=nil)
-    language ||= I18n.locale
-
-    if language.to_s == I18n.default_locale.to_s
-      path = "/#{path}"
-    else
-      path = "/#{language}/#{path}";
-    end
+    path = "/#{path}"
   end
 
 
@@ -135,20 +129,11 @@ module MiddlemanCasperHelpers
   end
 
   def feed_path
-    if I18n.locale == I18n.default_locale
-      "/feed.xml"
-    else
-      "/#{I18n.locale}/feed.xml"
-    end
+    "/feed.xml"
   end
 
   def home_path(language=nil)
-    language ||= I18n.locale
-    if language.to_s == I18n.default_locale.to_s
-      "/"
-    else
-      "/#{language}/"
-    end
+    "/"
   end
   
   def author_path

@@ -21,7 +21,9 @@
       - if tags?(article)
         on #{tags(article)}
       %time.post-date{datetime: article.date.strftime('%Y-%m-%d')}
-        = article.date.strftime(blog_settings.date_format)
+        = link_to article.date.strftime('%d'), blog_day_path(article.date.year, article.date.month, article.date.day)
+        = link_to article.date.strftime(' %B'), blog_month_path(article.date.year, article.date.month)
+        = link_to article.date.strftime(' %Y'), blog_year_path(article.date.year)
       = partial(:translation, locals: { current_article: article })
 
 = partial(:pagination) if paginate

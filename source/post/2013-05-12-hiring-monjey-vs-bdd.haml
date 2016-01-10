@@ -1,0 +1,257 @@
+---
+layout: presentation
+title:  "Hire a monkey vs BDD"
+subtitle: "Should you hire a monkey or start to use TDD?"
+date:   2013-05-12 22:15:46 UTC
+theme: beige
+lang: en
+tags: ruby, testing, en
+cover: monkey-on-a-computer.jpg
+---
+
+%section
+  %h2 The testing, The monkey & the BDD*
+  %h4 * Behavior-driven development
+  %p
+    %small
+      Created by
+      %a{:href => "http://fabbook.fr/fabien-garcia/about"} Fabien Garcia
+  %a.image{:href => "#/2"}
+    %img{:height => "238", :src => image_path("monkey-on-a-computer.jpg")}
+%section
+  %section
+    %h1 How to be sure that your web app is working?
+  %section
+    %h1 You can trust developpers
+  %section
+    %h1 You test it!
+    %ol
+      %li You open a browser
+      %li Visit the url of your application
+      %li Fill in a form
+      %li Check if the page should have the right content
+  %section
+    %h2 And you do it for every single change, and you check for every single page, for every case
+  %section{"data-state" => "soothe"}
+    %h1 Advantages
+    %ul
+      %li You will become really good using your application
+  %section{"data-state" => "alert"}
+    %h1 Drawbacks
+    %ul
+      %li Time consuming
+      %li Do not add value to the product
+      %li Do not let you focus on the user experience
+      %li Stupid task
+  %section
+    %h1 A better solution?
+%section
+  %section
+    %h1 Why not hire a monkey?
+    %img{:height => "250px", :src => image_path("face-monkey.svg")}
+  %section{"data-state" => "soothe"}
+    %h1 Advantages
+    %ul
+      %li You pay him with banana
+      %li It will do any stupid task
+      %li It's cute
+      %li It could repeat action as long as you give bananas
+  %section{"data-state" => "alert"}
+    %h1 Drawbacks
+    %ul
+      %li It's a monkey ;-)
+      %li Training time
+      %li It could be loud
+      %li The office is not suitable
+  %section
+    %h1 So let's find a better solution...
+%section
+  %section
+    %h1 Let's hire a robot!
+    %img{:src => image_path("bender.png")}
+  %section{"data-state" => "soothe"}
+    %h1 Advantages
+    %ul
+      %li You do not pay him
+      %li It will do any stupid task
+      %li It can test every part of your application, not just the interface
+      %li It could repeat action as long as you want
+      %li it's a computer
+  %section{"data-state" => "alert"}
+    %h1 Drawbacks
+    %ul
+      %li Not cute like a monkey
+      %li Need to program this robot
+  %section
+    %h1 How we programm this robot?
+%section
+  %h1 BDD*
+  %h2 * Behavior-driven development
+  %h3 Let see the frameworks to program our robot
+/ Example of nested vertical slides
+%section
+  %section
+    %h1 Cucumber
+  %section
+    %blockquote
+      It's a hight level framework testing
+    %p
+      %a{:href => "http://cukes.info/"} See more here
+  %section
+    %h1 Let's see
+    %pre
+      %code.ruby
+        :preserve
+      
+          Feature: Search
+            In order to learn more
+            As an information seeker
+            I want to find more information
+
+            Scenario: Find what I'm looking for
+              Given I am on the search page
+              And I have posts titled article top, other staff
+              When I search for "article top"
+              Then I should see
+                """
+                article top
+                """
+  %section{"data-state" => "alert"}
+    %h1 Under the hood!
+    %h2 You also need to define specific words
+    %pre
+      %code.ruby
+        :preserve
+
+          Given 'I am on the search page' do
+            @browser.goto '/search'
+          end
+
+          When /I search for "(.*)"/ do |query|
+            @browser.text_field(:name, 'q').set(query)
+            @browser.button(:name, 'btnG').click
+          end
+
+          Then /I should see/ do |text\
+            @browser.text.should =~ /\#{text}/m
+          end
+
+  %section{"data-state" => "soothe"}
+    %h1 Advantages
+    %ul
+      %li The syntax is really similar to a real User-story
+      %li Framework force to write straightforward user stories
+      %li High level testing
+  %section{"data-state" => "alert"}
+    %h1 Drawbacks
+    %ul
+      %li Need to learn the syntax
+      %li Syntax has no link with ruby
+      %li You need extra work to define specific task
+%section
+  %section
+    %h1 Rspec with sugar*
+    %h3 * Capybara, Selenium-webdriver, Factory_girl_rails, ...
+  %section
+    %blockquote
+      Framework for testing developer friendly and easy to read.
+  %section
+    %h1 Let's see
+    %pre
+      %code.ruby
+        :preserve
+
+          describe "Search /blog" do
+            it "should be able to search into the blog database" do
+              post = FactoryGirl.create(:post)
+              post2 = FactoryGirl.create(:post, title: 'other staff' )
+              visit home_path
+              fill_in 'search', :with => 'article top'
+              click_on 'Search'
+              page.should have_content("article top")
+            end
+          end
+          
+  %section{"data-state" => "soothe"}
+    %h1 Advantages
+    %ul
+      %li Really flexible allow hight level testing and unit test
+      %li With the sugar test case are easy to read for non developer
+      %li Close to the ruby
+      %li When it's written nothing to add
+      %li Could be integrate with Selenium
+  %section{"data-state" => "alert"}
+    %h1 Drawbacks
+    %ul
+      %li Need to understand Ruby
+%section
+  %section
+    %h2 How we know when test are passing?
+    %img{:height => "238", :src => image_path("checkmark.svg")}
+  %section
+    %h1 You can trust your developpers
+  %section
+    %h1 You use a building tool
+    %p It will give you a nice interface to build your project and see test result
+    %p (without knowing anything about development)
+  %section
+    %h1 Jenkins
+    %p
+      %a{:href => "http://jenkins-ci.org/"} See more
+    %p One of the most famous, using Java to run on a server
+    %ul
+      %li.good Really powerful :-)
+      %li.good Any language
+      %li.bad Really complexe to setup :-(
+  %section
+    %h1 Travis
+    %p
+      %a{:href => "http://travis-ci.org"} See more
+    %p Really powerfull solution for open source project
+    %ul
+      %li.good Really powerfull
+      %li.good Any language
+      %li.good Really easy to setup for opensource project
+      %li.bad Really expensif/complex to setup for private project
+  %section
+    %h1 Integrity
+    %p
+      %a{:href => "http://integrity.github.io/"} See more
+    %p Build tool made with ruby on rails
+    %ul
+      %li.good Really simple to use
+      %li.good Simple to setup and install
+      %li.good Works for any project
+      %li.good Any language
+      %li.bad Too simple
+%section 
+  %h1 Conclusion
+  %h2 Choose one but you have to test ! *
+  %p * except maybe for a <b>small</b> project 1 or 2 days long and with a <b>really</b> short life span and witch will <b>never</b> change !
+%section
+  %h1 To go further
+  %ul
+    %li 
+      %a{:href => "http://railscasts.com/episodes/155-beginning-with-cucumber"} Railscast about cucumber
+    %li 
+      %a{:href => "http://railscasts.com/episodes/275-how-i-test"} Railscast about Rspec with sugar
+    %li
+      %a{:href => "http://cukes.info/"} Official cucumber web site
+    %li
+      %a{:href => "https://github.com/rspec/rspec-rails"} RSpec for rails
+    %li
+      %a{:href => "http://jnicklas.github.io/capybara/"} Capybara
+    %li
+      %a{:href => "https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md"} Getting startted with factory_girl
+    %li 
+      %a{:href => "http://www.confreaks.com/videos/2433-railsconf2013-bdd-and-acceptance-testing-with-rspec-capybara"} Video about BDD
+%section
+  %h2 Smart quotation
+  %blockquote
+    We've heard that a million monkeys at a million keyboards could produce the complete works of Shakespeare; now, thanks to the Internet, we know that is not true
+  %p.source Robert Wilensky
+%section
+  %h1 Question?
+%section
+  %h1 THE END
+  %h3 BY Fabien Garcia

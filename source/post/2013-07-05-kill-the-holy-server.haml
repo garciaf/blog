@@ -1,0 +1,100 @@
+---
+layout: presentation
+title:  Kill the holy server
+subtitle:  Or how to build a server on demand
+date:   2013-07-05 12:40:46
+categories: slide
+theme: moon
+tags: en
+lang: en
+cover: holly.jpg
+published: true
+---
+
+%section
+  %h1 Kill the holy server
+  %h3 Or how to build a server on demand
+  %p
+    %small
+      Created by
+      %a{:href => "http://fabbook.fr"} Fabien Garcia
+  %a.image{:href => "#/1"}
+    %img{:height => "238", :src => image_path('holly.jpg') }}/
+%section
+  %section
+    %h1 How you build a server?
+  %section
+    %h2 You install each package
+    %code.bash
+      sudo apt-get install mysql php5
+    %h2 And you do it each time you need a server
+  %section
+    %h1 Who get knowledge of how to configure your server?
+  %section
+    %h1 The sysadmin know's
+    %h2 so
+    %h1 sysadmin = God
+  %section
+    %h2 How you create a server?
+    %h1 You wait ...
+  %section
+    %h2 Your server get destroyed
+    %h1 You are screwed
+  %section
+    %h2 The sysadmin disapear because of alien
+    %h1 You are screwed
+  %section
+    %h1 So how we change it?
+%section
+  %section
+    %h1 Why not hire a monkey?
+    %img{:height => "250px", :src => image_path("face-monkey.svg")}
+  %section{"data-state" => "alert"}
+    %h1 There is no monkey with sysadmin skill!
+    %h2 Let's be realistic for god seak!
+%section
+  %section
+    %h1 Let's hire a robot!
+    %img{:src => image_path("bender.png")}
+  %section
+    %h1 Chef
+    %h2 You can program the provisioning of any server
+    %a.image{:href => "http://www.opscode.com/chef/"}
+      %img{:height => "238", :src => image_path("chef.png")}
+  %section{"data-state" => "soothe"}
+    %h1 Advantages
+    %ul
+      %li Your architecture is documented
+      %li You can create a server on demand
+      %li You can scale
+      %li No island knowledge
+      %li You can use short-cuts to configure server
+  %section{"data-state" => "alert"}
+    %h1 Drawbacks
+    %ul
+      %li You have to learn
+  %section
+    %h1 Vocabulary
+    %ul
+      %li Node = Server
+      %li Recipe = Action to perform
+      %li Cookbook = Folder of recipes
+      %li Role = Set of action to perform
+
+%section
+  %section
+    %h1 How to train ?
+  %section
+    %h1 Vagrant
+    %a.image{:href => "http://www.vagrantup.com"}
+      %img{:height => "238", :src => image_path("vagrant.png")}
+  %section
+    %h1 How it works ?
+    %p 
+      It will allow you to create a sandbox and have a server 
+    %a{:href => "http://www.vagrantup.com/"}
+      RTFM
+%section
+  %h1 Conclusion
+  %h3
+    Let's kill the configuration that nobody know

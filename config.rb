@@ -5,50 +5,24 @@
 # Time.zone = "UTC"
 activate :i18n, :mount_at_root => :fr
 activate :middleman_simple_thumbnailer
-activate :blog do |blog|
-  # This will add a prefix to all links, template references and source paths
-  blog.name = "en"
-
-  blog.permalink = "en/post/{year}/{month}/{day}/{title}.html"
-  # Matcher for blog source files
-  blog.sources = "post/en/{year}-{month}-{day}-{title}.html"
-  blog.taglink = "tag/{tag}.html"
-  blog.layout = "post"
-  blog.summary_separator = /READMORE/
-  blog.taglink = "en/tag/{tag}.html"
-  
-  # blog.summary_length = 250
-  blog.year_link = "{year}.html"
-  blog.month_link = "{year}/{month}.html"
-  blog.day_link = "{year}/{month}/{day}.html"
-  # blog.default_extension = ".markdown"
-
-  blog.tag_template = "tag_en.html"
-  # blog.calendar_template = "calendar.html"
-
-  # Enable pagination
-  blog.paginate = true
-  blog.per_page = 10
-  blog.page_link = "page/{num}"
-end
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
-  blog.name = "fr"
-  blog.permalink = "post/{year}/{month}/{day}/{title}.html"
+  blog.name = "fabbook"
+  blog.permalink = "post/{lang}/{year}/{month}/{day}/{title}.html"
   # Matcher for blog source files
-  blog.sources = "post/fr/{year}-{month}-{day}-{title}.html"
+  blog.sources = "post/{year}-{month}-{day}-{title}.html"
   blog.layout = "post"
   blog.summary_separator = /READMORE/
   blog.taglink = "tag/{tag}.html"
   # blog.summary_length = 250
-  # blog.year_link = "{year}.html"
-  # blog.month_link = "{year}/{month}.html"
-  # blog.day_link = "{year}/{month}/{day}.html"
+  blog.year_link = "post/{year}.html"
+  blog.month_link = "post/{year}/{month}.html"
+  blog.day_link = "post/{year}/{month}/{day}.html"
   # blog.default_extension = ".markdown"
 
-  blog.tag_template = "tag_fr.html"
-  # blog.calendar_template = "calendar.html"
+  blog.tag_template = "tag.html"
+  blog.calendar_template = "calendar.html"
 
   # Enable pagination
   blog.paginate = true
@@ -73,10 +47,9 @@ set :casper, {
     twitter: 'https://twitter.com/FabbookFr'
   },
   navigation: {
-    "The french cook" => "http://the-french-cook.com",
-    "Fabphoto" => "http://fabphoto.fr",
-    "Fabfight" => "http://fabfight.com"
-
+    "Home" => "/",
+    "English" => "/en/",
+    "Français" => "/fr/"
   }
 }
 
@@ -84,8 +57,6 @@ set :casper, {
 page '/sitemap.xml', layout: false
 
 ignore '/partials/*'
-ignore '/tag_en.html.haml'
-ignore '/tag_fr.html.haml'
 
 
 ready do
