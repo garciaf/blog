@@ -6,7 +6,7 @@ cover: love-hate.jpg
 lang: fr
 alias: post/2015/09/04/ma-relation-avec-les-tests-automatises/
 translations: 
-  en: /en/post/2015/08/22/testing-and-i/
+  en: /post/en/2015/08/22/testing-and-i/
 ---
 
 Pendant toutes ces années à écrire du code j'ai vécu une curieuse relation avec les tests automatisés. Je les ai aimé et detesté. 

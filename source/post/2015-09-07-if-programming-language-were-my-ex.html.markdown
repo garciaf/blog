@@ -5,7 +5,7 @@ tags: opinion, php, javascript, ruby, en
 lang: en
 cover: ex-girl-friends.jpg
 translations:
-  fr: /fr/post/2013/08/24/quel_techno_utiliser_aujourd'hui/
+  fr: /post/fr/2013/08/24/quel_techno_utiliser_aujourd'hui/
 ---
 
 How love life of a developer looks like when it come to programming language?
