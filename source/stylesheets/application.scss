@@ -17,8 +17,22 @@ pre.highlight {
   padding: 90px 9% 5%;
 }
 
-
+.page-description{
+  a {
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #000000;
+  }
+}
 .page-title{
+    margin: 10px 0 10px 0;
+    font-size: 5rem;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #000000;
   a{
     margin: 10px 0 10px 0;
     font-size: 5rem;
