@@ -39,7 +39,7 @@ Even if she have the best company interest, it will also hard for her to give yo
 some commitment to her investor, and maybe she will be in the position to force a release even if she does not like your product. 
 She is in a tough spot too. 
 
-# So don't release before some pro did
+# So don't release before some pro test it
 Your business is really important maybe it would be time to hire a QA or if you do not have the time or the resource, why don't use crowd tester?
 
 They will give to you the most honest feedback because they get paid for it, and they won't be afraid to hurt your feeling but most important they will tell you everything which can goes wrong before your next 
