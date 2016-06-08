@@ -25,7 +25,7 @@ Not your best choice.
 
 ## The nice one
 ![jared](2016-06-08-richard-do-not-trust-your-friends/jared.jpg "The nice friend")
-Some of your friends are nice, and that's good, but if you look for honest, it's the best choice.
+Some of your friends are nice, and that's good, but if you look for honest feedback, it's not the best choice.
 He will try to spare your feeling, and because he knows how much effort you put in your product he will only tell you good things.
 
 ## Your developer
