@@ -4,7 +4,7 @@ title: Richard, do not trust your friends
 date: 2016-06-08 12:06 UTC
 tags: opinion, test
 cover: silicon-valley.jpg
-published: false
+published: true
 ---
 
 Richard Hendricks, was about to release the last version of Pied Piper in the last show. 
