@@ -9,7 +9,7 @@ published: true
 
 Richard Hendricks, was about to release the last version of Pied Piper in the last show. 
 He ask his friends to have a look to the Beta, and give him feedback. 
-Richard if you are reading this, do not release before you read this article ...
+Richard if you are reading this, do not release before you read this ...
 
 READMORE
 
@@ -40,9 +40,9 @@ some commitment to her investor, and maybe she will be in the position to force 
 She is in a tough spot too. 
 
 # So don't release before some pro test it
-Your business is really important maybe it would be time to hire a QA or if you do not have the time or the resource, why don't use crowd tester?
+Your business is really important maybe it would be time to hire a QA or if you do not have the time or the resource, why don't use [crowd tester?](https://test.io)
 
-They will give to you the most honest feedback because they get paid for it, and they won't be afraid to hurt your feeling but most important they will tell you everything which can goes wrong before your next 
+They will give to you the most honest feedback because they get paid for it, and they won't be afraid to hurt your feeling either. Most important they will tell you everything which can goes wrong before your next customer. 
 ![crowd](2016-06-08-richard-do-not-trust-your-friends/crowd.png "the crowd")
 
 So please Richard take my advice, just make one round with some pro, because I really want to see Pied Piper succeed for once.
