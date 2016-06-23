@@ -29,9 +29,20 @@ He does his best, but he’s seen your application 100 times, so he knows it by 
 ![monica](2016-06-08-richard-do-not-trust-your-friends/monica.jpg "Your boss")
 Even if she has the best interests of the company in mind, it will also be hard for her to give you honest feedback. She might have a deadline, some commitments to her investors or she may be in the position to force a release even if she doesn’t like your product. She is in a tough spot too.
 
+## Other developers
+![moss](2016-06-08-richard-do-not-trust-your-friends/moss.jpg "Other developers")
+If you want to reach a lot of people and you are not targeting a niche. 
+You need feedback from real user, people who do not have the technical background to understand your product out of the box.
+It's a little bit like art, art should be universal and not for a small part of the population who get all the necessary reference to understand art. 
+So does a software, you should not have a computer degree to understand what an application is doing.
+
+So Richard make sure real people will give you feedback otherwise your platform will only please a small fraction of the people (episode season 3 episode 09) and you do not want to hire people to run your platform. 
+
 # This is a job for a pro
 
 If your business is really important, maybe it’s time to hire a QA person. No time or money for that? Why not try [crowd testing?](https://test.io)
+
+![crowd](2016-06-08-richard-do-not-trust-your-friends/crowd.png "Crowd")
 
 Professional testers will give you honest feedback because they get paid for it, and they won’t be afraid to hurt your feelings, either. Most importantly they’ll tell you everything that can go wrong before your next customer does!
 [crowd](2016-06-08-richard-do-not-trust-your-friends/crowd.png "the crowd")
