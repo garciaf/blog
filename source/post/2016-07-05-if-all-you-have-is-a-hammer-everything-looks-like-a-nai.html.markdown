@@ -6,8 +6,8 @@ tags: opinion
 cover: nails.jpg
 ---
 
-A strange thing I start to noticed in the technologies, is that we always tried to fit solution in the tools we know regardless if it fit our need.
-So where did I see that, are you doing this yourself? Let's have a look.
+A strange thing I start to noticed in the technologies, is that we always tried to fit solution with the tools we already know regardless if it fit our need.
+Where did I see that, are you doing this yourself? Let's have a look.
 
 READMORE
 
@@ -29,7 +29,7 @@ So we built from scratch a user management system, same way for data access, and
 
 So guess what? We where six people working on it full time, and we where so slow. On the bright side we could scale but never had the need too. 
 
-Everything was really long to implement, at the end they rebuild the same project with rails and one developer. 
+Everything was really long to implement, at the end they rebuild the same project with rails and one developer (That's what the legend say...). 
 
 Basically we choose a technology to solve problem we would never have.
 It was worthy for my experience but not for professional software.
