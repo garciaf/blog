@@ -16,12 +16,12 @@ READMORE
 How many time I saw people using Wordpress for everything? Too many time, from a static website, to a E-commerce website, and sometime as Blog engine. That's a big split.
 Is it possible that one tool can do everything perfectly?
 I don't think so... However people always will try to fit the problem in a solution they already know.
-But could it be that's the lake of technical insight can lead to this, right?
-Unfortunately no it does not...
+But could it be the lake of technical insight?
+Unfortunately no it is not...
 
 ## For a javascript developer everything looks like non blocking and scaling
 
-I remember once, developing a simple a simple dashboard with node.
+I remember once, developing a simple a simple dashboard with nodejs.
 At first it looked like a good idea: "look how fast is it", "we can scale in no time", "we only code in a single language".
 But when it comes to a dashboard what you really need is user management, templating system and easy access to data. 
 And even if nodejs is a great technology it does not provide easily the core feature that you need for building a simple dashboard.
@@ -41,11 +41,11 @@ Unfortunately no it is not...
 
 ## Medicine too
 
-If you complain about your shoulder and you met a surgeon the odd that open you up would be the solution.
+If you complain about your shoulder and you met a surgeon there is hight chance that open you up would be the solution.
 Would it be right? Only if it fit your problem, and that's all the problem.
 Probably having a second opinion with someone not specialized in opening people for living would be a reasonable decision.
 
-> So let's live in a forest far from every technical decisions
+## So no more technical decisions ...
 
 I would not go so far. 
 
