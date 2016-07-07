@@ -21,7 +21,7 @@ Unfortunately no it is not...
 
 ## For a javascript developer everything looks like non blocking and scaling
 
-I remember once, developing a simple a simple dashboard with nodejs.
+I remember once, developing a simple dashboard with nodejs.
 At first it looked like a good idea: "look how fast is it", "we can scale in no time", "we only code in a single language".
 But when it comes to a dashboard what you really need is user management, templating system and easy access to data. 
 And even if nodejs is a great technology it does not provide easily the core feature that you need for building a simple dashboard.
