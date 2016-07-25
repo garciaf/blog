@@ -1,6 +1,6 @@
 ---
 lang: en
-title: 'Coding like a politicians?'
+title: 'Coding like a politician?'
 date: 2016-07-23 06:53 UTC
 tags: opinion, humour
 cover: trump.jpg
