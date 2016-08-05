@@ -8,6 +8,13 @@ lang: fr
 ##Petit pense bête à l'usage des utilisateurs UNIX avec une mémoire de 256k
 Ayant la mémoire courte je me permet de faire un pense bête de commandes simple et vitale dont je me sert pour mes dev, si au passage cela aide quelqu'un tant mieux :
 
+###Gader l'odrinateur vivant pendant une commande
+Si vous ne souhaitez pas que votre ordinateur se mette en veille pendant une commande: 
+
+```bash
+caffeinate YOUR_COMMAND
+```
+
 ###Créer un pont ssh 
 
 ```bash
