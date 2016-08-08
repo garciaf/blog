@@ -1,4 +1,5 @@
 ---
+lang: en
 title: When should I write comment?
 date: 2016-08-06 08:35 UTC
 tags: opinion, code
