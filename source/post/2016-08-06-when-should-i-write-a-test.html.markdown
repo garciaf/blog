@@ -11,6 +11,8 @@ Coming from industrial engineering curriculum,
 I like to transpose solution used in other field than IT.
 So when should I write a test?
 
+READMORE
+
 ### First let's tackle the obvious
 
 Never and always are wrong answer for two different reason.
