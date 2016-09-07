@@ -38,7 +38,7 @@
       %footer.site-footer.clearfix
         %section.copyright
           =link_to "the cook", "http://the-french-cook.com"
-          , 
+          ,
           = link_to "the dev", home_path
           ,
           = link_to "the photographer", "http://fabphoto.fr"
@@ -65,3 +65,9 @@
 
       ga('create', 'UA-35211511-1', 'auto');
       ga('send', 'pageview');
+    :javascript
+      window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":null,"theme":"dark-bottom"}; var cookieconsent_id = '8597565b-4fbb-486c-93e5-910ca820e5a7';
+    %script{:src => "//cdn.cookiescript.info/libs/cookiescript.min.js", :type => "text/javascript"}
+    %noscript
+      %a{:href => "http://cookiescript.info/"} Cookie consent script
+    / End Cookie Consent script
