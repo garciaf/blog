@@ -1,0 +1,170 @@
+---
+layout: presentation
+title: tips for css and sass
+date: 2017-02-02 07:21 UTC
+tags:
+categories: slide
+theme: beige
+lang: en
+---
+
+%section
+  %h1 Tips for css/sass
+  %h2 No need for a new haircut
+  %p
+    %small
+      %a{:href => "http://fabbook.fr/author/fabien"} Fabien Garcia
+
+
+%section
+  %section
+    %h1 Flexbox
+  %section
+    %pre
+      %code.sass
+        :preserve
+          .flex-center-vertically {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+          }
+
+%section
+  %section
+    %h1 Media queries
+  %section
+    %pre
+      %code.sass
+        :preserve
+          @include media-breakpoint-up(lg) {
+            // something up
+          }
+
+          @include media-breakpoint-down(xs) {
+            // something down
+          }
+
+%section
+  %h1 Default!
+%section
+  %section
+    %h1 Placeholder selectors
+  %section
+    %pre
+      %code.sass
+        :preserve
+          %animal {
+              background: gray;
+              // and so on...
+          }
+          .cat {
+              @extend %animal;
+              color: white;
+          }
+          .dog {
+              @extend %animal;
+              color: black;
+          }
+%section
+  %h1 Auto-prefix VS Compass/Bourbon
+
+%section
+  %section
+    %h1 Extending a selector
+  %section
+    %pre
+      %code.sass
+        :preserve
+          .animal {
+              background: gray;
+          }
+          .cat {
+              @extend .animal;
+              color: white;
+          }
+
+%section
+  %section
+    %h1 count
+  %section
+    %pre
+      %code.sass
+        :preserve
+          .with-number-circled {
+            counter-reset: section;
+            list-style-type: none;
+
+            li:before {
+              counter-increment: section;
+              content: counter(section);
+            }
+%section
+  %section
+    %h1 Cool CSS selectors
+  %section
+    %h1 first-of-type & last-of-type
+  %section
+    %h1 not
+  %section
+    %h1 first-child & last-child
+  %section
+    %h1 even & odd
+  %section
+    %h2 example
+    %pre
+      %code.sass
+        :preserve
+          .table-inside-border {
+            @extend .table-bordered;
+            border: 0;
+
+            thead tr:first-of-type td, th,
+            tbody tr:first-of-type td, th {
+              border-top: 0 !important;
+            }
+
+            thead tr:first-of-type td:first-of-type,
+            thead tr:first-of-type th:first-of-type,
+            tbody tr td:first-of-type,
+            tbody tr th:first-of-type {
+              border-left: 0!important;
+            }
+
+            thead tr:first-of-type td:last-of-type,
+            thead tr:first-of-type th:last-of-type,
+            tbody tr td:last-of-type {
+              border-right: 0!important;
+            }
+
+            tbody tr:last-of-type td,
+            tbody tr:last-of-type th {
+              border-bottom: 0!important;
+            }
+            tfoot tr td {
+              border-top-style: double !important;
+              border-top-width: 4px !important;
+              border-left: 0!important;
+              border-right: 0!important;
+              border-bottom: 0!important;
+            }
+          }
+
+%section
+  %section
+    %h1 Best practice
+  %section
+    %h1 No ID selector ( #bad-idea )
+  %section
+    %h1 Never style an html element
+  %section
+    %h1 No more than 3 nested selector
+
+%section
+  %h1
+    Question ?
+
+    -# %ul
+    -#   %li No ID selector ( #bad-idea )
+    -#   %li No more than 3 nested selector
+    -#   %li Avoid custom as much as possible
+
