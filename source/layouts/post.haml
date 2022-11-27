@@ -17,7 +17,6 @@
             on #{tags}
           = partial(:translation)
       %section.post-content= yield
-      %section.post-link= partial(:adsense)
       %section.post-comment= partial(:comments)
       %footer.post-footer
         - if gravatar?
