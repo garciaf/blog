@@ -1,29 +1,25 @@
-.extra-pagination.inner
-  = partial(:pagination) if paginate
-
-- page_articles.each do |article|
-  %article.post
-    %header.post-header
-      %h2.post-title= link_to article.title, article
-    - if cover?(article)
-      %section.post-content
-        %p
-          =link_to article do
-            = image_cover(article)
-    %section.post-excerpt
-      %p
+%main.grid.grid-cols-3.gap-4
+  - page_articles.each do |article|
+    %article.col-start-2.my-12
+      %header.post-header
+        %h2.text-3xl.text-center.mb-4= link_to article.title, article
+      - if article&.data&.cover.present?
+        =link_to article do
+          = image_tag article&.data&.cover, class: 'w-full mb-4'
+      %section.text-xl.mb-4.prose.dark:prose-dark
         = summary(article)
-        = link_to '&raquo;', article, class: 'read-more'
-    %footer.post-meta
-      - if gravatar?
-        %img.author-thumb{src: gravatar(24), alt: blog_author, nopin: 'nopin'}
-      %a{href: author_path}= blog_author
-      - if tags?(article)
-        on #{tags(article)}
-      %time.post-date{datetime: article.date.strftime('%Y-%m-%d')}
-        = link_to article.date.strftime('%d'), blog_day_path(article.date.year, article.date.month, article.date.day)
-        = link_to article.date.strftime(' %B'), blog_month_path(article.date.year, article.date.month)
-        = link_to article.date.strftime(' %Y'), blog_year_path(article.date.year)
-      = partial(:translation, locals: { current_article: article })
+        = link_to '&raquo;', article
+      %footer.post-meta
+        - if gravatar?
+          %img.inline.mr-4.rounded-full{src: gravatar(24), alt: blog_author, nopin: 'nopin'}
+        %a{href: author_path}= blog_author
+        - if tags?(article)
+          on #{tags(article)}
+        %time.post-date{datetime: article.date.strftime('%Y-%m-%d')}
+          = link_to article.date.strftime('%d'), blog_day_path(article.date.year, article.date.month, article.date.day)
+          = link_to article.date.strftime(' %B'), blog_month_path(article.date.year, article.date.month)
+          = link_to article.date.strftime(' %Y'), blog_year_path(article.date.year)
+        = partial(:translation, locals: { current_article: article })
 
-= partial(:pagination) if paginate
+  .col-start-2.my-12.flex.justify-center
+    = partial(:pagination) if paginate

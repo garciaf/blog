@@ -19,13 +19,10 @@ module MiddlemanCasperHelpers
   end
 
   def page_description
-    # if is_blog_article?
-    #   body = strip_tags(current_article.body).gsub(/\s+/, ' ')
-    #   truncate(body, length: 147)
-    # else
-    #   blog_settings.description
-    # end
-    'page description'
+    if is_blog_article?
+      body = strip_tags(current_article.body).gsub(/\s+/, ' ')
+      truncate(body, length: 147)
+    end
   end
 
   def page_class
@@ -67,7 +64,7 @@ module MiddlemanCasperHelpers
 
   def image_cover(page = current_page)
     if (src = page.data.cover).present?
-      image_tag src, resize_to: '700x'
+      image_tag src, class: 'w-full'
     end
   end
   def is_tag_page?
@@ -96,7 +93,7 @@ module MiddlemanCasperHelpers
   end
   def cover(page = current_page)
     if (src = page.data.cover).present?
-      { style: "background-image: url(#{image_path(src)})" }
+      { style: "background-image: url(#{image_path(src)})"}
     else
       { class: 'no-cover' }
     end

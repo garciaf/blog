@@ -28,16 +28,8 @@
     = stylesheet_link_tag :site
     %link{rel: :stylesheet, type: 'text/css', href: '//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400'}
   %body{class: "#{page_class} nav-closed"}
+    = yield
 
-    / = partial(:navigation)
-
-    .site-wrapper
-      = yield
-
-      %footer.site-footer.clearfix
-        %section.copyright
-          = link_to "the dev", home_path
-          &copy;
-          = Time.now.year
+    = partial :footer
 
     = javascript_include_tag :application

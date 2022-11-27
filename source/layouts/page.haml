@@ -8,8 +8,8 @@
         %a.menu-button.icon-menu{href: '#'}
           %span.word Menu
 
-  %main{role: :main}
-    %article
+  %main.grid.grid-cols-3.gap-4{role: :main}
+    %article.col-start-2.my-12
       %header
         %h1= current_page.data.title
       %section= yield

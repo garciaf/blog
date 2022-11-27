@@ -12,6 +12,5 @@ pageable: true
   %a.scroll-down.icon-arrow-left{href: '#content', data: {offset: '-45'}}
     %span.hidden Scroll Down
 
-%main#content.content{role: :main}
   = partial(:page_articles,
             locals: { page_articles: page_articles, paginate: paginate })

@@ -1,57 +1,33 @@
 = wrap_layout :layout do
-  %header.main-header.post-head{cover}
-    .vertical
-      .main-header-content.inner
-        %h1.page-title
-          = current_article.title
-        %h2.page-description
-          %a{href: localized_path("")}
-            = page_title
-            = page_description
+  %header.bg-center.bg-cover{cover}
+    .py-10{ class: "bg-neutral-50/50" }
+      %h1.text-9xl.text-center.mb-4.font-bold.font-sans 
+        = current_article.title
+      
     
-  %main.content{role: :main}
-    %article.post
-      %header.post-header
-        %section.post-meta
-          - if tags?
-            on #{tags}
-          = partial(:translation)
-      %section.post-content= yield
-      %section.post-comment= partial(:comments)
-      %footer.post-footer
+  %main.grid.grid-cols-3.gap-4
+    %article.col-start-2.my-12
+      %section
+        - if tags?
+          on #{tags}
+        = partial(:translation)
+      %section= yield
+      
+      %footer.py-10
         - if gravatar?
-          %figure.author-image
-            %a.img{href: author_path, style: "background-image: url(#{gravatar})"}
-              %span.hidden #{blog_author}'s Picture
-        %section.author
-          %h4
-            %a{href: author_path}= blog_author
-
-          %p
-            Read
-            %a{href: author_path} more posts
-            by this author.
-
-
-        %section.share
-          %h4 Share this post
-          %a.icon-twitter{href: twitter_url, onclick: "window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"}
-            %span.hidden Twitter
-          %a.icon-facebook{href: facebook_url, onclick: "window.open(this.href, 'facebook-share','width=580,height=296');return false;"}
-            %span.hidden Facebook
-          %a.icon-google-plus{href: google_plus_url, onclick: "window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"}
-            %span.hidden Google+
-  
-  %aside.read-next
-    - if prev_article = current_article.previous_article
-      - attributes = { href: prev_article.url }.merge(cover(prev_article))
-      %a.read-next-story{attributes}
-        %section.post
-          %h2= prev_article.title
-          %p #{read_next_summary(prev_article, 19)}&hellip;
-    - if next_article = current_article.next_article
-      - attributes = { href: next_article.url }.merge(cover(next_article))
-      %a.read-next-story.prev{attributes}
-        %section.post
-          %h2= next_article.title
-          %p #{read_next_summary(next_article, 19)}&hellip;
+          %img.inline.mr-4.rounded-full{ src: gravatar(24)}
+          Fabien G
+        
+      %div
+        - if prev_article = current_article.previous_article
+          - attributes = { href: prev_article.url }.merge(cover(prev_article))
+          %a.read-next-story{attributes}
+            %section.post
+              %h2= prev_article.title
+              %p #{read_next_summary(prev_article, 19)}&hellip;
+        - if next_article = current_article.next_article
+          - attributes = { href: next_article.url }.merge(cover(next_article))
+          %a.read-next-story.prev{attributes}
+            %section.post
+              %h2= next_article.title
+              %p #{read_next_summary(next_article, 19)}&hellip;

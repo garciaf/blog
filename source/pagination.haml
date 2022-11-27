@@ -4,9 +4,8 @@
 - num_pages = locals['num_pages']
 - next_page = locals['next_page']
 
-%nav.pagination{role: :pagination}
+%ul.inline-flex
   - if prev_page
-    = link_to '← Newer Posts', prev_page, class: 'newer-posts'
-  %span.page-number Page #{page_number} of #{num_pages}
+    %li= link_to 'Newer Posts', prev_page, class: 'h-10 px-5 py-5  transition-colors duration-150 bg-white border border-r-0 border-black-600 rounded-l-lg focus:shadow-outline hover:bg-gray-200'
   - if next_page
-    = link_to 'Older Posts →', next_page, class: 'older-posts'
+    %li= link_to 'Older Posts', next_page, class: 'h-10 px-5 py-5 transition-colors duration-150 bg-white border border-l-0 border-black-600 rounded-r-lg focus:shadow-outline hover:bg-gray-200'
