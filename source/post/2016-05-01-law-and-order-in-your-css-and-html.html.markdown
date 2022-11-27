@@ -58,7 +58,7 @@ This way just by reading the HTML source you will be able to distinct what is re
 
 Alright CSS contain the word cascading and at first it sound like really good concept. But in my opinion do not go deep in your cascading here is what I mean. 
 
-```scss
+```
 .some_class {
   ...
   .some_class_more {
@@ -78,7 +78,7 @@ Alright CSS contain the word cascading and at first it sound like really good co
 
 If you have such a deep styling, changing or adapting the structure of your template will be really hard. Also link the style who need each other. For instance I have no problem with something like this: 
 
-```scss
+```
 .card{
   .card-header{
     ...
