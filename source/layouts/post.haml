@@ -6,22 +6,13 @@
           = current_article.title
         %h2.page-description
           %a{href: localized_path("")}
-            = blog_settings.name
-            = blog_settings.description
-    %nav.main-nav.clearfix{class: cover? ? 'overlay' : nil}
-      - if blog_settings.logo.present?
-        %a.blog-logo{href: localized_path("")}
-          = image_tag blog_settings.logo, alt: blog_settings.name
-      - if blog_settings.navigation
-        %a.menu-button.icon-menu{href: '#'}
-          %span.word Menu
-
+            = page_title
+            = page_description
+    
   %main.content{role: :main}
     %article.post
       %header.post-header
         %section.post-meta
-          %time.post-date{datetime: current_article.date.strftime('%Y-%m-%d')}
-            = current_article.date.strftime(blog_settings.date_format)
           - if tags?
             on #{tags}
           = partial(:translation)
@@ -32,26 +23,16 @@
         - if gravatar?
           %figure.author-image
             %a.img{href: author_path, style: "background-image: url(#{gravatar})"}
-              %span.hidden #{blog_author.name}'s Picture
+              %span.hidden #{blog_author}'s Picture
         %section.author
           %h4
-            %a{href: author_path}= blog_author.name
+            %a{href: author_path}= blog_author
 
           %p
-          - if blog_author.bio.present?
-            = blog_author.bio
-          - else
             Read
             %a{href: author_path} more posts
             by this author.
 
-          - if blog_author.location.present? || blog_author.website.present?
-            .author-meta
-              - if blog_author.location.present?
-                %span.author-location.icon-location= blog_author.location
-              - if blog_author.website.present?
-                %span.author-link.icon-link
-                  %a{href: blog_author.website}= blog_author.website
 
         %section.share
           %h4 Share this post
