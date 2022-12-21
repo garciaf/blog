@@ -3,23 +3,25 @@ require 'digest/md5'
 
 module MiddlemanCasperHelpers
   def page_title
-    title = blog_settings.name.dup
-    if is_tag_page?
-      title << ": #{current_resource.metadata[:locals]['tagname']}"
-    elsif current_page.data.title
-      title << ": #{current_page.data.title}"
-    elsif is_blog_article?
-      title << ": #{current_article.title}"
-    end
-    title
+    # title = blog_settings.name.dup
+    # if is_tag_page?
+    #   title << ": #{current_resource.metadata[:locals]['tagname']}"
+    # elsif current_page.data.title
+    #   title << ": #{current_page.data.title}"
+    # elsif is_blog_article?
+    #   title << ": #{current_article.title}"
+    # end
+    # title
+    'title'
+  end
+
+  def date_format
   end
 
   def page_description
     if is_blog_article?
       body = strip_tags(current_article.body).gsub(/\s+/, ' ')
       truncate(body, length: 147)
-    else
-      blog_settings.description
     end
   end
 
@@ -48,21 +50,21 @@ module MiddlemanCasperHelpers
   end
 
   def blog_author
-    OpenStruct.new(casper[:author])
   end
 
   def blog_settings
-    OpenStruct.new(casper[:blog])
   end
+
   def theme(page = current_page)
     page.data.theme || 'default'
   end
+
   def navigation
-    casper[:navigation]
   end
+
   def image_cover(page = current_page)
     if (src = page.data.cover).present?
-      image_tag src, resize_to: '700x'
+      image_tag src, class: 'w-full'
     end
   end
   def is_tag_page?
@@ -81,17 +83,17 @@ module MiddlemanCasperHelpers
   end
 
   def current_article_url
-    URI.join(blog_settings.url, current_article.url)
+    'somewehere'
   end
 
   def cover_url(page = current_page)
-    if (src = page.data.cover).present?
-      URI.join(blog_settings.url, image_path(src)) 
-    end
+    # if (src = page.data.cover).present?
+    #   URI.join(blog_settings.url, image_path(src)) 
+    # end
   end
   def cover(page = current_page)
     if (src = page.data.cover).present?
-      { style: "background-image: url(#{image_path(src)})" }
+      { style: "background-image: url(#{image_path(src)})"}
     else
       { class: 'no-cover' }
     end
@@ -100,12 +102,17 @@ module MiddlemanCasperHelpers
     page.data.cover.present?
   end
 
+  def gravatar_email
+    'fab0670312047@gmail.com'
+  end
+
   def gravatar(size = 68)
-    md5 = Digest::MD5.hexdigest(blog_author.gravatar_email.downcase)
+    md5 = Digest::MD5.hexdigest(gravatar_email)
     "https://www.gravatar.com/avatar/#{md5}?size=#{size}"
   end
+  
   def gravatar?
-    blog_author.gravatar_email.present?
+    gravatar_email.present?
   end
 
   def has_translation?(page = current_page)
@@ -138,9 +145,9 @@ module MiddlemanCasperHelpers
   
   def author_path
     if I18n.locale == I18n.default_locale
-      "/author/#{blog_author.name.parameterize}/"
+      "/author/#{blog_author}/"
     else
-      "/#{I18n.locale}/author/#{blog_author.name.parameterize}/"
+      "/#{I18n.locale}/author/#{blog_author}/"
     end
   end
 end

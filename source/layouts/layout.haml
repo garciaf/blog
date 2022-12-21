@@ -15,7 +15,6 @@
     // Open Graph General (Facebook & Pinterest)
     %meta{content: cover_url, property: "og:image"}
     %meta{content: page_title, property: "og:title"}
-    %meta{content: blog_settings.name, property: "og:site_name"}
     %meta{content: cover_url, property: "og:image"}
     %meta{content: page_description, property: "og:description"}
     %meta{content: 'website', property: "og:type"}
@@ -26,48 +25,11 @@
 
     = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
     = favicon_tag 'images/iconemain.png'
-    = stylesheet_link_tag :application
+    = stylesheet_link_tag :site
     %link{rel: :stylesheet, type: 'text/css', href: '//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400'}
   %body{class: "#{page_class} nav-closed"}
+    = yield
 
-    = partial(:navigation)
-
-    .site-wrapper
-      = yield
-
-      %footer.site-footer.clearfix
-        %section.copyright
-          =link_to "the cook", "http://the-french-cook.com"
-          ,
-          = link_to "the dev", home_path
-          ,
-          = link_to "the photographer", "http://fabphoto.fr"
-          and
-          = link_to "the fighter", "http://fabfight.com"
-          &copy;
-          = Time.now.year
+    = partial :footer
 
     = javascript_include_tag :application
-    //Search engine
-    :javascript
-      (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-      (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-      e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-      })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-
-      _st('install','ps3dxEPNzj6kRkRM3G2c','2.0.0');
-    // Google analytic
-    :javascript
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-35211511-1', 'auto');
-      ga('send', 'pageview');
-    :javascript
-      window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":null,"theme":"dark-bottom"}; var cookieconsent_id = '8597565b-4fbb-486c-93e5-910ca820e5a7';
-    %script{:src => "//cdn.cookiescript.info/libs/cookiescript.min.js", :type => "text/javascript"}
-    %noscript
-      %a{:href => "http://cookiescript.info/"} Cookie consent script
-    / End Cookie Consent script

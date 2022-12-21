@@ -1,0 +1,11 @@
+- locals = current_resource.metadata[:locals]
+- prev_page = locals['prev_page']
+- page_number = locals['page_number']
+- num_pages = locals['num_pages']
+- next_page = locals['next_page']
+
+%ul.inline-flex
+  - if prev_page
+    %li= link_to 'Newer Posts', prev_page, class: 'h-10 px-5 py-5  transition-colors duration-150 bg-white border border-r-0 border-black-600 rounded-l-lg focus:shadow-outline hover:bg-gray-200'
+  - if next_page
+    %li= link_to 'Older Posts', next_page, class: 'h-10 px-5 py-5 transition-colors duration-150 bg-white border border-l-0 border-black-600 rounded-r-lg focus:shadow-outline hover:bg-gray-200'

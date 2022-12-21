@@ -1,6 +1,6 @@
 = wrap_layout :layout do
-  %header.main-header.post-head{cover}
-    %nav.main-nav.clearfix{class: cover? ? 'overlay' : nil}
+  %header{cover}
+    %nav{class: cover? ? 'overlay' : nil}
       - if blog_settings.logo.present?
         %a.blog-logo{href: home_path}
           = image_tag blog_settings.logo, alt: blog_settings.name
@@ -8,8 +8,8 @@
         %a.menu-button.icon-menu{href: '#'}
           %span.word Menu
 
-  %main.content{role: :main}
-    %article.post
-      %header.post-header
-        %h1.post-title= current_page.data.title
-      %section.post-content= yield
+  %main.grid.grid-cols-3.gap-4{role: :main}
+    %article.col-start-2.my-12
+      %header
+        %h1= current_page.data.title
+      %section= yield
